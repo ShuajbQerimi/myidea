@@ -1,0 +1,173 @@
+@font-face {
+  font-family: "Lemon Bold";
+  src: url("../fonts/LemonMilkProBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Lemon Bold Italic";
+  src: url("../fonts/LemonMilkProBoldItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "Lemon Medium";
+  src: url("../fonts/LemonMilkProMedium.otf") format("opentype");
+}
+@font-face {
+  font-family: "Lemon Medium Italic";
+  src: url("../fonts/LemonMilkProMediumItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "Lemon Regular";
+  src: url("../fonts/LemonMilkProRegular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Lemon Regular Italic";
+  src: url("../fonts/LemonMilkProRegularItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "Lemon UltraLight";
+  src: url("../fonts/LemonMilkProUltraLight.otf") format("opentype");
+}
+@font-face {
+  font-family: "Lemon UltraLight Italic";
+  src: url("../fonts/LemonMilkProUltraLightItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "Zacbelx Extrabold";
+  src: url("../fonts/zacbelx-extrabold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Zacbelx Medium";
+  src: url("../fonts/zacbelx-medium.ttf") format("truetype");
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  font-family: "Lemon Regular";
+  background-color: black;
+}
+body .nav {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+body .nav .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 0px;
+  padding-top: 15px;
+  margin-bottom: 20px;
+}
+body .nav .container .left img {
+  width: 97.71px;
+  height: 25.93px;
+}
+body .nav .container .mid {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5px;
+}
+body .nav .container .mid a {
+  font-family: "Lemon Medium";
+  font-size: 14px;
+  color: #FFFFFF;
+  margin: 0px 40px;
+}
+body .nav .container .mid a:hover {
+  color: #FFFF27;
+}
+body .nav .container .right {
+  padding-top: 5px;
+}
+body .nav .container .right a {
+  font-family: "Lemon Regular";
+  font-size: 14px;
+  padding: 10px 20px;
+  border: 2px solid #FDFDFD;
+  border-radius: 3px;
+}
+body .section1 {
+  background-image: url(../img/bg1banner.png);
+  background-size: 100% 100%;
+}
+body .section1 .container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+body .section1 .container .left .text1 p {
+  font-family: "Lemon Medium";
+  font-size: 12px;
+  color: #FFFF27;
+  line-height: 17px;
+  letter-spacing: 1.72em;
+  margin-top: 130px;
+}
+body .section1 .container .left .text2 p {
+  font-family: "Zacbelx Extrabold";
+  font-size: 130px;
+  line-height: 186px;
+  color: #FFFFFF;
+  margin-top: -40px;
+  margin-bottom: -10px;
+}
+body .section1 .container .left .text3 p {
+  font-family: "Lemon Regular";
+  font-size: 14px;
+  line-height: 30px;
+  color: #C5CFD5;
+}
+body .section1 .container .left .buttons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+body .section1 .container .left .buttons .button1 img {
+  width: 124px;
+  height: 38px;
+}
+body .section1 .container .left .buttons .button2 img {
+  width: 38px;
+  height: 38px;
+  margin: 0px 30px;
+}
+body .section1 .container .left .buttons .button3 img {
+  width: 38px;
+  height: 38px;
+}
+body .section1 .container .left .buttons .button4 img {
+  width: 38px;
+  height: 38px;
+  margin: 0px 30px;
+}
+body .section1 .container .left .downpart {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+body .section1 .container .left .downpart .left p {
+  font-family: "Lemon Bold";
+  font-size: 48px;
+  line-height: 67px;
+  color: #FFFFFF;
+  margin: 0px;
+}
+body .section1 .container .left .downpart .mid img {
+  width: 4px;
+  height: 48px;
+  margin: 0px 45px;
+  margin-top: 10px;
+}
+body .section1 .container .left .downpart .right p {
+  font-family: "Lemon UltraLight";
+  font-size: 34px;
+  color: #FFFFFF;
+  margin: 0px;
+  margin-top: 10px;
+}
+body .section1 .container .right img {
+  width: 615px;
+  height: 667px;
+}/*# sourceMappingURL=style.css.map */
