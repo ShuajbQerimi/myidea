@@ -54,12 +54,15 @@ a {
 }
 
 
+
 body {
     font-family: "Lemon Regular";
     background-color: black;
+    margin: 0px;
+    padding: 0px;
 
     .nav {
-        max-width: 1280px;
+        max-width: 1060px;
         margin: 0 auto;
 
         .container {
@@ -104,7 +107,7 @@ body {
                     font-family: "Lemon Regular";
                     font-size: 14px;
                     padding: 10px 20px;
-                    
+
 
                     border: 2px solid #FDFDFD;
                     border-radius: 3px;
@@ -119,11 +122,13 @@ body {
 
         background-image: url(../img/bg1banner.png);
         background-size: 100% 100%;
+
         .container {
-            max-width: 1280px;
+            max-width: 1060px;
             margin: 0 auto;
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
 
             .left {
                 .text1 {
@@ -150,6 +155,7 @@ body {
 
                 .text3 {
                     p {
+                        max-width: 546px;
                         font-family: "Lemon Regular";
                         font-size: 14px;
                         line-height: 30px;
@@ -166,7 +172,7 @@ body {
                         img {
                             width: 124px;
                             height: 38px;
-                            
+
                         }
                     }
 
@@ -239,4 +245,397 @@ body {
             }
         }
     }
+
+    #mainmodal {
+
+        font-family: Arial;
+
+        height: 100%;
+        width: 100%;
+        text-align: center;
+
+        .modalconent {
+            background-image: url(../img/breakingnews.png);
+            background-size: 100%;
+            width: 100%;
+
+        }
+
+        .marquee {
+            font-family: "Zacbelx Extrabold";
+            color: #080707;
+            padding: 30px;
+            font-size: 60px;
+
+        }
+    }
+
+    .section2 {
+        background-image: url(../img/bgservices.png);
+        background-size: 100% 100%;
+        background-color: #151515;
+
+        .container {
+            max-width: 1060px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+
+            .texts {
+                width: 100%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+
+                .text1 {
+                    font-family: "Lemon Medium";
+                    font-size: 12px;
+                    line-height: 17px;
+                    letter-spacing: 1.72em;
+                    color: #FFFF27;
+                    margin-top: 100px;
+                    margin-bottom: 25px;
+                }
+
+                .text2 {
+                    img {
+                        margin: 0px;
+                        width: 526.98px;
+                        height: 101.97px;
+                    }
+                }
+
+                .text3 {
+
+                    width: 546px;
+                    margin: 0 auto;
+                    font-family: 'LEMON Regular';
+                    font-size: 14px;
+                    line-height: 30px;
+                    text-align: center;
+                    color: #C5CFD5;
+                    margin-top: 26px;
+                    margin-bottom: 44px;
+                }
+            }
+
+
+
+            .innersection {
+                .first {
+                    width: 90%;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    // background: #292929;
+                    // border: 2px solid #181818;
+                    padding: 20px;
+
+                    .left {
+                        display: flex;
+                        flex-direction: row;
+
+                        p {
+                            font-family: "Lemon Regular";
+                            font-size: 34px;
+                            color: white;
+                        }
+
+                        .img1 {
+                            margin-top: 40px;
+                            margin-left: 15px;
+                            width: 27px;
+                            height: 33.2px;
+                        }
+
+                        .hide {}
+
+                        .img2 {
+                            display: none;
+                            margin-top: 40px;
+                            margin-left: 15px;
+                            width: 27px;
+                            height: 33.2px;
+                        }
+                    }
+
+                    .right {
+                        p {
+                            display: none;
+                            width: 502px;
+                            font-family: "Lemon Regular";
+                            font-size: 14px;
+                            line-height: 30px;
+                            color: #9A9A9A;
+                        }
+
+                        button {
+                            margin-top: 35px;
+                            background-color: transparent;
+                            cursor: crosshair;
+
+                            img {
+
+
+                                width: 42px;
+
+                            }
+                        }
+
+
+                    }
+                }
+            }
+
+
+
+        }
+    }
+
+    .section3 {
+        .container {
+            max-width: 1060px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            margin-top: 96px;
+
+            .up {
+                margin-bottom: 81px;
+
+                .up1 {
+                    p {
+                        font-family: "Lemon Medium";
+                        font-size: 12px;
+                        line-height: 17px;
+                        letter-spacing: 1.72em;
+                        color: #FFFF27;
+                        margin-bottom: 25px;
+                    }
+                }
+
+                .down1 {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .left {
+                        img {
+                            width: 524.95px;
+                        }
+                    }
+
+                    .right {
+                        p {
+                            font-family: "Lemon Regular";
+                            font-size: 14px;
+                            line-height: 30px;
+                            color: #C5CFD5;
+                            max-width: 473px;
+
+                        }
+                    }
+                }
+            }
+
+
+            .down {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .box {
+                    .up {
+                        margin-bottom: 0px;
+
+                        a {
+                            img {
+                                width: 520px;
+                                height: 520px;
+
+                            }
+                        }
+                    }
+
+                    .down {
+                        display: flex;
+                        flex-direction: column;
+
+                        .ups {
+                            p {
+                                font-family: "Lemon Medium";
+                                font-size: 18px;
+                                line-height: 25px;
+                                color: #FFFFFF;
+                                margin-top: 0px;
+                                margin-bottom: 0px;
+                            }
+                        }
+
+                        .downs {
+                            p {
+                                font-family: "Lemon Regular";
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #A4ADB3;
+                                margin-top: 6px;
+                                margin-bottom: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .section4 {
+        background-image: url(../img/bgcareer.png);
+        background-size: 100% 100%;
+        background-color: #151515;
+
+        .container {
+            max-width: 1060px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+
+            .up {
+                display: flex;
+                flex-direction: row;
+
+                .left {
+                    flex: 0.5;
+
+                    img {
+                        width: 37.18px;
+                        height: 150.22px;
+                    }
+                }
+
+                .mid {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    flex: 2;
+                    margin-top: 100px;
+
+                    .text1 {
+                        p {
+                            font-family: "Lemon Medium";
+                            font-size: 12px;
+                            line-height: 17px;
+                            letter-spacing: 1.72em;
+                            color: #FFFF27;
+                            margin-bottom: 40px;
+                        }
+                    }
+
+                    .text2 {
+                        img {
+                            width: 608px;
+                            height: 111px;
+                            margin-bottom: 40px;
+                        }
+                    }
+
+                    .text3 {
+                        max-width: 605;
+                        margin: 0 auto;
+
+                        p {
+                            font-family: "Lemon Regular";
+                            font-size: 14px;
+                            line-height: 30px;
+                            text-align: center;
+                            color: #C5CFD5;
+                        }
+                    }
+                }
+
+                .right {
+                    flex: 0.5;
+                    text-align: end;
+                    margin-top: 50px;
+
+                    img {
+                        width: 59.76px;
+                        height: 29.88px;
+                    }
+                }
+            }
+
+            .down {
+                display: flex;
+                flex-direction: column;
+                margin-top: 80px;
+
+                .first {
+                    display: flex;
+                    flex-direction: row;
+
+                    .left {
+                        padding: 224px 121px;
+                        background: #0C0C0C;
+                        opacity: 0.6;
+                        border: 1px solid rgba(255, 255, 255, 0.25);
+                        border-radius: 4px;
+                        text-align: center;
+                        margin-right: 5px;
+
+                        img {
+                            width: 176px;
+                            height: 181.5px;
+                        }
+
+                        p {
+                            font-family: "Lemon Bold";
+                            font-size: 34px;
+                            line-height: 30px;
+                            color: #FFFFFF;
+                        }
+                    }
+
+                    .right {
+                        display: flex;
+                        flex-direction: column;
+                        
+
+                        .text1 {
+                            background: #0C0C0C;
+                            opacity: 0.6;
+                            border: 1px solid rgba(255, 255, 255, 0.25);
+                            border-radius: 4px;
+                            margin-bottom: 15px;
+
+                            .up {
+                                p {
+                                    font-family: "Lemon Bold";
+                                    font-size: 30px;
+                                    line-height: 30px;
+                                    color: #FFFFFF;
+                                }
+                            }
+
+                            .down {
+                                p {
+                                    font-family: "Lemon Bold";
+                                    font-size: 16px;
+                                    line-height: 30px;
+                                    color: rgba(255, 255, 255, 0.54);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+
 }

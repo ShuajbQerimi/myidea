@@ -46,9 +46,11 @@ a {
 body {
   font-family: "Lemon Regular";
   background-color: black;
+  margin: 0px;
+  padding: 0px;
 }
 body .nav {
-  max-width: 1280px;
+  max-width: 1060px;
   margin: 0 auto;
 }
 body .nav .container {
@@ -92,10 +94,11 @@ body .section1 {
   background-size: 100% 100%;
 }
 body .section1 .container {
-  max-width: 1280px;
+  max-width: 1060px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 body .section1 .container .left .text1 p {
   font-family: "Lemon Medium";
@@ -114,6 +117,7 @@ body .section1 .container .left .text2 p {
   margin-bottom: -10px;
 }
 body .section1 .container .left .text3 p {
+  max-width: 546px;
   font-family: "Lemon Regular";
   font-size: 14px;
   line-height: 30px;
@@ -170,4 +174,291 @@ body .section1 .container .left .downpart .right p {
 body .section1 .container .right img {
   width: 615px;
   height: 667px;
+}
+body #mainmodal {
+  font-family: Arial;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+body #mainmodal .modalconent {
+  background-image: url(../img/breakingnews.png);
+  background-size: 100%;
+  width: 100%;
+}
+body #mainmodal .marquee {
+  font-family: "Zacbelx Extrabold";
+  color: #080707;
+  padding: 30px;
+  font-size: 60px;
+}
+body .section2 {
+  background-image: url(../img/bgservices.png);
+  background-size: 100% 100%;
+  background-color: #151515;
+}
+body .section2 .container {
+  max-width: 1060px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+body .section2 .container .texts {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+body .section2 .container .texts .text1 {
+  font-family: "Lemon Medium";
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 1.72em;
+  color: #FFFF27;
+  margin-top: 100px;
+  margin-bottom: 25px;
+}
+body .section2 .container .texts .text2 img {
+  margin: 0px;
+  width: 526.98px;
+  height: 101.97px;
+}
+body .section2 .container .texts .text3 {
+  width: 546px;
+  margin: 0 auto;
+  font-family: "LEMON Regular";
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #C5CFD5;
+  margin-top: 26px;
+  margin-bottom: 44px;
+}
+body .section2 .container .innersection .first {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+body .section2 .container .innersection .first .left {
+  display: flex;
+  flex-direction: row;
+}
+body .section2 .container .innersection .first .left p {
+  font-family: "Lemon Regular";
+  font-size: 34px;
+  color: white;
+}
+body .section2 .container .innersection .first .left .img1 {
+  margin-top: 40px;
+  margin-left: 15px;
+  width: 27px;
+  height: 33.2px;
+}
+body .section2 .container .innersection .first .left .img2 {
+  display: none;
+  margin-top: 40px;
+  margin-left: 15px;
+  width: 27px;
+  height: 33.2px;
+}
+body .section2 .container .innersection .first .right p {
+  display: none;
+  width: 502px;
+  font-family: "Lemon Regular";
+  font-size: 14px;
+  line-height: 30px;
+  color: #9A9A9A;
+}
+body .section2 .container .innersection .first .right button {
+  margin-top: 35px;
+  background-color: transparent;
+  cursor: crosshair;
+}
+body .section2 .container .innersection .first .right button img {
+  width: 42px;
+}
+body .section3 .container {
+  max-width: 1060px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 96px;
+}
+body .section3 .container .up {
+  margin-bottom: 81px;
+}
+body .section3 .container .up .up1 p {
+  font-family: "Lemon Medium";
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 1.72em;
+  color: #FFFF27;
+  margin-bottom: 25px;
+}
+body .section3 .container .up .down1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body .section3 .container .up .down1 .left img {
+  width: 524.95px;
+}
+body .section3 .container .up .down1 .right p {
+  font-family: "Lemon Regular";
+  font-size: 14px;
+  line-height: 30px;
+  color: #C5CFD5;
+  max-width: 473px;
+}
+body .section3 .container .down {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+body .section3 .container .down .box .up {
+  margin-bottom: 0px;
+}
+body .section3 .container .down .box .up a img {
+  width: 520px;
+  height: 520px;
+}
+body .section3 .container .down .box .down {
+  display: flex;
+  flex-direction: column;
+}
+body .section3 .container .down .box .down .ups p {
+  font-family: "Lemon Medium";
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+body .section3 .container .down .box .down .downs p {
+  font-family: "Lemon Regular";
+  font-size: 14px;
+  line-height: 20px;
+  color: #A4ADB3;
+  margin-top: 6px;
+  margin-bottom: 40px;
+}
+body .section4 {
+  background-image: url(../img/bgcareer.png);
+  background-size: 100% 100%;
+  background-color: #151515;
+}
+body .section4 .container {
+  max-width: 1060px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+body .section4 .container .up {
+  display: flex;
+  flex-direction: row;
+}
+body .section4 .container .up .left {
+  flex: 0.5;
+}
+body .section4 .container .up .left img {
+  width: 37.18px;
+  height: 150.22px;
+}
+body .section4 .container .up .mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  flex: 2;
+  margin-top: 100px;
+}
+body .section4 .container .up .mid .text1 p {
+  font-family: "Lemon Medium";
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 1.72em;
+  color: #FFFF27;
+  margin-bottom: 40px;
+}
+body .section4 .container .up .mid .text2 img {
+  width: 608px;
+  height: 111px;
+  margin-bottom: 40px;
+}
+body .section4 .container .up .mid .text3 {
+  max-width: 605;
+  margin: 0 auto;
+}
+body .section4 .container .up .mid .text3 p {
+  font-family: "Lemon Regular";
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #C5CFD5;
+}
+body .section4 .container .up .right {
+  flex: 0.5;
+  text-align: end;
+  margin-top: 50px;
+}
+body .section4 .container .up .right img {
+  width: 59.76px;
+  height: 29.88px;
+}
+body .section4 .container .down {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+body .section4 .container .down .first {
+  display: flex;
+  flex-direction: row;
+}
+body .section4 .container .down .first .left {
+  padding: 224px 121px;
+  background: #0C0C0C;
+  opacity: 0.6;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
+  text-align: center;
+  margin-right: 5px;
+}
+body .section4 .container .down .first .left img {
+  width: 176px;
+  height: 181.5px;
+}
+body .section4 .container .down .first .left p {
+  font-family: "Lemon Bold";
+  font-size: 34px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+body .section4 .container .down .first .right {
+  display: flex;
+  flex-direction: column;
+}
+body .section4 .container .down .first .right .text1 {
+  background: #0C0C0C;
+  opacity: 0.6;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+body .section4 .container .down .first .right .text1 .up p {
+  font-family: "Lemon Bold";
+  font-size: 30px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+body .section4 .container .down .first .right .text1 .down p {
+  font-family: "Lemon Bold";
+  font-size: 16px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.54);
 }/*# sourceMappingURL=style.css.map */
