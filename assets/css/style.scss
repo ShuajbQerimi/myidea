@@ -502,17 +502,19 @@ body {
             margin: 0 auto;
             display: flex;
             flex-direction: column;
+            
 
             .up {
                 display: flex;
                 flex-direction: row;
 
                 .left {
-                    flex: 0.5;
+                    flex: 0.2;
 
                     img {
-                        width: 37.18px;
-                        height: 150.22px;
+                        width: 350px;
+                        margin-left: -170px;
+                        margin-right: -80px;
                     }
                 }
 
@@ -548,19 +550,22 @@ body {
                         margin: 0 auto;
 
                         p {
+                            max-width: 600px;
                             font-family: "Lemon Regular";
                             font-size: 14px;
                             line-height: 30px;
                             text-align: center;
                             color: #C5CFD5;
+                            margin-top: -20px;
                         }
                     }
                 }
 
                 .right {
-                    flex: 0.5;
+                    flex: 0.2;
                     text-align: end;
                     margin-top: 50px;
+                    
 
                     img {
                         width: 59.76px;
@@ -577,61 +582,166 @@ body {
                 .first {
                     display: flex;
                     flex-direction: row;
+                    margin-bottom: 10px;
 
                     .left {
-                        padding: 224px 121px;
-                        background: #0C0C0C;
-                        opacity: 0.6;
-                        border: 1px solid rgba(255, 255, 255, 0.25);
-                        border-radius: 4px;
+                        width: 341px;
+                        height: 425px;
                         text-align: center;
                         margin-right: 5px;
+                        background: #0C0C0C;
+                        opacity: 0.6;
+                        border: 1px solid #191919;
+                        border-radius: 4px;
 
                         img {
                             width: 176px;
                             height: 181.5px;
+                            margin-bottom: 0px;
+                            margin-top: 80px;
                         }
 
                         p {
                             font-family: "Lemon Bold";
                             font-size: 34px;
                             line-height: 30px;
-                            color: #FFFFFF;
+                            color: #E1E1E1;
+                            margin: 0px;
+                            margin-top: -20px;
                         }
                     }
 
                     .right {
                         display: flex;
                         flex-direction: column;
-                        
+                        width: 714px;
+                        height: 138px;
 
                         .text1 {
                             background: #0C0C0C;
                             opacity: 0.6;
-                            border: 1px solid rgba(255, 255, 255, 0.25);
+                            border: 1px solid #191919;
                             border-radius: 4px;
-                            margin-bottom: 15px;
+                            padding: 0px;
+                            margin: 0px;
+                            margin-bottom: 5px;
 
                             .up {
+                                margin: 0px;
+
                                 p {
-                                    font-family: "Lemon Bold";
-                                    font-size: 30px;
+                                    font-family: "Lemon Medium";
+                                    font-size: 26px;
                                     line-height: 30px;
-                                    color: #FFFFFF;
+                                    color: #E1E1E1;
+                                    margin: 0px;
+                                    margin-top: 39px;
+                                    margin-left: 23px;
                                 }
                             }
 
                             .down {
+                                margin: 0px;
+
                                 p {
-                                    font-family: "Lemon Bold";
+
+                                    margin: 0px;
+                                    font-family: "Lemon Regular";
                                     font-size: 16px;
                                     line-height: 30px;
                                     color: rgba(255, 255, 255, 0.54);
+                                    margin-top: 15px;
+                                    margin-left: 23px;
+                                    margin-bottom: 23px;
                                 }
                             }
                         }
                     }
                 }
+                .second {
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 10px;
+                    margin-bottom: 300px;
+
+                    .left {
+                        width: 341px;
+                        height: 565px;
+                        text-align: center;
+                        
+                        background: #0C0C0C;
+                        opacity: 0.6;
+                        border: 1px solid #191919;
+                        border-radius: 4px;
+
+                        img {
+                            width: 176px;
+                            height: 181.5px;
+                            margin-bottom: 0px;
+                            margin-top: 165.66px;
+                        }
+
+                        p {
+                            font-family: "Lemon Bold";
+                            font-size: 34px;
+                            line-height: 30px;
+                            color: #E1E1E1;
+                            margin: 0px;
+                            margin-top: 5px;
+                        }
+                    }
+
+                    .right {
+                        display: flex;
+                        flex-direction: column;
+                        width: 714px;
+                        height: 138px;
+                        margin-right: 5px;
+                        
+
+                        .text1 {
+                            background: #0C0C0C;
+                            opacity: 0.6;
+                            border: 1px solid #191919;
+                            border-radius: 4px;
+                            padding: 0px;
+                            margin: 0px;
+                            margin-bottom: 5px;
+
+                            .up {
+                                margin: 0px;
+
+                                p {
+                                    font-family: "Lemon Medium";
+                                    font-size: 26px;
+                                    line-height: 30px;
+                                    color: #E1E1E1;
+                                    margin: 0px;
+                                    margin-top: 38.5px;
+                                    margin-left: 23px;
+                                }
+                            }
+
+                            .down {
+                                margin: 0px;
+
+                                p {
+
+                                    margin: 0px;
+                                    font-family: "Lemon Regular";
+                                    font-size: 16px;
+                                    line-height: 30px;
+                                    color: rgba(255, 255, 255, 0.54);
+                                    margin-top: 15px;
+                                    margin-left: 23px;
+                                    margin-bottom: 23px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                
             }
 
         }

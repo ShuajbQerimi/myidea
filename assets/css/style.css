@@ -364,11 +364,12 @@ body .section4 .container .up {
   flex-direction: row;
 }
 body .section4 .container .up .left {
-  flex: 0.5;
+  flex: 0.2;
 }
 body .section4 .container .up .left img {
-  width: 37.18px;
-  height: 150.22px;
+  width: 350px;
+  margin-left: -170px;
+  margin-right: -80px;
 }
 body .section4 .container .up .mid {
   display: flex;
@@ -396,14 +397,16 @@ body .section4 .container .up .mid .text3 {
   margin: 0 auto;
 }
 body .section4 .container .up .mid .text3 p {
+  max-width: 600px;
   font-family: "Lemon Regular";
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   color: #C5CFD5;
+  margin-top: -20px;
 }
 body .section4 .container .up .right {
-  flex: 0.5;
+  flex: 0.2;
   text-align: end;
   margin-top: 50px;
 }
@@ -419,46 +422,139 @@ body .section4 .container .down {
 body .section4 .container .down .first {
   display: flex;
   flex-direction: row;
+  margin-bottom: 10px;
 }
 body .section4 .container .down .first .left {
-  padding: 224px 121px;
-  background: #0C0C0C;
-  opacity: 0.6;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 4px;
+  width: 341px;
+  height: 425px;
   text-align: center;
   margin-right: 5px;
+  background: #0C0C0C;
+  opacity: 0.6;
+  border: 1px solid #191919;
+  border-radius: 4px;
 }
 body .section4 .container .down .first .left img {
   width: 176px;
   height: 181.5px;
+  margin-bottom: 0px;
+  margin-top: 80px;
 }
 body .section4 .container .down .first .left p {
   font-family: "Lemon Bold";
   font-size: 34px;
   line-height: 30px;
-  color: #FFFFFF;
+  color: #E1E1E1;
+  margin: 0px;
+  margin-top: -20px;
 }
 body .section4 .container .down .first .right {
   display: flex;
   flex-direction: column;
+  width: 714px;
+  height: 138px;
 }
 body .section4 .container .down .first .right .text1 {
   background: #0C0C0C;
   opacity: 0.6;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: 1px solid #191919;
   border-radius: 4px;
-  margin-bottom: 15px;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 5px;
+}
+body .section4 .container .down .first .right .text1 .up {
+  margin: 0px;
 }
 body .section4 .container .down .first .right .text1 .up p {
-  font-family: "Lemon Bold";
-  font-size: 30px;
+  font-family: "Lemon Medium";
+  font-size: 26px;
   line-height: 30px;
-  color: #FFFFFF;
+  color: #E1E1E1;
+  margin: 0px;
+  margin-top: 39px;
+  margin-left: 23px;
+}
+body .section4 .container .down .first .right .text1 .down {
+  margin: 0px;
 }
 body .section4 .container .down .first .right .text1 .down p {
-  font-family: "Lemon Bold";
+  margin: 0px;
+  font-family: "Lemon Regular";
   font-size: 16px;
   line-height: 30px;
   color: rgba(255, 255, 255, 0.54);
+  margin-top: 15px;
+  margin-left: 23px;
+  margin-bottom: 23px;
+}
+body .section4 .container .down .second {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  margin-bottom: 300px;
+}
+body .section4 .container .down .second .left {
+  width: 341px;
+  height: 565px;
+  text-align: center;
+  background: #0C0C0C;
+  opacity: 0.6;
+  border: 1px solid #191919;
+  border-radius: 4px;
+}
+body .section4 .container .down .second .left img {
+  width: 176px;
+  height: 181.5px;
+  margin-bottom: 0px;
+  margin-top: 165.66px;
+}
+body .section4 .container .down .second .left p {
+  font-family: "Lemon Bold";
+  font-size: 34px;
+  line-height: 30px;
+  color: #E1E1E1;
+  margin: 0px;
+  margin-top: 5px;
+}
+body .section4 .container .down .second .right {
+  display: flex;
+  flex-direction: column;
+  width: 714px;
+  height: 138px;
+  margin-right: 5px;
+}
+body .section4 .container .down .second .right .text1 {
+  background: #0C0C0C;
+  opacity: 0.6;
+  border: 1px solid #191919;
+  border-radius: 4px;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 5px;
+}
+body .section4 .container .down .second .right .text1 .up {
+  margin: 0px;
+}
+body .section4 .container .down .second .right .text1 .up p {
+  font-family: "Lemon Medium";
+  font-size: 26px;
+  line-height: 30px;
+  color: #E1E1E1;
+  margin: 0px;
+  margin-top: 38.5px;
+  margin-left: 23px;
+}
+body .section4 .container .down .second .right .text1 .down {
+  margin: 0px;
+}
+body .section4 .container .down .second .right .text1 .down p {
+  margin: 0px;
+  font-family: "Lemon Regular";
+  font-size: 16px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.54);
+  margin-top: 15px;
+  margin-left: 23px;
+  margin-bottom: 23px;
 }/*# sourceMappingURL=style.css.map */
