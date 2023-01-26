@@ -10,24 +10,24 @@
 </head>
 
 <body>
-    <div class="nav">
+    <div class="nav" id="nav">
         <div class="container">
             <div class="left">
                 <img src="assets/img/logo.png" alt="">
             </div>
             <div class="mid">
-                <a href="#">home</a>
-                <a href="#">services</a>
-                <a href="#">projects</a>
-                <a href="#">mycareer</a>
+                <a href="#home">home</a>
+                <a href="#services">services</a>
+                <a href="#projects">projects</a>
+                <a href="#mycareer">mycareer</a>
             </div>
             <div class="right">
-                <a href="#">contact me</a>
+                <a href="#contact">contact me</a>
             </div>
         </div>
     </div>
 
-    <div class="section1">
+    <div class="section1" id="home">
         <div class="container">
             <div class="left">
                 <div class="text1">
@@ -83,7 +83,7 @@
         </div>
     </div>
 
-    <div class="section2">
+    <div class="section2" id="services">
         <div class="container">
 
             <div class="texts">
@@ -149,7 +149,7 @@
     </div>
 
 
-    <div class="section3">
+    <div class="section3" id="projects">
         <div class="container">
             <div class="up">
                 <div class="up1">
@@ -178,15 +178,7 @@
                                 <div class="text"><img src="assets/img/fullpage.png" alt=""></div>
                             </div>
                         </a>
-                        <div id="myModal" class="modal">
 
-                            <!-- Modal content -->
-                            <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <p>Some text in the Modal..</p>
-                            </div>
-
-                        </div>
                     </div>
                     <div class="down">
                         <div class="ups">
@@ -316,7 +308,7 @@
         </div>
     </div>
 
-    <div class="section4">
+    <div class="section4" id="mycareer">
         <div class="container">
             <div class="up">
                 <div class="left">
@@ -465,7 +457,7 @@
                     <img src="assets/img/logo2.png" alt="">
                 </div>
                 <div class="mid">
-                    <div class="up">
+                    <div class="up" id="contact">
                         <p>
                             contact me
                         </p>
@@ -495,7 +487,7 @@
                     </div>
                 </div>
                 <div class="right">
-                    <a href="#">
+                    <a href="#nav" >
                         up
                     </a>
                 </div>
@@ -528,24 +520,24 @@
 
     <script>
 
-        const img1 = document.querySelector('#img1');
-        const img2 = document.querySelector('#img2');
+        // const img1 = document.querySelector('#img1');
+        // const img2 = document.querySelector('#img2');
 
-        const butoni = document.querySelector('#butoni');
+        // const butoni = document.querySelector('#butoni');
 
 
-        function myFunction() {
-            var img1 = document.getElementById("#img1");
-            var img2 = document.getElementById("#img2");
+        // function myFunction() {
+        //     var img1 = document.getElementById("#img1");
+        //     var img2 = document.getElementById("#img2");
 
-            if (img1.style.display === "block") {
-                img1.style.display = "none";
-                img2.style.display = "block";
-            } else {
-                img2.style.display = "none";
-                img1.style.display = "block";
-            }
-        }
+        //     if (img1.style.display === "block") {
+        //         img1.style.display = "none";
+        //         img2.style.display = "block";
+        //     } else {
+        //         img2.style.display = "none";
+        //         img1.style.display = "block";
+        //     }
+        // }
 
 
 
