@@ -61,12 +61,13 @@ p {
 
 html {
     scroll-behavior: smooth;
+
     body {
         font-family: "Lemon Regular";
         background-color: black;
         margin: 0px;
         padding: 0px;
-        
+
 
         .nav {
             max-width: 1060px;
@@ -101,9 +102,10 @@ html {
                         color: #FFFFFF;
                         margin: 0px 40px;
                         transition: 0.3s ease-in-out;
+
                         &:hover {
                             color: #FFFF27;
-                            
+
                         }
                     }
                 }
@@ -115,10 +117,14 @@ html {
                         font-family: "Lemon Regular";
                         font-size: 14px;
                         padding: 10px 20px;
-
-
                         border: 2px solid #FDFDFD;
                         border-radius: 3px;
+                        transition: 0.3s ease-in-out;
+
+                        &:hover {
+                            color: #FFFF27;
+                            border: 2px solid #FFFF27;
+                        }
                     }
 
                 }
@@ -177,10 +183,34 @@ html {
                         margin-top: 40px;
 
                         .button1 {
-                            img {
-                                width: 124px;
-                                height: 38px;
 
+                            // img {
+                            //     width: 124px;
+                            //     height: 38px;
+                            // }
+                            a {
+
+                                background: #FFFF27;
+                                border-radius: 3px;
+                                font-family: "Lemon Regular";
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #050505;
+                                padding: 10px 13px;
+
+                                .spani1 {
+                                    display: none;
+
+                                }
+                                transition: 1s all ease-in-out ;
+                                &:hover {
+                                    
+                                    .spani1 {
+                                        display: inline-block;
+                                        
+                                        
+                                    }
+                                }
                             }
                         }
 
@@ -189,7 +219,7 @@ html {
                                 width: 38px;
                                 height: 38px;
                                 margin: 0px 30px;
-                            }
+                            } 
                         }
 
                         .button3 {

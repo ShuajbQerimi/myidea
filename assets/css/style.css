@@ -97,6 +97,11 @@ html body .nav .container .right a {
   padding: 10px 20px;
   border: 2px solid #FDFDFD;
   border-radius: 3px;
+  transition: 0.3s ease-in-out;
+}
+html body .nav .container .right a:hover {
+  color: #FFFF27;
+  border: 2px solid #FFFF27;
 }
 html body .section1 {
   background-image: url(../img/bg1banner.png);
@@ -137,9 +142,21 @@ html body .section1 .container .left .buttons {
   flex-direction: row;
   margin-top: 40px;
 }
-html body .section1 .container .left .buttons .button1 img {
-  width: 124px;
-  height: 38px;
+html body .section1 .container .left .buttons .button1 a {
+  background: #FFFF27;
+  border-radius: 3px;
+  font-family: "Lemon Regular";
+  font-size: 14px;
+  line-height: 20px;
+  color: #050505;
+  padding: 10px 13px;
+  transition: 1s all ease-in-out;
+}
+html body .section1 .container .left .buttons .button1 a .spani1 {
+  display: none;
+}
+html body .section1 .container .left .buttons .button1 a:hover .spani1 {
+  display: inline-block;
 }
 html body .section1 .container .left .buttons .button2 img {
   width: 38px;
