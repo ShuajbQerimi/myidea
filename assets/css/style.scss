@@ -53,6 +53,10 @@ a {
     color: white;
 }
 
+p {
+    text-decoration: none;
+    color: white;
+}
 
 
 body {
@@ -453,11 +457,48 @@ body {
                         margin-bottom: 0px;
 
                         a {
+
                             img {
                                 width: 520px;
                                 height: 520px;
 
+
                             }
+
+                            .overlay {
+                                position: absolute;
+                                width: 520px;
+                                height: 520px;
+                                opacity: 0;
+                                transition: .5s ease;
+
+                                background: rgba(255, 255, 39, 0.7);
+                                border-radius: 3px;
+                                margin-top: -525px;
+
+
+                            }
+
+                            .text {
+                                color: white;
+                                font-size: 20px;
+                                position: absolute;
+                                text-align: center;
+                                justify-content: center;
+                                margin: 230px 145px;
+
+                                img{
+                                    width: 233.5px;
+                                    height: 62px;
+                                }
+                            }
+
+                            &:hover {
+                                .overlay {
+                                    opacity: 1;
+                                }
+                            }
+
                         }
                     }
 
@@ -502,7 +543,7 @@ body {
             margin: 0 auto;
             display: flex;
             flex-direction: column;
-            
+
 
             .up {
                 display: flex;
@@ -565,7 +606,7 @@ body {
                     flex: 0.2;
                     text-align: end;
                     margin-top: 50px;
-                    
+
 
                     img {
                         width: 59.76px;
@@ -658,17 +699,18 @@ body {
                         }
                     }
                 }
+
                 .second {
                     display: flex;
                     flex-direction: row;
                     margin-bottom: 10px;
-                    margin-bottom: 300px;
+                    margin-bottom: 180px;
 
                     .left {
                         width: 341px;
                         height: 565px;
                         text-align: center;
-                        
+
                         background: #0C0C0C;
                         opacity: 0.6;
                         border: 1px solid #191919;
@@ -697,7 +739,7 @@ body {
                         width: 714px;
                         height: 138px;
                         margin-right: 5px;
-                        
+
 
                         .text1 {
                             background: #0C0C0C;
@@ -741,10 +783,134 @@ body {
                     }
                 }
 
-                
+
             }
 
         }
+    }
+
+    .section5 {
+        .container {
+            max-width: 1060px;
+            margin: 0 auto;
+            margin-top: -135px;
+
+            margin-bottom: 0px;
+
+            img {
+                width: 1060px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .section6 {
+        .container {
+            max-width: 1060px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            margin-top: 105px;
+
+            .up {
+                display: flex;
+                flex-direction: row;
+
+                .left {
+                    img {
+                        width: 232.29px;
+                        height: 67.12px;
+                        margin: 0px;
+                        margin-top: 58px;
+                        margin-right: 188px;
+                    }
+                }
+
+                .mid {
+                    display: flex;
+                    flex-direction: column;
+
+
+                    .up {
+
+                        p {
+                            font-family: "Lemon Medium";
+                            font-weight: 500;
+                            font-size: 26px;
+                            line-height: 36px;
+                            color: #FFFFFF;
+                            margin: 0px;
+                            margin-bottom: 35px;
+
+                        }
+                    }
+
+                    .down {
+                        margin-bottom: 66px;
+
+                        p {
+                            font-family: "Lemon Regular";
+                            font-size: 16px;
+                            line-height: 30px;
+                            color: #A4ADB3;
+                            margin: 0px;
+                            margin-right: 76px;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+
+                .right {
+                    margin-top: 107px;
+                    margin-left: 61.5px;
+
+
+                    a {
+                        font-family: "Lemon Bold";
+                        padding: 7px;
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: #000000;
+                        background: #FFFF27;
+                        border-radius: 3px;
+
+                    }
+
+                }
+            }
+
+
+        }
+
+        .down {
+            text-align: center;
+
+            .line {
+                hr {
+
+                    border: 2px solid #FFFFFF;
+                    margin-bottom: 12;
+                }
+            }
+
+            .text {
+                margin: 0px;
+
+                p {
+                    font-family: "Lemon Regular";
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 18px;
+                    color: #FFFFFF;
+                    margin: 0px;
+                    margin-bottom: 11px;
+                }
+            }
+
+
+        }
+
+
     }
 
 
