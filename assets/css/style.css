@@ -422,6 +422,12 @@ html body .section4 .container .up .left img {
   margin-left: -170px;
   margin-right: -80px;
 }
+html body .section4 .container .up .left .onpart {
+  display: none;
+}
+html body .section4 .container .up .left .offpart {
+  display: none;
+}
 html body .section4 .container .up .mid {
   display: flex;
   flex-direction: column;
@@ -461,9 +467,54 @@ html body .section4 .container .up .right {
   text-align: end;
   margin-top: 50px;
 }
-html body .section4 .container .up .right img {
-  width: 59.76px;
-  height: 29.88px;
+html body .section4 .container .up .right .switch {
+  --secondary-container: #FFFF27;
+  --primary: #050505;
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.7em;
+  height: 1.8em;
+}
+html body .section4 .container .up .right .switch input {
+  display: none;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+html body .section4 .container .up .right .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #D1D1D1;
+  transition: 0.2s;
+  border-radius: 30px;
+}
+html body .section4 .container .up .right .slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  left: 0.2em;
+  bottom: 0.2em;
+  background-color: #050505;
+  transition: 0.4s;
+}
+html body .section4 .container .up .right input:checked + .slider::before {
+  background-color: var(--primary);
+}
+html body .section4 .container .up .right input:checked + .slider {
+  background-color: var(--secondary-container);
+}
+html body .section4 .container .up .right input:focus + .slider {
+  box-shadow: 0 0 1px var(--secondary-container);
+}
+html body .section4 .container .up .right input:checked + .slider:before {
+  transform: translateX(1.9em);
 }
 html body .section4 .container .down {
   display: flex;
@@ -652,6 +703,7 @@ html body .section6 .container .up .mid .up p {
 }
 html body .section6 .container .up .mid .down {
   margin-bottom: 66px;
+  text-align: start;
 }
 html body .section6 .container .up .mid .down p {
   font-family: "Lemon Regular";

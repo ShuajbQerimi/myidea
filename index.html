@@ -43,9 +43,9 @@
                 <div class="buttons">
                     <div class="button1">
                         <a href="">
-                        
-                        re<span class="spani1">sumeeeé</span>
-                    </a>
+
+                            re<span class="spani1">sumeeeé</span>
+                        </a>
                     </div>
 
                     <div class="button2">
@@ -316,7 +316,8 @@
         <div class="container">
             <div class="up">
                 <div class="left">
-                    <img src="assets/img/lambcareer.png" alt="">
+                    <img src="assets/img/lambcareer.png" id="onpart" alt="" style="display: none;">
+                    <img src="assets/img/lambcareeroff.png" id="offpart" alt="" >
                 </div>
                 <div class="mid">
                     <div class="text1">
@@ -333,7 +334,11 @@
                     </div>
                 </div>
                 <div class="right">
-                    <img src="assets/img/butononof.png" alt="">
+                    <!-- <img src="assets/img/butononof.png" alt=""> -->
+                    <label class="switch">
+                        <input type="checkbox" class="toggle" onclick="toggle()">
+                        <span class="slider"></span>
+                    </label>
                 </div>
             </div>
 
@@ -491,7 +496,7 @@
                     </div>
                 </div>
                 <div class="right">
-                    <a href="#nav" >
+                    <a href="#nav">
                         up
                     </a>
                 </div>
@@ -523,6 +528,27 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 
     <script>
+
+        let active = false
+
+        function toggle() {
+            let toggle = document.querySelector('.toggle')
+            let oni = document.querySelector('#onpart')
+            let offi = document.querySelector('#offpart')
+
+            active = !active
+            if (active) {
+                toggle.classList.add('active')
+                oni.style.display = 'block';
+                offi.style.display = 'none';
+            } else {
+                toggle.classList.remove('active')
+                
+
+                oni.style.display = 'none';
+                offi.style.display = 'block';
+            }
+        }
 
         // const img1 = document.querySelector('#img1');
         // const img2 = document.querySelector('#img2');
