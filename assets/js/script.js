@@ -135,28 +135,28 @@ function toggle() {
 
 $(document).ready(function(){
 	$('#showtext1').hover(function(){ 
-        $('#spani1').toggle(500);
+        $('#spani1').toggle(300);
     	
 	}, function(){
-        $('#spani1').toggle(500);
+        $('#spani1').toggle(300);
     });
 
     $('#showtext2').hover(function(){ 
-    	$('#spani2').show(500);
+    	$('#spani2').show(300);
 	}, function(){
-        $('#spani2').hide(500);
+        $('#spani2').hide(300);
     });
 
     $('#showtext3').hover(function(){ 
-    	$('#spani3').show(500);
+    	$('#spani3').show(300);
 	}, function(){
-        $('#spani3').hide(500);
+        $('#spani3').hide(300);
     });
 
     $('#showtext4').hover(function(){ 
-    	$('#spani4').show(500);
+    	$('#spani4').show(300);
 	}, function(){
-        $('#spani4').hide(500);
+        $('#spani4').hide(300);
     });
 });
 
