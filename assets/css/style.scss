@@ -48,6 +48,8 @@
     src: url("../fonts/zacbelx-medium.ttf") format("truetype");
 }
 
+
+
 a {
     text-decoration: none;
     color: white;
@@ -59,554 +61,249 @@ p {
 }
 
 
-html {
-    scroll-behavior: smooth;
+@media only screen and (min-width: 1280px) {
+    html {
+        scroll-behavior: smooth;
 
-    body {
-        font-family: "Lemon Regular";
-        background-color: black;
-        margin: 0px;
-        padding: 0px;
-
-
-        .nav {
-            max-width: 1060px;
-            margin: 0 auto;
-
-            .container {
-
-                display: flex;
-                flex-direction: row;
-
-                justify-content: space-between;
-                margin: 0px 0px;
-                padding-top: 15px;
-                margin-bottom: 20px;
+        body {
+            font-family: "Lemon Regular";
+            background-color: black;
+            margin: 0px;
+            padding: 0px;
 
 
-                .left {
-                    img {
-                        width: 97.71px;
-                        height: 25.93px;
-                    }
-                }
+            .nav {
+                max-width: 1060px;
+                margin: 0 auto;
 
-                .mid {
+                .container {
+
                     display: flex;
                     flex-direction: row;
-                    padding-top: 5px;
 
-                    a {
-                        font-family: "Lemon Medium";
-                        font-size: 14px;
-                        color: #FFFFFF;
-                        margin: 0px 40px;
-                        transition: 0.3s ease-in-out;
-
-                        &:hover {
-                            color: #FFFF27;
-
-                        }
-                    }
-                }
-
-                .right {
-                    padding-top: 5px;
-
-                    a {
-                        font-family: "Lemon Regular";
-                        font-size: 14px;
-                        padding: 10px 20px;
-                        border: 2px solid #FDFDFD;
-                        border-radius: 3px;
-                        transition: 0.3s ease-in-out;
-
-                        &:hover {
-                            color: #FFFF27;
-                            border: 2px solid #FFFF27;
-                        }
-                    }
-
-                }
-            }
-
-        }
-
-        .section1 {
-
-            background-image: url(../img/bg1banner.png);
-            background-size: 100% 100%;
-
-            .container {
-                max-width: 1060px;
-                margin: 0 auto;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-
-                .left {
-                    .text1 {
-                        p {
-                            font-family: "Lemon Medium";
-                            font-size: 12px;
-                            color: #FFFF27;
-                            line-height: 17px;
-                            letter-spacing: 1.72em;
-                            margin-top: 130px;
-                        }
-                    }
-
-                    .text2 {
-                        p {
-                            font-family: "Zacbelx Extrabold";
-                            font-size: 130px;
-                            line-height: 186px;
-                            color: #FFFFFF;
-                            margin-top: -40px;
-                            margin-bottom: -10px;
-                        }
-                    }
-
-                    .text3 {
-                        p {
-                            max-width: 546px;
-                            font-family: "Lemon Regular";
-                            font-size: 14px;
-                            line-height: 30px;
-                            color: #C5CFD5;
-                        }
-                    }
-
-                    .buttons {
-                        display: flex;
-                        flex-direction: row;
-                        margin-top: 40px;
-
-
-
-                        .button1 {
-
-                            // img {
-                            //     width: 124px;
-                            //     height: 38px;
-                            // }
-                            margin-right: 40px;
-
-                            a {
-
-                                background: #FFFF27;
-                                border-radius: 3px;
-                                font-family: "Lemon Regular";
-                                font-size: 14px;
-                                line-height: 20px;
-                                color: #050505;
-                                padding: 10px 13px;
-                                span{
-                                    margin-top: -3px;
-                                    overflow: hidden;
-                                }
-                            }
-                        }
-
-                    }
-
-                    .downpart {
-                        display: flex;
-                        flex-direction: row;
-                        margin-top: 40px;
-                       
-
-
-                        .left {
-                            p {
-                                font-family: "Lemon Bold";
-                                font-size: 48px;
-                                line-height: 67px;
-                                color: #FFFFFF;
-                                margin: 0px;
-                            }
-                        }
-
-                        .mid {
-                            img {
-                                width: 4px;
-                                height: 48px;
-                                margin: 0px 45px;
-                                margin-top: 10px;
-
-                            }
-                        }
-
-                        .right {
-                            p {
-                                font-family: "Lemon UltraLight";
-                                font-size: 34px;
-                                color: #FFFFFF;
-                                margin: 0px;
-                                margin-top: 10px;
-                            }
-                        }
-                    }
-                }
-
-                .right {
-                    img {
-                        width: 615px;
-                        height: 667px;
-                    }
-                }
-            }
-        }
-
-        #mainmodal {
-
-            font-family: Arial;
-
-            height: 100%;
-            width: 100%;
-            text-align: center;
-
-            .modalconent {
-                background-image: url(../img/breakingnews.png);
-                background-size: 100%;
-                width: 100%;
-
-            }
-
-            .marquee {
-                font-family: "Zacbelx Extrabold";
-                color: #080707;
-                padding: 30px;
-                font-size: 60px;
-
-            }
-        }
-
-        .section2 {
-            background-image: url(../img/bgservices.png);
-            background-size: 100% 100%;
-            background-color: #151515;
-
-            .container {
-                max-width: 1060px;
-                margin: 0 auto;
-                display: flex;
-                flex-direction: column;
-
-                .texts {
-                    width: 100%;
-                    margin: 0 auto;
-                    display: flex;
-                    flex-direction: column;
-                    text-align: center;
-                    justify-content: center;
-
-                    .text1 {
-                        p {
-                            font-family: "Lemon Medium";
-                            font-size: 12px;
-                            line-height: 17px;
-                            letter-spacing: 1.72em;
-                            color: #FFFF27;
-                            margin-top: 100px;
-                            margin-bottom: 25px;
-                        }
-
-                    }
-
-                    .text2 {
-                        img {
-                            margin: 0px;
-                            width: 526.98px;
-                            height: 101.97px;
-                        }
-                    }
-
-                    .text3 {
-
-                        width: 546px;
-                        margin: 0 auto;
-                        font-family: 'LEMON Regular';
-                        font-size: 14px;
-                        line-height: 30px;
-                        text-align: center;
-                        color: #C5CFD5;
-                        margin-top: 26px;
-                        margin-bottom: 44px;
-                    }
-                }
-
-
-
-                .innersection {
-                    .first {
-                        width: 1060PX;
-                        margin: 0 auto;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        // background: #292929;
-                        // border: 2px solid #181818;
-                        padding: 0px;
-
-                        .box {
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-between;
-                            // background: #292929;
-                            // border: 2px solid #181818;
-                            padding: 20px;
-
-                            .left {
-                                display: flex;
-                                flex-direction: row;
-
-                                p {
-                                    font-family: "Lemon Regular";
-                                    font-size: 34px;
-                                    color: white;
-                                }
-
-                                .img1service {
-                                    display: block;
-                                    margin-top: 40px;
-                                    margin-left: 15px;
-                                    width: 27px;
-                                    height: 33.2px;
-                                }
-
-
-
-                                .img2service {
-                                    display: none;
-                                    margin-top: 40px;
-                                    margin-left: 15px;
-                                    width: 27px;
-                                    height: 33.2px;
-                                }
-                            }
-
-                            .right {
-                                p {
-                                    display: none;
-                                    width: 502px;
-                                    font-family: "Lemon Regular";
-                                    font-size: 14px;
-                                    line-height: 30px;
-                                    color: #9A9A9A;
-                                }
-
-                                button {
-                                    margin-top: 35px;
-                                    background-color: transparent;
-                                    cursor: crosshair;
-                                    border: none;
-
-                                    img {
-                                        width: 42px;
-                                    }
-                                }
-
-
-                            }
-                        }
-
-                        .lineservice {
-                            width: 1060px;
-                            border: 2px solid #434343;
-
-                        }
-
-                        #lineserviices4 {
-                            margin-bottom: 116px;
-                        }
-
-
-                    }
-
-                }
-
-
-
-            }
-        }
-
-        .section3 {
-            .container {
-                max-width: 1060px;
-                margin: 0 auto;
-                display: flex;
-                flex-direction: column;
-                margin-top: 96px;
-
-                .up {
-                    margin-bottom: 81px;
-
-                    .up1 {
-                        p {
-                            font-family: "Lemon Medium";
-                            font-size: 12px;
-                            line-height: 17px;
-                            letter-spacing: 1.72em;
-                            color: #FFFF27;
-                            margin-bottom: 25px;
-                        }
-                    }
-
-                    .down1 {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
-
-                        .left {
-                            img {
-                                width: 524.95px;
-                            }
-                        }
-
-                        .right {
-                            p {
-                                font-family: "Lemon Regular";
-                                font-size: 14px;
-                                line-height: 30px;
-                                color: #C5CFD5;
-                                max-width: 473px;
-
-                            }
-                        }
-                    }
-                }
-
-
-                .down {
-                    display: flex;
-                    flex-direction: row;
                     justify-content: space-between;
-                    flex-wrap: wrap;
+                    margin: 0px 0px;
+                    padding-top: 15px;
+                    margin-bottom: 20px;
 
-                    .box {
-                        .up {
-                            margin-bottom: 0px;
-
-                            a {
-
-                                img {
-                                    width: 520px;
-                                    height: 520px;
-
-
-                                }
-
-                                .overlay {
-                                    position: absolute;
-                                    width: 520px;
-                                    height: 520px;
-                                    opacity: 0;
-                                    transition: .5s ease;
-
-                                    background: rgba(255, 255, 39, 0.7);
-                                    border-radius: 3px;
-                                    margin-top: -525px;
-
-
-                                }
-
-                                .text {
-                                    color: white;
-                                    font-size: 20px;
-                                    position: absolute;
-                                    text-align: center;
-                                    justify-content: center;
-                                    margin: 230px 145px;
-
-                                    img {
-                                        width: 233.5px;
-                                        height: 62px;
-                                    }
-                                }
-
-                                &:hover {
-                                    .overlay {
-                                        opacity: 1;
-                                    }
-                                }
-
-                            }
-                        }
-
-                        .down {
-                            display: flex;
-                            flex-direction: column;
-
-                            .ups {
-                                p {
-                                    font-family: "Lemon Medium";
-                                    font-size: 18px;
-                                    line-height: 25px;
-                                    color: #FFFFFF;
-                                    margin-top: 0px;
-                                    margin-bottom: 0px;
-                                }
-                            }
-
-                            .downs {
-                                p {
-                                    font-family: "Lemon Regular";
-                                    font-size: 14px;
-                                    line-height: 20px;
-                                    color: #A4ADB3;
-                                    margin-top: 6px;
-                                    margin-bottom: 40px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        .section4 {
-            background-image: url(../img/bgcareer.png);
-            background-size: 100% 100%;
-            background-color: #151515;
-
-            .container {
-                max-width: 1060px;
-                margin: 0 auto;
-                display: flex;
-                flex-direction: column;
-
-
-                .up {
-                    display: flex;
-                    flex-direction: row;
 
                     .left {
-                        flex: 0.2;
-
                         img {
-                            width: 350px;
-                            margin-left: -170px;
-                            margin-right: -80px;
-                        }
-
-                        .onpart {
-                            display: none;
-                        }
-
-                        .offpart {
-
-                            display: none;
+                            width: 97.71px;
+                            height: 25.93px;
                         }
                     }
 
                     .mid {
                         display: flex;
+                        flex-direction: row;
+                        padding-top: 5px;
+
+                        a {
+                            font-family: "Lemon Medium";
+                            font-size: 14px;
+                            color: #FFFFFF;
+                            margin: 0px 40px;
+                            transition: 0.3s ease-in-out;
+
+                            &:hover {
+                                color: #FFFF27;
+
+                            }
+                        }
+                    }
+
+                    .right {
+                        padding-top: 5px;
+
+                        a {
+                            font-family: "Lemon Regular";
+                            font-size: 14px;
+                            padding: 10px 20px;
+                            border: 2px solid #FDFDFD;
+                            border-radius: 3px;
+                            transition: 0.3s ease-in-out;
+
+                            &:hover {
+                                color: #FFFF27;
+                                border: 2px solid #FFFF27;
+                            }
+                        }
+
+                    }
+                }
+
+            }
+
+            .section1 {
+
+                background-image: url(../img/bg1banner.png);
+                background-size: 100% 100%;
+
+                .container {
+                    max-width: 1060px;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .left {
+                        .text1 {
+                            p {
+                                font-family: "Lemon Medium";
+                                font-size: 12px;
+                                color: #FFFF27;
+                                line-height: 17px;
+                                letter-spacing: 1.72em;
+                                margin-top: 130px;
+                            }
+                        }
+
+                        .text2 {
+                            p {
+                                font-family: "Zacbelx Extrabold";
+                                font-size: 130px;
+                                line-height: 186px;
+                                color: #FFFFFF;
+                                margin-top: -40px;
+                                margin-bottom: -10px;
+                            }
+                        }
+
+                        .text3 {
+                            p {
+                                max-width: 546px;
+                                font-family: "Lemon Regular";
+                                font-size: 14px;
+                                line-height: 30px;
+                                color: #C5CFD5;
+                            }
+                        }
+
+                        .buttons {
+                            display: flex;
+                            flex-direction: row;
+                            margin-top: 40px;
+
+
+
+                            .button1 {
+
+                                // img {
+                                //     width: 124px;
+                                //     height: 38px;
+                                // }
+                                margin-right: 40px;
+
+                                a {
+
+                                    background: #FFFF27;
+                                    border-radius: 3px;
+                                    font-family: "Lemon Regular";
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #050505;
+                                    padding: 10px 13px;
+
+                                    span {
+                                        margin-top: -3px;
+                                        overflow: hidden;
+                                    }
+                                }
+                            }
+
+                        }
+
+                        .downpart {
+                            display: flex;
+                            flex-direction: row;
+                            margin-top: 40px;
+
+
+
+                            .left {
+                                p {
+                                    font-family: "Lemon Bold";
+                                    font-size: 48px;
+                                    line-height: 67px;
+                                    color: #FFFFFF;
+                                    margin: 0px;
+                                }
+                            }
+
+                            .mid {
+                                img {
+                                    width: 4px;
+                                    height: 48px;
+                                    margin: 0px 45px;
+                                    margin-top: 10px;
+
+                                }
+                            }
+
+                            .right {
+                                p {
+                                    font-family: "Lemon UltraLight";
+                                    font-size: 34px;
+                                    color: #FFFFFF;
+                                    margin: 0px;
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+                    }
+
+                    .right {
+                        img {
+                            width: 615px;
+                            height: 667px;
+                        }
+                    }
+                }
+            }
+
+            #mainmodal {
+
+                font-family: Arial;
+
+                height: 100%;
+                width: 100%;
+                text-align: center;
+
+                .modalconent {
+                    background-image: url(../img/breakingnews.png);
+                    background-size: 100%;
+                    width: 100%;
+
+                }
+
+                .marquee {
+                    font-family: "Zacbelx Extrabold";
+                    color: #080707;
+                    padding: 30px;
+                    font-size: 60px;
+
+                }
+            }
+
+            .section2 {
+                background-image: url(../img/bgservices.png);
+                background-size: 100% 100%;
+                background-color: #151515;
+
+                .container {
+                    max-width: 1060px;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: column;
+
+                    .texts {
+                        width: 100%;
+                        margin: 0 auto;
+                        display: flex;
                         flex-direction: column;
-                        justify-content: center;
                         text-align: center;
-                        flex: 2;
-                        margin-top: 100px;
+                        justify-content: center;
 
                         .text1 {
                             p {
@@ -615,403 +312,2364 @@ html {
                                 line-height: 17px;
                                 letter-spacing: 1.72em;
                                 color: #FFFF27;
-                                margin-bottom: 40px;
+                                margin-top: 100px;
+                                margin-bottom: 25px;
                             }
+
                         }
 
                         .text2 {
                             img {
-                                width: 608px;
-                                height: 111px;
-                                margin-bottom: 40px;
+                                margin: 0px;
+                                width: 526.98px;
+                                height: 101.97px;
                             }
                         }
 
                         .text3 {
-                            max-width: 605;
-                            margin: 0 auto;
 
+                            width: 546px;
+                            margin: 0 auto;
+                            font-family: 'LEMON Regular';
+                            font-size: 14px;
+                            line-height: 30px;
+                            text-align: center;
+                            color: #C5CFD5;
+                            margin-top: 26px;
+                            margin-bottom: 44px;
+                        }
+                    }
+
+
+
+                    .innersection {
+                        .first {
+                            width: 1060PX;
+                            margin: 0 auto;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            // background: #292929;
+                            // border: 2px solid #181818;
+                            padding: 0px;
+
+                            .box {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                // background: #292929;
+                                // border: 2px solid #181818;
+                                padding: 20px;
+
+                                .left {
+                                    display: flex;
+                                    flex-direction: row;
+
+                                    p {
+                                        font-family: "Lemon Regular";
+                                        font-size: 34px;
+                                        color: white;
+                                    }
+
+                                    .img1service {
+                                        display: block;
+                                        margin-top: 40px;
+                                        margin-left: 15px;
+                                        width: 27px;
+                                        height: 33.2px;
+                                    }
+
+
+
+                                    .img2service {
+                                        display: none;
+                                        margin-top: 40px;
+                                        margin-left: 15px;
+                                        width: 27px;
+                                        height: 33.2px;
+                                    }
+                                }
+
+                                .right {
+                                    p {
+                                        display: none;
+                                        width: 502px;
+                                        font-family: "Lemon Regular";
+                                        font-size: 14px;
+                                        line-height: 30px;
+                                        color: #9A9A9A;
+                                    }
+
+                                    button {
+                                        margin-top: 35px;
+                                        background-color: transparent;
+                                        cursor: crosshair;
+                                        border: none;
+
+                                        img {
+                                            width: 42px;
+                                        }
+                                    }
+
+
+                                }
+                            }
+
+                            .lineservice {
+                                width: 1060px;
+                                border: 2px solid #434343;
+
+                            }
+
+                            #lineserviices4 {
+                                margin-bottom: 116px;
+                            }
+
+
+                        }
+
+                    }
+
+
+
+                }
+            }
+
+            .section3 {
+                .container {
+                    max-width: 1060px;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 96px;
+
+                    .up {
+                        margin-bottom: 81px;
+
+                        .up1 {
                             p {
-                                max-width: 600px;
-                                font-family: "Lemon Regular";
-                                font-size: 14px;
-                                line-height: 30px;
-                                text-align: center;
-                                color: #C5CFD5;
-                                margin-top: -20px;
+                                font-family: "Lemon Medium";
+                                font-size: 12px;
+                                line-height: 17px;
+                                letter-spacing: 1.72em;
+                                color: #FFFF27;
+                                margin-bottom: 25px;
+                            }
+                        }
+
+                        .down1 {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+
+                            .left {
+                                img {
+                                    width: 524.95px;
+                                }
+                            }
+
+                            .right {
+                                p {
+                                    font-family: "Lemon Regular";
+                                    font-size: 14px;
+                                    line-height: 30px;
+                                    color: #C5CFD5;
+                                    max-width: 473px;
+
+                                }
                             }
                         }
                     }
 
-                    .right {
-                        flex: 0.2;
-                        text-align: end;
-                        margin-top: 50px;
+
+                    .down {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+
+                        .box {
+                            .up {
+                                margin-bottom: 0px;
+
+                                button {
+                                    border: none;
+                                    cursor: pointer;
+                                    appearance: none;
+                                    background-color: inherit;
+
+                                    img {
+                                        width: 515px;
+                                        height: 515px;
 
 
-                        // img {
-                        //     width: 59.76px;
-                        //     height: 29.88px;
-                        // }
+                                    }
 
-                        .switch {
-                            --secondary-container: #FFFF27;
-                            --primary: #050505;
-                            font-size: 17px;
-                            position: relative;
-                            display: inline-block;
-                            width: 3.7em;
-                            height: 1.8em;
-                        }
+                                    .overlay {
+                                        position: absolute;
+                                        width: 515px;
+                                        height: 515px;
+                                        opacity: 0;
+                                        transition: .5s ease;
 
-                        .switch input {
-                            display: none;
-                            opacity: 0;
-                            width: 0;
-                            height: 0;
-                        }
+                                        background: rgba(255, 255, 39, 0.7);
+                                        border-radius: 3px;
+                                        margin-top: -520px;
 
-                        .slider {
-                            position: absolute;
-                            cursor: pointer;
-                            top: 0;
-                            left: 0;
-                            right: 0;
-                            bottom: 0;
-                            background-color: #D1D1D1;
-                            transition: .2s;
-                            border-radius: 30px;
-                        }
 
-                        .slider:before {
-                            position: absolute;
-                            content: "";
-                            height: 1.4em;
-                            width: 1.4em;
-                            border-radius: 20px;
-                            left: 0.2em;
-                            bottom: 0.2em;
-                            background-color: #050505;
-                            transition: .4s;
-                        }
+                                    }
 
-                        input:checked+.slider::before {
-                            background-color: var(--primary);
-                        }
+                                    .text {
+                                        color: white;
+                                        font-size: 20px;
+                                        position: absolute;
+                                        text-align: center;
+                                        justify-content: center;
+                                        margin: 230px 145px;
 
-                        input:checked+.slider {
-                            background-color: var(--secondary-container);
-                        }
+                                        img {
+                                            width: 233.5px;
+                                            height: 62px;
+                                        }
+                                    }
 
-                        input:focus+.slider {
-                            box-shadow: 0 0 1px var(--secondary-container);
-                        }
+                                    &:hover {
+                                        .overlay {
+                                            opacity: 1;
+                                        }
+                                    }
 
-                        input:checked+.slider:before {
-                            transform: translateX(1.9em);
+                                }
+
+                                .modal1 {
+                                    display: none;
+                                    /* Hidden by default */
+                                    position: fixed;
+                                    opacity: 0;
+                                    /* Stay in place */
+                                    z-index: 1;
+                                    /* Sit on top */
+                                    padding-top: 5px;
+                                    padding-bottom: 5px;
+                                    /* Location of the box */
+                                    left: 0;
+                                    top: 0;
+                                    width: 100%;
+                                    /* Full width */
+                                    height: 100%;
+                                    /* Full height */
+                                    overflow: auto;
+                                    /* Enable scroll if needed */
+                                    background-color: rgb(0, 0, 0);
+                                    /* Fallback color */
+                                    background-color: rgba(0, 0, 0, 0.4);
+                                    /* Black w/ opacity */
+                                    transition: opacity 3s ease-in-out;
+
+
+
+                                    .modal-content1 {
+                                        width: 1120px;
+                                        margin: 0 auto;
+                                        background: #131313;
+                                        box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+                                        border-radius: 3px;
+
+                                        .containermodal1 {
+                                            width: 1060px;
+                                            margin: 0 auto;
+
+
+                                            .up {
+                                                margin: 0px;
+                                                display: flex;
+                                                flex-direction: row;
+                                                padding-top: 30px;
+                                                justify-content: space-between;
+
+                                                .left {
+                                                    display: flex;
+                                                    flex-direction: row;
+
+                                                    a {
+                                                        font-family: "Lemon Medium";
+                                                        font-size: 18px;
+                                                        line-height: 25px;
+                                                        color: #FFFFFF;
+                                                    }
+
+                                                    .changetovideo {
+                                                        border: none;
+                                                        cursor: pointer;
+                                                        appearance: none;
+                                                        background-color: inherit;
+                                                        margin-right: 50px;
+                                                        font-family: "Lemon Medium";
+                                                        font-size: 18px;
+                                                        line-height: 25px;
+                                                        color: #FFFFFF;
+                                                    }
+
+                                                    .changetoimages {
+                                                        border: none;
+                                                        cursor: pointer;
+                                                        appearance: none;
+                                                        background-color: inherit;
+                                                        font-family: "Lemon Medium";
+                                                        font-size: 18px;
+                                                        line-height: 25px;
+                                                        color: #FFFF27;
+                                                    }
+
+                                                }
+
+                                                .right {
+                                                    button {
+                                                        border: none;
+                                                        cursor: pointer;
+                                                        appearance: none;
+                                                        background-color: inherit;
+
+                                                        img {
+                                                            width: 18px;
+                                                            height: 18px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+                                            .down {
+
+                                                .imagespart {
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    margin-top: 40px;
+                                                    justify-content: space-between;
+
+                                                    .left {
+                                                        img {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            margin-bottom: 30px;
+                                                        }
+
+                                                        .project11image {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            display: block;
+                                                        }
+
+                                                        .project12image {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            display: none;
+                                                        }
+
+                                                        .project13image {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            display: none;
+                                                        }
+
+                                                        .project14image {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            display: none;
+                                                        }
+
+                                                        .project15image {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            display: none;
+                                                        }
+                                                    }
+
+                                                    .right {
+                                                        max-width: 280px;
+
+                                                        .text1 {
+                                                            p {
+                                                                font-family: "Lemon Bold";
+                                                                font-size: 28px;
+                                                                line-height: 39px;
+                                                                color: #FFFFFF;
+                                                                margin: 0px;
+                                                            }
+                                                        }
+
+                                                        .text2 {
+                                                            p {
+                                                                font-family: "Lemon Regular";
+                                                                font-size: 12px;
+                                                                line-height: 30px;
+                                                                color: #C5CFD5;
+                                                                margin-top: 17px;
+                                                                margin-bottom: 75px;
+                                                            }
+                                                        }
+
+                                                        .selections {
+                                                            display: flex;
+                                                            flex-direction: row;
+                                                            flex-wrap: wrap;
+
+                                                            button {
+                                                                border: none;
+                                                                cursor: pointer;
+                                                                appearance: none;
+                                                                background-color: inherit;
+                                                                padding: 0px;
+                                                                margin: 3px;
+
+                                                                img {
+                                                                    width: 85px;
+                                                                    height: 85px;
+                                                                }
+                                                            }
+                                                        }
+
+                                                        .downparts {
+                                                            justify-content: center;
+                                                            text-align: center;
+                                                            display: flex;
+                                                            flex-direction: column;
+
+                                                            .ups {
+                                                                p {
+                                                                    font-family: "Lemon Regular";
+                                                                    font-size: 16px;
+                                                                    line-height: 22px;
+                                                                    color: rgba(197, 207, 213, 0.7);
+                                                                    margin: 0px;
+                                                                    margin-bottom: 24px;
+                                                                    margin-top: 200px;
+                                                                }
+                                                            }
+
+                                                            .downs {
+                                                                img {
+                                                                    width: 60px;
+                                                                    height: 60px;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                                .videopart {
+                                                    display: none;
+                                                    flex-direction: row;
+                                                    margin-top: 40px;
+                                                    justify-content: space-between;
+
+                                                    .left {
+                                                        video {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            margin-bottom: 30px;
+                                                        }
+
+                                                        .project11video {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            display: block;
+                                                        }
+
+                                                        .project12video {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            display: none;
+                                                        }
+
+                                                        .project13video {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            display: none;
+                                                        }
+
+                                                        .project14video {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            display: none;
+                                                        }
+
+                                                        .project15video {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            display: none;
+                                                        }
+                                                    }
+
+                                                    .right {
+                                                        max-width: 280px;
+
+                                                        .text1 {
+                                                            p {
+                                                                font-family: "Lemon Bold";
+                                                                font-size: 28px;
+                                                                line-height: 39px;
+                                                                color: #FFFFFF;
+                                                                margin: 0px;
+                                                            }
+                                                        }
+
+                                                        .text2 {
+                                                            p {
+                                                                font-family: "Lemon Regular";
+                                                                font-size: 12px;
+                                                                line-height: 30px;
+                                                                color: #C5CFD5;
+                                                                margin-top: 17px;
+                                                                margin-bottom: 75px;
+                                                            }
+                                                        }
+
+                                                        .selections {
+                                                            display: flex;
+                                                            flex-direction: row;
+                                                            flex-wrap: wrap;
+
+                                                            button {
+                                                                border: none;
+                                                                cursor: pointer;
+                                                                appearance: none;
+                                                                background-color: inherit;
+                                                                padding: 0px;
+                                                                margin: 3px;
+
+                                                                video {
+                                                                    width: 85px;
+                                                                    height: 85px;
+                                                                }
+                                                            }
+                                                        }
+
+                                                        .downparts {
+                                                            justify-content: center;
+                                                            text-align: center;
+                                                            display: flex;
+                                                            flex-direction: column;
+
+                                                            .ups {
+                                                                p {
+                                                                    font-family: "Lemon Regular";
+                                                                    font-size: 16px;
+                                                                    line-height: 22px;
+                                                                    color: rgba(197, 207, 213, 0.7);
+                                                                    margin: 0px;
+                                                                    margin-bottom: 24px;
+                                                                    margin-top: 200px;
+                                                                }
+                                                            }
+
+                                                            .downs {
+                                                                img {
+                                                                    width: 60px;
+                                                                    height: 60px;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .down {
+                                display: flex;
+                                flex-direction: column;
+
+                                .ups {
+                                    p {
+                                        font-family: "Lemon Medium";
+                                        font-size: 18px;
+                                        line-height: 25px;
+                                        color: #FFFFFF;
+                                        margin-top: 0px;
+                                        margin-bottom: 0px;
+                                    }
+                                }
+
+                                .downs {
+                                    p {
+                                        font-family: "Lemon Regular";
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        color: #A4ADB3;
+                                        margin-top: 6px;
+                                        margin-bottom: 40px;
+                                    }
+                                }
+                            }
                         }
                     }
+                }
+            }
+
+            .section4 {
+                background-image: url(../img/bgcareer.png);
+                background-size: 100% 100%;
+                background-color: #151515;
+
+                .container {
+                    max-width: 1060px;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: column;
+
+
+                    .up {
+                        display: flex;
+                        flex-direction: row;
+
+                        .left {
+                            flex: 0.2;
+
+                            img {
+                                width: 350px;
+                                margin-left: -170px;
+                                margin-right: -80px;
+                            }
+
+                            .onpart {
+                                display: none;
+                            }
+
+                            .offpart {
+
+                                display: none;
+                            }
+                        }
+
+                        .mid {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            text-align: center;
+                            flex: 2;
+                            margin-top: 100px;
+
+                            .text1 {
+                                p {
+                                    font-family: "Lemon Medium";
+                                    font-size: 12px;
+                                    line-height: 17px;
+                                    letter-spacing: 1.72em;
+                                    color: #FFFF27;
+                                    margin-bottom: 40px;
+                                }
+                            }
+
+                            .text2 {
+                                img {
+                                    width: 608px;
+                                    height: 111px;
+                                    margin-bottom: 40px;
+                                }
+                            }
+
+                            .text3 {
+                                max-width: 605;
+                                margin: 0 auto;
+
+                                p {
+                                    max-width: 600px;
+                                    font-family: "Lemon Regular";
+                                    font-size: 14px;
+                                    line-height: 30px;
+                                    text-align: center;
+                                    color: #C5CFD5;
+                                    margin-top: -20px;
+                                }
+                            }
+                        }
+
+                        .right {
+                            flex: 0.2;
+                            text-align: end;
+                            margin-top: 50px;
+
+
+                            // img {
+                            //     width: 59.76px;
+                            //     height: 29.88px;
+                            // }
+
+                            .switch {
+                                --secondary-container: #FFFF27;
+                                --primary: #050505;
+                                font-size: 17px;
+                                position: relative;
+                                display: inline-block;
+                                width: 3.7em;
+                                height: 1.8em;
+                            }
+
+                            .switch input {
+                                display: none;
+                                opacity: 0;
+                                width: 0;
+                                height: 0;
+                            }
+
+                            .slider {
+                                position: absolute;
+                                cursor: pointer;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                background-color: #D1D1D1;
+                                transition: .2s;
+                                border-radius: 30px;
+                            }
+
+                            .slider:before {
+                                position: absolute;
+                                content: "";
+                                height: 1.4em;
+                                width: 1.4em;
+                                border-radius: 20px;
+                                left: 0.2em;
+                                bottom: 0.2em;
+                                background-color: #050505;
+                                transition: .4s;
+                            }
+
+                            input:checked+.slider::before {
+                                background-color: var(--primary);
+                            }
+
+                            input:checked+.slider {
+                                background-color: var(--secondary-container);
+                            }
+
+                            input:focus+.slider {
+                                box-shadow: 0 0 1px var(--secondary-container);
+                            }
+
+                            input:checked+.slider:before {
+                                transform: translateX(1.9em);
+                            }
+                        }
+                    }
+
+                    .down {
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 80px;
+
+                        .first {
+                            display: flex;
+                            flex-direction: row;
+                            margin-bottom: 10px;
+
+                            .left {
+                                width: 341px;
+                                height: 425px;
+                                text-align: center;
+                                margin-right: 5px;
+                                background: rgba(12, 12, 12, 0.6);
+                                border: 1px solid #191919;
+                                border-radius: 4px;
+
+                                img {
+                                    width: 176px;
+                                    height: 181.5px;
+                                    margin-bottom: 0px;
+                                    margin-top: 80px;
+                                }
+
+                                p {
+                                    font-family: "Lemon Bold";
+                                    font-size: 34px;
+                                    line-height: 30px;
+                                    color: #E1E1E1;
+                                    margin: 0px;
+                                    margin-top: -20px;
+                                }
+                            }
+
+                            .right {
+                                display: flex;
+                                flex-direction: column;
+                                width: 714px;
+                                height: 138px;
+
+                                .text1 {
+                                    background: #0C0C0C;
+                                    opacity: 0.6;
+                                    border: 1px solid #191919;
+                                    border-radius: 4px;
+                                    padding: 0px;
+                                    margin: 0px;
+                                    margin-bottom: 5px;
+
+                                    .up {
+                                        margin: 0px;
+
+                                        p {
+                                            font-family: "Lemon Medium";
+                                            font-size: 26px;
+                                            line-height: 30px;
+                                            color: #E1E1E1;
+                                            margin: 0px;
+                                            margin-top: 39px;
+                                            margin-left: 23px;
+                                        }
+                                    }
+
+                                    .down {
+                                        margin: 0px;
+
+                                        p {
+
+                                            margin: 0px;
+                                            font-family: "Lemon Regular";
+                                            font-size: 16px;
+                                            line-height: 30px;
+                                            color: rgba(255, 255, 255, 0.54);
+                                            margin-top: 15px;
+                                            margin-left: 23px;
+                                            margin-bottom: 23px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .second {
+                            display: flex;
+                            flex-direction: row;
+                            margin-bottom: 10px;
+                            margin-bottom: 180px;
+
+                            .left {
+                                width: 341px;
+                                height: 565px;
+                                text-align: center;
+
+                                background: rgba(12, 12, 12, 0.6);
+                                border: 1px solid #191919;
+                                border-radius: 4px;
+
+                                img {
+                                    width: 176px;
+                                    height: 181.5px;
+                                    margin-bottom: 0px;
+                                    margin-top: 165.66px;
+                                }
+
+                                p {
+                                    font-family: "Lemon Bold";
+                                    font-size: 34px;
+                                    line-height: 30px;
+                                    color: #E1E1E1;
+                                    margin: 0px;
+                                    margin-top: 5px;
+                                }
+                            }
+
+                            .right {
+                                display: flex;
+                                flex-direction: column;
+                                width: 714px;
+                                height: 138px;
+                                margin-right: 5px;
+
+
+                                .text1 {
+                                    background: #0C0C0C;
+                                    opacity: 0.6;
+                                    border: 1px solid #191919;
+                                    border-radius: 4px;
+                                    padding: 0px;
+                                    margin: 0px;
+                                    margin-bottom: 5px;
+
+                                    .up {
+                                        margin: 0px;
+
+                                        p {
+                                            font-family: "Lemon Medium";
+                                            font-size: 26px;
+                                            line-height: 30px;
+                                            color: #E1E1E1;
+                                            margin: 0px;
+                                            margin-top: 38.5px;
+                                            margin-left: 23px;
+                                        }
+                                    }
+
+                                    .down {
+                                        margin: 0px;
+
+                                        p {
+
+                                            margin: 0px;
+                                            font-family: "Lemon Regular";
+                                            font-size: 16px;
+                                            line-height: 30px;
+                                            color: rgba(255, 255, 255, 0.54);
+                                            margin-top: 15px;
+                                            margin-left: 23px;
+                                            margin-bottom: 23px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+
+                    }
+
+                }
+            }
+
+            .section5 {
+                .container {
+                    max-width: 1060px;
+                    margin: 0 auto;
+                    margin-top: -80px;
+
+                    margin-bottom: 0px;
+
+                    img {
+                        width: 1060px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+
+            .section6 {
+                .container {
+                    max-width: 1060px;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 105px;
+
+                    .up {
+                        display: flex;
+                        flex-direction: row;
+
+                        .left {
+                            img {
+                                width: 232.29px;
+                                height: 67.12px;
+                                margin: 0px;
+                                margin-top: 58px;
+                                margin-right: 188px;
+                            }
+                        }
+
+                        .mid {
+                            display: flex;
+                            flex-direction: column;
+
+
+                            .up {
+
+                                p {
+                                    font-family: "Lemon Medium";
+                                    font-weight: 500;
+                                    font-size: 26px;
+                                    line-height: 36px;
+                                    color: #FFFFFF;
+                                    margin: 0px;
+                                    margin-bottom: 35px;
+
+                                }
+                            }
+
+                            .down {
+                                margin-bottom: 66px;
+                                text-align: start;
+
+                                p {
+                                    a {
+                                        font-family: "Lemon Regular";
+                                        font-size: 16px;
+                                        line-height: 30px;
+                                        color: #A4ADB3;
+                                        margin: 0px;
+                                        margin-right: 76px;
+                                        margin-bottom: 15px;
+                                        transition: all 0.2s ease-in-out;
+
+                                        &:hover {
+                                            color: #9A9A9A;
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+
+                        .right {
+                            margin-top: 107px;
+                            margin-left: 61.5px;
+
+
+                            a {
+                                font-family: "Lemon Bold";
+                                padding: 7px;
+                                font-size: 16px;
+                                line-height: 22px;
+                                color: #000000;
+                                background: #FFFF27;
+                                border-radius: 3px;
+
+                            }
+
+                        }
+                    }
+
+
                 }
 
                 .down {
-                    display: flex;
-                    flex-direction: column;
-                    margin-top: 80px;
+                    text-align: center;
 
-                    .first {
-                        display: flex;
-                        flex-direction: row;
-                        margin-bottom: 10px;
+                    .line {
+                        hr {
 
-                        .left {
-                            width: 341px;
-                            height: 425px;
-                            text-align: center;
-                            margin-right: 5px;
-                            background: #0C0C0C;
-                            opacity: 0.6;
-                            border: 1px solid #191919;
-                            border-radius: 4px;
-
-                            img {
-                                width: 176px;
-                                height: 181.5px;
-                                margin-bottom: 0px;
-                                margin-top: 80px;
-                            }
-
-                            p {
-                                font-family: "Lemon Bold";
-                                font-size: 34px;
-                                line-height: 30px;
-                                color: #E1E1E1;
-                                margin: 0px;
-                                margin-top: -20px;
-                            }
-                        }
-
-                        .right {
-                            display: flex;
-                            flex-direction: column;
-                            width: 714px;
-                            height: 138px;
-
-                            .text1 {
-                                background: #0C0C0C;
-                                opacity: 0.6;
-                                border: 1px solid #191919;
-                                border-radius: 4px;
-                                padding: 0px;
-                                margin: 0px;
-                                margin-bottom: 5px;
-
-                                .up {
-                                    margin: 0px;
-
-                                    p {
-                                        font-family: "Lemon Medium";
-                                        font-size: 26px;
-                                        line-height: 30px;
-                                        color: #E1E1E1;
-                                        margin: 0px;
-                                        margin-top: 39px;
-                                        margin-left: 23px;
-                                    }
-                                }
-
-                                .down {
-                                    margin: 0px;
-
-                                    p {
-
-                                        margin: 0px;
-                                        font-family: "Lemon Regular";
-                                        font-size: 16px;
-                                        line-height: 30px;
-                                        color: rgba(255, 255, 255, 0.54);
-                                        margin-top: 15px;
-                                        margin-left: 23px;
-                                        margin-bottom: 23px;
-                                    }
-                                }
-                            }
+                            border: 2px solid #FFFFFF;
+                            margin-bottom: 12;
                         }
                     }
 
-                    .second {
-                        display: flex;
-                        flex-direction: row;
-                        margin-bottom: 10px;
-                        margin-bottom: 180px;
+                    .text {
+                        margin: 0px;
 
-                        .left {
-                            width: 341px;
-                            height: 565px;
-                            text-align: center;
-
-                            background: #0C0C0C;
-                            opacity: 0.6;
-                            border: 1px solid #191919;
-                            border-radius: 4px;
-
-                            img {
-                                width: 176px;
-                                height: 181.5px;
-                                margin-bottom: 0px;
-                                margin-top: 165.66px;
-                            }
-
-                            p {
-                                font-family: "Lemon Bold";
-                                font-size: 34px;
-                                line-height: 30px;
-                                color: #E1E1E1;
-                                margin: 0px;
-                                margin-top: 5px;
-                            }
-                        }
-
-                        .right {
-                            display: flex;
-                            flex-direction: column;
-                            width: 714px;
-                            height: 138px;
-                            margin-right: 5px;
-
-
-                            .text1 {
-                                background: #0C0C0C;
-                                opacity: 0.6;
-                                border: 1px solid #191919;
-                                border-radius: 4px;
-                                padding: 0px;
-                                margin: 0px;
-                                margin-bottom: 5px;
-
-                                .up {
-                                    margin: 0px;
-
-                                    p {
-                                        font-family: "Lemon Medium";
-                                        font-size: 26px;
-                                        line-height: 30px;
-                                        color: #E1E1E1;
-                                        margin: 0px;
-                                        margin-top: 38.5px;
-                                        margin-left: 23px;
-                                    }
-                                }
-
-                                .down {
-                                    margin: 0px;
-
-                                    p {
-
-                                        margin: 0px;
-                                        font-family: "Lemon Regular";
-                                        font-size: 16px;
-                                        line-height: 30px;
-                                        color: rgba(255, 255, 255, 0.54);
-                                        margin-top: 15px;
-                                        margin-left: 23px;
-                                        margin-bottom: 23px;
-                                    }
-                                }
-                            }
+                        p {
+                            font-family: "Lemon Regular";
+                            font-weight: 400;
+                            font-size: 13px;
+                            line-height: 18px;
+                            color: #FFFFFF;
+                            margin: 0px;
+                            margin-bottom: 11px;
                         }
                     }
 
 
                 }
 
+
             }
+
+
         }
+    }
+}
 
-        .section5 {
-            .container {
-                max-width: 1060px;
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    html {
+        scroll-behavior: smooth;
+
+        body {
+            font-family: "Lemon Regular";
+            background-color: black;
+            margin: 0px;
+            padding: 0px;
+
+
+            .nav {
+                max-width: 715px;
                 margin: 0 auto;
-                margin-top: -80px;
 
-                margin-bottom: 0px;
+                .container {
 
-                img {
-                    width: 1060px;
-                    margin: 0 auto;
-                }
-            }
-        }
-
-        .section6 {
-            .container {
-                max-width: 1060px;
-                margin: 0 auto;
-                display: flex;
-                flex-direction: column;
-                margin-top: 105px;
-
-                .up {
                     display: flex;
                     flex-direction: row;
 
+                    justify-content: space-between;
+                    margin: 0px 0px;
+                    padding-top: 15px;
+                    margin-bottom: 20px;
+
+
                     .left {
                         img {
-                            width: 232.29px;
-                            height: 67.12px;
-                            margin: 0px;
-                            margin-top: 58px;
-                            margin-right: 188px;
+                            margin-top: 5px;
+                            width: 78.52px;
+                            
                         }
                     }
 
                     .mid {
                         display: flex;
-                        flex-direction: column;
+                        flex-direction: row;
+                        padding-top: 5px;
 
+                        a {
+                            font-family: "Lemon Medium";
+                            font-size: 11px;
+                            color: #FFFFFF;
+                            margin: 0px 40px;
+                            transition: 0.3s ease-in-out;
 
-                        .up {
-
-                            p {
-                                font-family: "Lemon Medium";
-                                font-weight: 500;
-                                font-size: 26px;
-                                line-height: 36px;
-                                color: #FFFFFF;
-                                margin: 0px;
-                                margin-bottom: 35px;
-
-                            }
-                        }
-
-                        .down {
-                            margin-bottom: 66px;
-                            text-align: start;
-
-                            p {
-                                a {
-                                    font-family: "Lemon Regular";
-                                    font-size: 16px;
-                                    line-height: 30px;
-                                    color: #A4ADB3;
-                                    margin: 0px;
-                                    margin-right: 76px;
-                                    margin-bottom: 15px;
-                                    transition: all 0.2s ease-in-out;
-
-                                    &:hover {
-                                        color: #9A9A9A;
-                                    }
-                                }
+                            &:hover {
+                                color: #FFFF27;
 
                             }
                         }
                     }
 
                     .right {
-                        margin-top: 107px;
-                        margin-left: 61.5px;
-
+                        padding-top: 5px;
 
                         a {
-                            font-family: "Lemon Bold";
-                            padding: 7px;
-                            font-size: 16px;
-                            line-height: 22px;
-                            color: #000000;
-                            background: #FFFF27;
+                            font-family: "Lemon Regular";
+                            font-size: 11px;
+                            padding: 7px 18px;
+                            border: 2px solid #FDFDFD;
                             border-radius: 3px;
+                            transition: 0.3s ease-in-out;
 
+                            &:hover {
+                                color: #FFFF27;
+                                border: 2px solid #FFFF27;
+                            }
                         }
 
                     }
                 }
 
-
             }
 
-            .down {
-                text-align: center;
+            .section1 {
 
-                .line {
-                    hr {
+                background-image: url(../img/bg1banner.png);
+                background-size: 100% 100%;
 
-                        border: 2px solid #FFFFFF;
-                        margin-bottom: 12;
+                .container {
+                    max-width: 715px;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .left {
+                        .text1 {
+                            p {
+                                font-family: "Lemon Medium";
+                                font-size: 9px;
+                                color: #FFFF27;
+                                line-height: 13px;
+                                letter-spacing: 1.72em;
+                                margin-top: 130px;
+                            }
+                        }
+
+                        .text2 {
+                            p {
+                                font-family: "Zacbelx Extrabold";
+                                font-size: 90px;
+                                line-height: 129px;
+                                color: #FFFFFF;
+                                margin-top: -40px;
+                                margin-bottom: -10px;
+                            }
+                        }
+
+                        .text3 {
+                            p {
+                                max-width: 546px;
+                                font-family: "Lemon Regular";
+                                font-size: 10px;
+                                line-height: 24px;
+                                color: #C5CFD5;
+                            }
+                        }
+
+                        .buttons {
+                            display: flex;
+                            flex-direction: row;
+                            margin-top: 40px;
+
+
+
+                            .button1 {
+
+                                // img {
+                                //     width: 124px;
+                                //     height: 38px;
+                                // }
+                                margin-right: 20px;
+
+                                a {
+
+                                    background: #FFFF27;
+                                    border-radius: 3px;
+                                    font-family: "Lemon bold";
+                                    font-size: 11px;
+                                    line-height: 20px;
+                                    color: #050505;
+                                    padding: 10px 13px;
+
+                                    span {
+                                        margin-top: -3px;
+                                        overflow: hidden;
+                                    }
+                                }
+                            }
+
+                        }
+
+                        .downpart {
+                            display: flex;
+                            flex-direction: row;
+                            margin-top: 40px;
+                            margin-bottom: 100px;
+
+
+
+                            .left {
+                                p {
+                                    font-family: "Lemon Bold";
+                                    font-size: 30px;
+                                    line-height: 53px;
+                                    color: #FFFFFF;
+                                    margin: 0px;
+                                }
+                            }
+
+                            .mid {
+                                img {
+                                    width: 2px;
+                                    height: 40px;
+                                    margin: 0px 23px;
+                                    margin-top: 10px;
+
+                                }
+                            }
+
+                            .right {
+                                p {
+                                    font-family: "Lemon UltraLight";
+                                    font-size: 25px;
+                                    line-height: 35px;
+                                    color: #FFFFFF;
+                                    margin: 0px;
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+                    }
+
+                    .right {
+                        img {
+                            width: 393.71px;
+                            height: 427px;
+                        }
                     }
                 }
+            }
 
-                .text {
-                    margin: 0px;
+            #mainmodal {
 
-                    p {
-                        font-family: "Lemon Regular";
-                        font-weight: 400;
-                        font-size: 13px;
-                        line-height: 18px;
-                        color: #FFFFFF;
-                        margin: 0px;
-                        margin-bottom: 11px;
+                font-family: Arial;
+
+                height: 100%;
+                width: 100%;
+                text-align: center;
+
+                .modalconent {
+                    background-image: url(../img/breakingnews.png);
+                    background-size: 100%;
+                    width: 100%;
+
+                }
+
+                .marquee {
+                    font-family: "Zacbelx Extrabold";
+                    color: #080707;
+                    padding: 5px;
+                    font-size: 42px;
+
+                }
+            }
+
+            .section2 {
+                background-image: url(../img/bgservices.png);
+                background-size: 100% 100%;
+                background-color: #151515;
+
+                .container {
+                    max-width: 715px;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: column;
+
+                    .texts {
+                        width: 100%;
+                        margin: 0 auto;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        justify-content: center;
+
+                        .text1 {
+                            p {
+                                font-family: "Lemon Medium";
+                                font-size: 9px;
+                                line-height: 13px;
+                                letter-spacing: 1.72em;
+                                color: #FFFF27;
+                                margin-top: 70px;
+                                margin-bottom: 22px;
+                            }
+
+                        }
+
+                        .text2 {
+                            img {
+                                margin: 0px;
+                                width: 371.94px;
+                                height: 71.97px;
+                            }
+                        }
+
+                        .text3 {
+
+                            width: 378px;
+                            margin: 0 auto;
+                            font-family: 'LEMON Regular';
+                            font-size: 10px;
+                            line-height: 24px;
+                            text-align: center;
+                            color: #C5CFD5;
+                            margin-top: 26px;
+                            margin-bottom: 44px;
+                        }
                     }
+
+
+
+                    .innersection {
+                        .first {
+                            width: 715px;
+                            margin: 0 auto;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            // background: #292929;
+                            // border: 2px solid #181818;
+                            padding: 0px;
+
+                            .box {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                // background: #292929;
+                                // border: 2px solid #181818;
+                                padding: 17px;
+
+                                .left {
+                                    display: flex;
+                                    flex-direction: row;
+
+                                    p {
+                                        font-family: "Lemon Regular";
+                                        font-size: 22px;
+                                        color: white;
+                                    }
+
+                                    .img1service {
+                                        display: block;
+                                        margin-top: 27px;
+                                        margin-left: 15px;
+                                        width: 19px;
+                                        height: 23.36px;
+                                    }
+
+
+
+                                    .img2service {
+                                        display: none;
+                                        margin-top: 40px;
+                                        margin-left: 15px;
+                                        width: 19px;
+                                        height: 23.36px;
+                                    }
+                                }
+
+                                .right {
+                                    p {
+                                        display: none;
+                                        width: 502px;
+                                        font-family: "Lemon Regular";
+                                        font-size: 14px;
+                                        line-height: 30px;
+                                        color: #9A9A9A;
+                                    }
+
+                                    button {
+                                        margin-top: 35px;
+                                        background-color: transparent;
+                                        cursor: crosshair;
+                                        border: none;
+
+                                        img {
+                                            width: 42px;
+                                        }
+                                    }
+
+
+                                }
+                            }
+
+                            .lineservice {
+                                width: 715px;
+                                border: 2px solid #434343;
+
+                            }
+
+                            #lineserviices4 {
+                                margin-bottom: 116px;
+                            }
+
+
+                        }
+
+                    }
+
+
+
+                }
+            }
+
+            .section3 {
+                .container {
+                    max-width: 715px;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 96px;
+
+                    .up {
+                        margin-bottom: 81px;
+
+                        .up1 {
+                            p {
+                                font-family: "Lemon Medium";
+                                font-size: 12px;
+                                line-height: 17px;
+                                letter-spacing: 1.72em;
+                                color: #FFFF27;
+                                margin-bottom: 25px;
+                            }
+                        }
+
+                        .down1 {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+
+                            .left {
+                                img {
+                                    width: 524.95px;
+                                }
+                            }
+
+                            .right {
+                                p {
+                                    font-family: "Lemon Regular";
+                                    font-size: 14px;
+                                    line-height: 30px;
+                                    color: #C5CFD5;
+                                    max-width: 473px;
+
+                                }
+                            }
+                        }
+                    }
+
+
+                    .down {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+
+                        .box {
+                            .up {
+                                margin-bottom: 0px;
+
+                                button {
+                                    border: none;
+                                    cursor: pointer;
+                                    appearance: none;
+                                    background-color: inherit;
+
+                                    img {
+                                        width: 515px;
+                                        height: 515px;
+
+
+                                    }
+
+                                    .overlay {
+                                        position: absolute;
+                                        width: 515px;
+                                        height: 515px;
+                                        opacity: 0;
+                                        transition: .5s ease;
+
+                                        background: rgba(255, 255, 39, 0.7);
+                                        border-radius: 3px;
+                                        margin-top: -520px;
+
+
+                                    }
+
+                                    .text {
+                                        color: white;
+                                        font-size: 20px;
+                                        position: absolute;
+                                        text-align: center;
+                                        justify-content: center;
+                                        margin: 230px 145px;
+
+                                        img {
+                                            width: 233.5px;
+                                            height: 62px;
+                                        }
+                                    }
+
+                                    &:hover {
+                                        .overlay {
+                                            opacity: 1;
+                                        }
+                                    }
+
+                                }
+
+                                .modal1 {
+                                    display: none;
+                                    /* Hidden by default */
+                                    position: fixed;
+                                    opacity: 0;
+                                    /* Stay in place */
+                                    z-index: 1;
+                                    /* Sit on top */
+                                    padding-top: 5px;
+                                    padding-bottom: 5px;
+                                    /* Location of the box */
+                                    left: 0;
+                                    top: 0;
+                                    width: 100%;
+                                    /* Full width */
+                                    height: 100%;
+                                    /* Full height */
+                                    overflow: auto;
+                                    /* Enable scroll if needed */
+                                    background-color: rgb(0, 0, 0);
+                                    /* Fallback color */
+                                    background-color: rgba(0, 0, 0, 0.4);
+                                    /* Black w/ opacity */
+                                    transition: opacity 3s ease-in-out;
+
+
+
+                                    .modal-content1 {
+                                        width: 1120px;
+                                        margin: 0 auto;
+                                        background: #131313;
+                                        box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+                                        border-radius: 3px;
+
+                                        .containermodal1 {
+                                            width: 715px;
+                                            margin: 0 auto;
+
+
+                                            .up {
+                                                margin: 0px;
+                                                display: flex;
+                                                flex-direction: row;
+                                                padding-top: 30px;
+                                                justify-content: space-between;
+
+                                                .left {
+                                                    display: flex;
+                                                    flex-direction: row;
+
+                                                    a {
+                                                        font-family: "Lemon Medium";
+                                                        font-size: 18px;
+                                                        line-height: 25px;
+                                                        color: #FFFFFF;
+                                                    }
+
+                                                    .changetovideo {
+                                                        border: none;
+                                                        cursor: pointer;
+                                                        appearance: none;
+                                                        background-color: inherit;
+                                                        margin-right: 50px;
+                                                        font-family: "Lemon Medium";
+                                                        font-size: 18px;
+                                                        line-height: 25px;
+                                                        color: #FFFFFF;
+                                                    }
+
+                                                    .changetoimages {
+                                                        border: none;
+                                                        cursor: pointer;
+                                                        appearance: none;
+                                                        background-color: inherit;
+                                                        font-family: "Lemon Medium";
+                                                        font-size: 18px;
+                                                        line-height: 25px;
+                                                        color: #FFFF27;
+                                                    }
+
+                                                }
+
+                                                .right {
+                                                    button {
+                                                        border: none;
+                                                        cursor: pointer;
+                                                        appearance: none;
+                                                        background-color: inherit;
+
+                                                        img {
+                                                            width: 18px;
+                                                            height: 18px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+                                            .down {
+
+                                                .imagespart {
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    margin-top: 40px;
+                                                    justify-content: space-between;
+
+                                                    .left {
+                                                        img {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            margin-bottom: 30px;
+                                                        }
+
+                                                        .project11image {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            display: block;
+                                                        }
+
+                                                        .project12image {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            display: none;
+                                                        }
+
+                                                        .project13image {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            display: none;
+                                                        }
+
+                                                        .project14image {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            display: none;
+                                                        }
+
+                                                        .project15image {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            display: none;
+                                                        }
+                                                    }
+
+                                                    .right {
+                                                        max-width: 280px;
+
+                                                        .text1 {
+                                                            p {
+                                                                font-family: "Lemon Bold";
+                                                                font-size: 28px;
+                                                                line-height: 39px;
+                                                                color: #FFFFFF;
+                                                                margin: 0px;
+                                                            }
+                                                        }
+
+                                                        .text2 {
+                                                            p {
+                                                                font-family: "Lemon Regular";
+                                                                font-size: 12px;
+                                                                line-height: 30px;
+                                                                color: #C5CFD5;
+                                                                margin-top: 17px;
+                                                                margin-bottom: 75px;
+                                                            }
+                                                        }
+
+                                                        .selections {
+                                                            display: flex;
+                                                            flex-direction: row;
+                                                            flex-wrap: wrap;
+
+                                                            button {
+                                                                border: none;
+                                                                cursor: pointer;
+                                                                appearance: none;
+                                                                background-color: inherit;
+                                                                padding: 0px;
+                                                                margin: 3px;
+
+                                                                img {
+                                                                    width: 85px;
+                                                                    height: 85px;
+                                                                }
+                                                            }
+                                                        }
+
+                                                        .downparts {
+                                                            justify-content: center;
+                                                            text-align: center;
+                                                            display: flex;
+                                                            flex-direction: column;
+
+                                                            .ups {
+                                                                p {
+                                                                    font-family: "Lemon Regular";
+                                                                    font-size: 16px;
+                                                                    line-height: 22px;
+                                                                    color: rgba(197, 207, 213, 0.7);
+                                                                    margin: 0px;
+                                                                    margin-bottom: 24px;
+                                                                    margin-top: 200px;
+                                                                }
+                                                            }
+
+                                                            .downs {
+                                                                img {
+                                                                    width: 60px;
+                                                                    height: 60px;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                                .videopart {
+                                                    display: none;
+                                                    flex-direction: row;
+                                                    margin-top: 40px;
+                                                    justify-content: space-between;
+
+                                                    .left {
+                                                        video {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            margin-bottom: 30px;
+                                                        }
+
+                                                        .project11video {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            display: block;
+                                                        }
+
+                                                        .project12video {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            display: none;
+                                                        }
+
+                                                        .project13video {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            display: none;
+                                                        }
+
+                                                        .project14video {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            display: none;
+                                                        }
+
+                                                        .project15video {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            display: none;
+                                                        }
+                                                    }
+
+                                                    .right {
+                                                        max-width: 280px;
+
+                                                        .text1 {
+                                                            p {
+                                                                font-family: "Lemon Bold";
+                                                                font-size: 28px;
+                                                                line-height: 39px;
+                                                                color: #FFFFFF;
+                                                                margin: 0px;
+                                                            }
+                                                        }
+
+                                                        .text2 {
+                                                            p {
+                                                                font-family: "Lemon Regular";
+                                                                font-size: 12px;
+                                                                line-height: 30px;
+                                                                color: #C5CFD5;
+                                                                margin-top: 17px;
+                                                                margin-bottom: 75px;
+                                                            }
+                                                        }
+
+                                                        .selections {
+                                                            display: flex;
+                                                            flex-direction: row;
+                                                            flex-wrap: wrap;
+
+                                                            button {
+                                                                border: none;
+                                                                cursor: pointer;
+                                                                appearance: none;
+                                                                background-color: inherit;
+                                                                padding: 0px;
+                                                                margin: 3px;
+
+                                                                video {
+                                                                    width: 85px;
+                                                                    height: 85px;
+                                                                }
+                                                            }
+                                                        }
+
+                                                        .downparts {
+                                                            justify-content: center;
+                                                            text-align: center;
+                                                            display: flex;
+                                                            flex-direction: column;
+
+                                                            .ups {
+                                                                p {
+                                                                    font-family: "Lemon Regular";
+                                                                    font-size: 16px;
+                                                                    line-height: 22px;
+                                                                    color: rgba(197, 207, 213, 0.7);
+                                                                    margin: 0px;
+                                                                    margin-bottom: 24px;
+                                                                    margin-top: 200px;
+                                                                }
+                                                            }
+
+                                                            .downs {
+                                                                img {
+                                                                    width: 60px;
+                                                                    height: 60px;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .down {
+                                display: flex;
+                                flex-direction: column;
+
+                                .ups {
+                                    p {
+                                        font-family: "Lemon Medium";
+                                        font-size: 18px;
+                                        line-height: 25px;
+                                        color: #FFFFFF;
+                                        margin-top: 0px;
+                                        margin-bottom: 0px;
+                                    }
+                                }
+
+                                .downs {
+                                    p {
+                                        font-family: "Lemon Regular";
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        color: #A4ADB3;
+                                        margin-top: 6px;
+                                        margin-bottom: 40px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .section4 {
+                background-image: url(../img/bgcareer.png);
+                background-size: 100% 100%;
+                background-color: #151515;
+
+                .container {
+                    max-width: 715px;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: column;
+
+
+                    .up {
+                        display: flex;
+                        flex-direction: row;
+
+                        .left {
+                            flex: 0.2;
+
+                            img {
+                                width: 350px;
+                                margin-left: -170px;
+                                margin-right: -80px;
+                            }
+
+                            .onpart {
+                                display: none;
+                            }
+
+                            .offpart {
+
+                                display: none;
+                            }
+                        }
+
+                        .mid {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            text-align: center;
+                            flex: 2;
+                            margin-top: 100px;
+
+                            .text1 {
+                                p {
+                                    font-family: "Lemon Medium";
+                                    font-size: 12px;
+                                    line-height: 17px;
+                                    letter-spacing: 1.72em;
+                                    color: #FFFF27;
+                                    margin-bottom: 40px;
+                                }
+                            }
+
+                            .text2 {
+                                img {
+                                    width: 608px;
+                                    height: 111px;
+                                    margin-bottom: 40px;
+                                }
+                            }
+
+                            .text3 {
+                                max-width: 605;
+                                margin: 0 auto;
+
+                                p {
+                                    max-width: 600px;
+                                    font-family: "Lemon Regular";
+                                    font-size: 14px;
+                                    line-height: 30px;
+                                    text-align: center;
+                                    color: #C5CFD5;
+                                    margin-top: -20px;
+                                }
+                            }
+                        }
+
+                        .right {
+                            flex: 0.2;
+                            text-align: end;
+                            margin-top: 50px;
+
+
+                            // img {
+                            //     width: 59.76px;
+                            //     height: 29.88px;
+                            // }
+
+                            .switch {
+                                --secondary-container: #FFFF27;
+                                --primary: #050505;
+                                font-size: 17px;
+                                position: relative;
+                                display: inline-block;
+                                width: 3.7em;
+                                height: 1.8em;
+                            }
+
+                            .switch input {
+                                display: none;
+                                opacity: 0;
+                                width: 0;
+                                height: 0;
+                            }
+
+                            .slider {
+                                position: absolute;
+                                cursor: pointer;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                background-color: #D1D1D1;
+                                transition: .2s;
+                                border-radius: 30px;
+                            }
+
+                            .slider:before {
+                                position: absolute;
+                                content: "";
+                                height: 1.4em;
+                                width: 1.4em;
+                                border-radius: 20px;
+                                left: 0.2em;
+                                bottom: 0.2em;
+                                background-color: #050505;
+                                transition: .4s;
+                            }
+
+                            input:checked+.slider::before {
+                                background-color: var(--primary);
+                            }
+
+                            input:checked+.slider {
+                                background-color: var(--secondary-container);
+                            }
+
+                            input:focus+.slider {
+                                box-shadow: 0 0 1px var(--secondary-container);
+                            }
+
+                            input:checked+.slider:before {
+                                transform: translateX(1.9em);
+                            }
+                        }
+                    }
+
+                    .down {
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 80px;
+
+                        .first {
+                            display: flex;
+                            flex-direction: row;
+                            margin-bottom: 10px;
+
+                            .left {
+                                width: 341px;
+                                height: 425px;
+                                text-align: center;
+                                margin-right: 5px;
+                                background: rgba(12, 12, 12, 0.6);
+                                border: 1px solid #191919;
+                                border-radius: 4px;
+
+                                img {
+                                    width: 176px;
+                                    height: 181.5px;
+                                    margin-bottom: 0px;
+                                    margin-top: 80px;
+                                }
+
+                                p {
+                                    font-family: "Lemon Bold";
+                                    font-size: 34px;
+                                    line-height: 30px;
+                                    color: #E1E1E1;
+                                    margin: 0px;
+                                    margin-top: -20px;
+                                }
+                            }
+
+                            .right {
+                                display: flex;
+                                flex-direction: column;
+                                width: 714px;
+                                height: 138px;
+
+                                .text1 {
+                                    background: #0C0C0C;
+                                    opacity: 0.6;
+                                    border: 1px solid #191919;
+                                    border-radius: 4px;
+                                    padding: 0px;
+                                    margin: 0px;
+                                    margin-bottom: 5px;
+
+                                    .up {
+                                        margin: 0px;
+
+                                        p {
+                                            font-family: "Lemon Medium";
+                                            font-size: 26px;
+                                            line-height: 30px;
+                                            color: #E1E1E1;
+                                            margin: 0px;
+                                            margin-top: 39px;
+                                            margin-left: 23px;
+                                        }
+                                    }
+
+                                    .down {
+                                        margin: 0px;
+
+                                        p {
+
+                                            margin: 0px;
+                                            font-family: "Lemon Regular";
+                                            font-size: 16px;
+                                            line-height: 30px;
+                                            color: rgba(255, 255, 255, 0.54);
+                                            margin-top: 15px;
+                                            margin-left: 23px;
+                                            margin-bottom: 23px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .second {
+                            display: flex;
+                            flex-direction: row;
+                            margin-bottom: 10px;
+                            margin-bottom: 180px;
+
+                            .left {
+                                width: 341px;
+                                height: 565px;
+                                text-align: center;
+
+                                background: rgba(12, 12, 12, 0.6);
+                                border: 1px solid #191919;
+                                border-radius: 4px;
+
+                                img {
+                                    width: 176px;
+                                    height: 181.5px;
+                                    margin-bottom: 0px;
+                                    margin-top: 165.66px;
+                                }
+
+                                p {
+                                    font-family: "Lemon Bold";
+                                    font-size: 34px;
+                                    line-height: 30px;
+                                    color: #E1E1E1;
+                                    margin: 0px;
+                                    margin-top: 5px;
+                                }
+                            }
+
+                            .right {
+                                display: flex;
+                                flex-direction: column;
+                                width: 714px;
+                                height: 138px;
+                                margin-right: 5px;
+
+
+                                .text1 {
+                                    background: #0C0C0C;
+                                    opacity: 0.6;
+                                    border: 1px solid #191919;
+                                    border-radius: 4px;
+                                    padding: 0px;
+                                    margin: 0px;
+                                    margin-bottom: 5px;
+
+                                    .up {
+                                        margin: 0px;
+
+                                        p {
+                                            font-family: "Lemon Medium";
+                                            font-size: 26px;
+                                            line-height: 30px;
+                                            color: #E1E1E1;
+                                            margin: 0px;
+                                            margin-top: 38.5px;
+                                            margin-left: 23px;
+                                        }
+                                    }
+
+                                    .down {
+                                        margin: 0px;
+
+                                        p {
+
+                                            margin: 0px;
+                                            font-family: "Lemon Regular";
+                                            font-size: 16px;
+                                            line-height: 30px;
+                                            color: rgba(255, 255, 255, 0.54);
+                                            margin-top: 15px;
+                                            margin-left: 23px;
+                                            margin-bottom: 23px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+
+                    }
+
+                }
+            }
+
+            .section5 {
+                .container {
+                    max-width: 715px;
+                    margin: 0 auto;
+                    margin-top: -80px;
+
+                    margin-bottom: 0px;
+
+                    img {
+                        width: 715px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+
+            .section6 {
+                .container {
+                    max-width: 715px;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 105px;
+
+                    .up {
+                        display: flex;
+                        flex-direction: row;
+
+                        .left {
+                            img {
+                                width: 232.29px;
+                                height: 67.12px;
+                                margin: 0px;
+                                margin-top: 58px;
+                                margin-right: 188px;
+                            }
+                        }
+
+                        .mid {
+                            display: flex;
+                            flex-direction: column;
+
+
+                            .up {
+
+                                p {
+                                    font-family: "Lemon Medium";
+                                    font-weight: 500;
+                                    font-size: 26px;
+                                    line-height: 36px;
+                                    color: #FFFFFF;
+                                    margin: 0px;
+                                    margin-bottom: 35px;
+
+                                }
+                            }
+
+                            .down {
+                                margin-bottom: 66px;
+                                text-align: start;
+
+                                p {
+                                    a {
+                                        font-family: "Lemon Regular";
+                                        font-size: 16px;
+                                        line-height: 30px;
+                                        color: #A4ADB3;
+                                        margin: 0px;
+                                        margin-right: 76px;
+                                        margin-bottom: 15px;
+                                        transition: all 0.2s ease-in-out;
+
+                                        &:hover {
+                                            color: #9A9A9A;
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+
+                        .right {
+                            margin-top: 107px;
+                            margin-left: 61.5px;
+
+
+                            a {
+                                font-family: "Lemon Bold";
+                                padding: 7px;
+                                font-size: 16px;
+                                line-height: 22px;
+                                color: #000000;
+                                background: #FFFF27;
+                                border-radius: 3px;
+
+                            }
+
+                        }
+                    }
+
+
+                }
+
+                .down {
+                    text-align: center;
+
+                    .line {
+                        hr {
+
+                            border: 2px solid #FFFFFF;
+                            margin-bottom: 12;
+                        }
+                    }
+
+                    .text {
+                        margin: 0px;
+
+                        p {
+                            font-family: "Lemon Regular";
+                            font-weight: 400;
+                            font-size: 13px;
+                            line-height: 18px;
+                            color: #FFFFFF;
+                            margin: 0px;
+                            margin-bottom: 11px;
+                        }
+                    }
+
+
                 }
 
 
@@ -1019,7 +2677,11 @@ html {
 
 
         }
-
-
     }
+}
+
+
+// Mobile styles
+@media only screen and (max-width: 767px) {
+    
 }
