@@ -1,28 +1,30 @@
+
+
 $('#butoniservice1').click(function () {
     $('#img1service1').css({
         'display': 'none',
-        "transition":"0.5s ease"
+        "transition":"0.5s ease",
     });
     $('#img2service1').css({
         'display': 'block',
-        "transition":"0.5s ease"
+        "transition":"0.5s ease",
     });
     $('#butoniservice1').css({
         'display': 'none',
-        "transition":"0.5s ease"
+        "transition":"0.5s ease",
     });
     $('#lineserviices1').css({
         'display': 'none',
-        "transition":"0.5s ease"
+        "transition":"0.5s ease",
     });
     $('#textgraphhic1').css({
         'padding-bottom': '100px',
-        "transition":"0.5s ease"
+        "transition":"0.5s ease",
     });
     $('#textservicess1').css({
         'display': 'block',
         'cursor':'pointer',
-        "transition":"0.5s ease"
+        "transition":"0.5s ease",
     });
     $('#kutiatext1').css({
         'background': '#292929',
@@ -30,38 +32,39 @@ $('#butoniservice1').click(function () {
         'height': '162px',
         'width': '1060px',
         'margin-bottom': '12px',
-        "transition":"0.5s ease"
+        "transition":"0.5s ease",
         
     });
 });
 $('#textservicess1').click(function () {
     $('#img1service1').css({
         'display': 'flex',
-        "transition":"0.5s ease",
+        "transition":"0.5s ease"
     });
     $('#img2service1').css({
         'display': 'none',
-        "transition":"0.5s ease",
+        "transition":"0.5s ease"
     });
     $('#butoniservice1').css({
         'display': 'flex',
-        "transition":"0.5s ease",
+        "transition":"0.5s ease"
     });
     $('#lineserviices1').css({
         'display': 'flex',
-        "transition":"0.5s ease",
+        "transition":"0.5s ease"
     });
     $('#textgraphhic1').css({
         'padding-bottom': '0px',
-        "transition":"0.5s ease",
+        "transition":"0.5s ease"
     });
     $('#textservicess1').css({
         'display': 'none',
-        "transition":"0.5s ease",
+        'cursor':'pointer',
+        "transition":"0.5s ease"
     });
     $('#kutiatext1').css({
         'background': 'none',
-        "transition":"0.5s ease",
+        "transition":"0.5s ease"
         
     });
 });
@@ -269,6 +272,284 @@ $('#textservicess4').click(function () {
         
     });
 });
+
+
+
+$('#butoniservice1tablet').click(function () {
+    $('#img1service1tablet').css({
+        'display': 'none',
+        "transition":"0.5s ease",
+    });
+    $('#img2service1tablet').css({
+        'display': 'block',
+        "transition":"0.5s ease",
+    });
+    $('#butoniservice1tablet').css({
+        'display': 'none',
+        "transition":"0.5s ease",
+    });
+    $('#lineserviices1tablet').css({
+        'display': 'none',
+        "transition":"0.5s ease",
+    });
+    $('#textgraphhic1tablet').css({
+        'padding-bottom': '0px',
+        "transition":"0.5s ease",
+    });
+    $('#textservicess1tablet').css({
+        'display': 'block',
+        'cursor':'pointer',
+        "transition":"0.5s ease",
+    });
+    $('#kutiatext1tablet').css({
+        'background': '#292929',
+        'border': '#2px solid #181818',
+        'width': '715px',
+        'margin-bottom': '12px',
+        "transition":"0.5s ease",
+        
+    });
+});
+$('#textservicess1tablet').click(function () {
+    $('#img1service1tablet').css({
+        'display': 'flex',
+        "transition":"0.5s ease"
+    });
+    $('#img2service1tablet').css({
+        'display': 'none',
+        "transition":"0.5s ease"
+    });
+    $('#butoniservice1tablet').css({
+        'display': 'flex',
+        "transition":"0.5s ease"
+    });
+    $('#lineserviices1tablet').css({
+        'display': 'flex',
+        "transition":"0.5s ease"
+    });
+    $('#textgraphhic1tablet').css({
+        'padding-bottom': '0px',
+        "transition":"0.5s ease"
+    });
+    $('#textservicess1tablet').css({
+        'display': 'none',
+        'cursor':'pointer',
+        "transition":"0.5s ease"
+    });
+    $('#kutiatext1tablet').css({
+        'background': 'none',
+        "transition":"0.5s ease"
+        
+    });
+});
+
+$('#butoniservice2tablet').click(function () {
+    $('#img1service2tablet').css({
+        'display': 'none',
+        "transition":"0.5s ease",
+    });
+    $('#img2service2tablet').css({
+        'display': 'block',
+        "transition":"0.5s ease",
+    });
+    $('#butoniservice2tablet').css({
+        'display': 'none',
+        "transition":"0.5s ease",
+    });
+    $('#lineserviices2tablet').css({
+        'display': 'none',
+        "transition":"0.5s ease",
+    });
+    $('#textgraphhic2tablet').css({
+        'padding-bottom': '0px',
+        "transition":"0.5s ease",
+    });
+    $('#textservicess2tablet').css({
+        'display': 'block',
+        'cursor':'pointer',
+        "transition":"0.5s ease",
+    });
+    $('#kutiatext2tablet').css({
+        'background': '#292929',
+        'border': '#2px solid #181818',
+        'width': '715px',
+        'margin-bottom': '12px',
+        "transition":"0.5s ease",
+        
+    });
+});
+$('#textservicess2tablet').click(function () {
+    $('#img1service2tablet').css({
+        'display': 'flex',
+        "transition":"0.5s ease"
+    });
+    $('#img2service2tablet').css({
+        'display': 'none',
+        "transition":"0.5s ease"
+    });
+    $('#butoniservice2tablet').css({
+        'display': 'flex',
+        "transition":"0.5s ease"
+    });
+    $('#lineserviices2tablet').css({
+        'display': 'flex',
+        "transition":"0.5s ease"
+    });
+    $('#textgraphhic2tablet').css({
+        'padding-bottom': '0px',
+        "transition":"0.5s ease"
+    });
+    $('#textservicess2tablet').css({
+        'display': 'none',
+        'cursor':'pointer',
+        "transition":"0.5s ease"
+    });
+    $('#kutiatext2tablet').css({
+        'background': 'none',
+        "transition":"0.5s ease"
+        
+    });
+});
+
+$('#butoniservice3tablet').click(function () {
+    $('#img1service3tablet').css({
+        'display': 'none',
+        "transition":"0.5s ease",
+    });
+    $('#img2service3tablet').css({
+        'display': 'block',
+        "transition":"0.5s ease",
+    });
+    $('#butoniservice3tablet').css({
+        'display': 'none',
+        "transition":"0.5s ease",
+    });
+    $('#lineserviices3tablet').css({
+        'display': 'none',
+        "transition":"0.5s ease",
+    });
+    $('#textgraphhic3tablet').css({
+        'padding-bottom': '0px',
+        "transition":"0.5s ease",
+    });
+    $('#textservicess3tablet').css({
+        'display': 'block',
+        'cursor':'pointer',
+        "transition":"0.5s ease",
+    });
+    $('#kutiatext3tablet').css({
+        'background': '#292929',
+        'border': '#2px solid #181818',
+        'width': '715px',
+        'margin-bottom': '12px',
+        "transition":"0.5s ease",
+        
+    });
+});
+$('#textservicess3tablet').click(function () {
+    $('#img1service3tablet').css({
+        'display': 'flex',
+        "transition":"0.5s ease"
+    });
+    $('#img2service3tablet').css({
+        'display': 'none',
+        "transition":"0.5s ease"
+    });
+    $('#butoniservice3tablet').css({
+        'display': 'flex',
+        "transition":"0.5s ease"
+    });
+    $('#lineserviices3tablet').css({
+        'display': 'flex',
+        "transition":"0.5s ease"
+    });
+    $('#textgraphhic3tablet').css({
+        'padding-bottom': '0px',
+        "transition":"0.5s ease"
+    });
+    $('#textservicess3tablet').css({
+        'display': 'none',
+        'cursor':'pointer',
+        "transition":"0.5s ease"
+    });
+    $('#kutiatext3tablet').css({
+        'background': 'none',
+        "transition":"0.5s ease"
+        
+    });
+});
+
+$('#butoniservice4tablet').click(function () {
+    $('#img1service4tablet').css({
+        'display': 'none',
+        "transition":"0.5s ease",
+    });
+    $('#img2service4tablet').css({
+        'display': 'block',
+        "transition":"0.5s ease",
+    });
+    $('#butoniservice4tablet').css({
+        'display': 'none',
+        "transition":"0.5s ease",
+    });
+    $('#lineserviices4tablet').css({
+        'display': 'none',
+        "transition":"0.5s ease",
+    });
+    $('#textgraphhic4tablet').css({
+        'padding-bottom': '0px',
+        "transition":"0.5s ease",
+    });
+    $('#textservicess4tablet').css({
+        'display': 'block',
+        'cursor':'pointer',
+        "transition":"0.5s ease",
+    });
+    $('#kutiatext4tablet').css({
+        'background': '#292929',
+        'border': '#2px solid #181818',
+        'width': '715px',
+        'margin-bottom': '12px',
+        "transition":"0.5s ease",
+        'margin-bottom':'20px'
+        
+    });
+});
+$('#textservicess4tablet').click(function () {
+    $('#img1service4tablet').css({
+        'display': 'flex',
+        "transition":"0.5s ease"
+    });
+    $('#img2service4tablet').css({
+        'display': 'none',
+        "transition":"0.5s ease"
+    });
+    $('#butoniservice4tablet').css({
+        'display': 'flex',
+        "transition":"0.5s ease"
+    });
+    $('#lineserviices4tablet').css({
+        'display': 'flex',
+        "transition":"0.5s ease"
+    });
+    $('#textgraphhic4tablet').css({
+        'padding-bottom': '0px',
+        "transition":"0.5s ease"
+    });
+    $('#textservicess4tablet').css({
+        'display': 'none',
+        'cursor':'pointer',
+        "transition":"0.5s ease"
+    });
+    $('#kutiatext4tablet').css({
+        'background': 'none',
+        "transition":'0.5s ease',
+        'margin-bottom':'0px'
+        
+    });
+});
+
+
 
 let active = false
 

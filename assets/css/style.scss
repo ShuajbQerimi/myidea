@@ -428,6 +428,13 @@ p {
 
                         }
 
+                        .firsttablet{
+                            display: none;
+                        }
+                        .firstmobile{
+                            display: none;
+                        }
+
                     }
 
 
@@ -1369,7 +1376,8 @@ p {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
     html {
         scroll-behavior: smooth;
 
@@ -1423,7 +1431,7 @@ p {
                     }
 
                     .right {
-                        padding-top: 5px;
+                        padding-top: 0px;
 
                         a {
                             font-family: "Lemon Regular";
@@ -1464,7 +1472,7 @@ p {
                                 color: #FFFF27;
                                 line-height: 13px;
                                 letter-spacing: 1.72em;
-                                margin-top: 130px;
+                                margin-top: 80px;
                             }
                         }
 
@@ -1474,8 +1482,8 @@ p {
                                 font-size: 90px;
                                 line-height: 129px;
                                 color: #FFFFFF;
-                                margin-top: -40px;
-                                margin-bottom: -10px;
+                                margin-top: -20px;
+                                margin-bottom: -20px;
                             }
                         }
 
@@ -1492,7 +1500,7 @@ p {
                         .buttons {
                             display: flex;
                             flex-direction: row;
-                            margin-top: 40px;
+                            margin-top: 20px;
 
 
 
@@ -1526,8 +1534,8 @@ p {
                         .downpart {
                             display: flex;
                             flex-direction: row;
-                            margin-top: 40px;
-                            margin-bottom: 100px;
+                            margin-top: 20px;
+                            margin-bottom: 40px;
 
 
 
@@ -1566,8 +1574,7 @@ p {
 
                     .right {
                         img {
-                            width: 393.71px;
-                            height: 427px;
+                            width: 363.71px;
                         }
                     }
                 }
@@ -1654,17 +1661,24 @@ p {
 
 
                     .innersection {
-                        .first {
+                        .first{
+                            display: none;
+                        }
+                        .firstmobile{
+                            display: none;
+                        }
+                        .firsttablet {
+                            display: flex;
                             width: 715px;
                             margin: 0 auto;
-                            display: flex;
+                            
                             flex-direction: column;
                             justify-content: space-between;
                             // background: #292929;
                             // border: 2px solid #181818;
                             padding: 0px;
 
-                            .box {
+                            .boxtablet {
                                 display: flex;
                                 flex-direction: row;
                                 justify-content: space-between;
@@ -1672,7 +1686,7 @@ p {
                                 // border: 2px solid #181818;
                                 padding: 17px;
 
-                                .left {
+                                .lefttablet {
                                     display: flex;
                                     flex-direction: row;
 
@@ -1680,11 +1694,12 @@ p {
                                         font-family: "Lemon Regular";
                                         font-size: 22px;
                                         color: white;
+                                        margin: 30px 0px;
                                     }
 
-                                    .img1service {
+                                    .img1servicetablet {
                                         display: block;
-                                        margin-top: 27px;
+                                        margin-top: 35px;
                                         margin-left: 15px;
                                         width: 19px;
                                         height: 23.36px;
@@ -1692,22 +1707,22 @@ p {
 
 
 
-                                    .img2service {
+                                    .img2servicetablet {
                                         display: none;
-                                        margin-top: 40px;
+                                        margin-top: 35px;
                                         margin-left: 15px;
                                         width: 19px;
                                         height: 23.36px;
                                     }
                                 }
 
-                                .right {
+                                .righttablet {
                                     p {
                                         display: none;
-                                        width: 502px;
+                                        width: 331px;
                                         font-family: "Lemon Regular";
-                                        font-size: 14px;
-                                        line-height: 30px;
+                                        font-size: 10px;
+                                        line-height: 24px;
                                         color: #9A9A9A;
                                     }
 
@@ -1718,7 +1733,7 @@ p {
                                         border: none;
 
                                         img {
-                                            width: 42px;
+                                            width: 34px;
                                         }
                                     }
 
@@ -1726,18 +1741,19 @@ p {
                                 }
                             }
 
-                            .lineservice {
-                                width: 715px;
+                            .lineservicetablet {
+                                width: 714px;
                                 border: 2px solid #434343;
 
                             }
 
-                            #lineserviices4 {
-                                margin-bottom: 116px;
+                            #lineserviices4tablet {
+                                margin-bottom: 15px;
                             }
 
 
                         }
+                        
 
                     }
 
@@ -1752,7 +1768,7 @@ p {
                     margin: 0 auto;
                     display: flex;
                     flex-direction: column;
-                    margin-top: 96px;
+                    margin-top: 70px;
 
                     .up {
                         margin-bottom: 81px;
@@ -1760,8 +1776,8 @@ p {
                         .up1 {
                             p {
                                 font-family: "Lemon Medium";
-                                font-size: 12px;
-                                line-height: 17px;
+                                font-size: 9px;
+                                line-height: 13px;
                                 letter-spacing: 1.72em;
                                 color: #FFFF27;
                                 margin-bottom: 25px;
@@ -1775,17 +1791,17 @@ p {
 
                             .left {
                                 img {
-                                    width: 524.95px;
+                                    width: 366.01px;
                                 }
                             }
 
                             .right {
                                 p {
                                     font-family: "Lemon Regular";
-                                    font-size: 14px;
-                                    line-height: 30px;
+                                    font-size: 10px;
+                                    line-height: 24px;
                                     color: #C5CFD5;
-                                    max-width: 473px;
+                                    max-width: 290px;
 
                                 }
                             }
@@ -1810,27 +1826,16 @@ p {
                                     background-color: inherit;
 
                                     img {
-                                        width: 515px;
-                                        height: 515px;
+                                        width: 330px;
+                                        height: 330px;
 
 
                                     }
 
-                                    .overlay {
-                                        position: absolute;
-                                        width: 515px;
-                                        height: 515px;
-                                        opacity: 0;
-                                        transition: .5s ease;
-
-                                        background: rgba(255, 255, 39, 0.7);
-                                        border-radius: 3px;
-                                        margin-top: -520px;
-
-
-                                    }
+                                    
 
                                     .text {
+                                        display: none;
                                         color: white;
                                         font-size: 20px;
                                         position: absolute;
@@ -2198,8 +2203,8 @@ p {
                                 .ups {
                                     p {
                                         font-family: "Lemon Medium";
-                                        font-size: 18px;
-                                        line-height: 25px;
+                                        font-size: 10px;
+                                        line-height: 14px;
                                         color: #FFFFFF;
                                         margin-top: 0px;
                                         margin-bottom: 0px;
@@ -2209,8 +2214,8 @@ p {
                                 .downs {
                                     p {
                                         font-family: "Lemon Regular";
-                                        font-size: 14px;
-                                        line-height: 20px;
+                                        font-size: 9px;
+                                        line-height: 13px;
                                         color: #A4ADB3;
                                         margin-top: 6px;
                                         margin-bottom: 40px;
@@ -2242,9 +2247,9 @@ p {
                             flex: 0.2;
 
                             img {
-                                width: 350px;
-                                margin-left: -170px;
-                                margin-right: -80px;
+                                width: 200px;
+                                margin-left: -70px;
+                                
                             }
 
                             .onpart {
@@ -2263,13 +2268,13 @@ p {
                             justify-content: center;
                             text-align: center;
                             flex: 2;
-                            margin-top: 100px;
+                            margin-top: 80px;
 
                             .text1 {
                                 p {
                                     font-family: "Lemon Medium";
-                                    font-size: 12px;
-                                    line-height: 17px;
+                                    font-size: 9px;
+                                    line-height: 13px;
                                     letter-spacing: 1.72em;
                                     color: #FFFF27;
                                     margin-bottom: 40px;
@@ -2278,20 +2283,19 @@ p {
 
                             .text2 {
                                 img {
-                                    width: 608px;
-                                    height: 111px;
-                                    margin-bottom: 40px;
+                                    width: 430px;
+                                    margin-bottom: 20px;
                                 }
                             }
 
                             .text3 {
-                                max-width: 605;
+                                max-width: 423;
                                 margin: 0 auto;
 
                                 p {
-                                    max-width: 600px;
+                                    max-width: 423px;
                                     font-family: "Lemon Regular";
-                                    font-size: 14px;
+                                    font-size: 10px;
                                     line-height: 30px;
                                     text-align: center;
                                     color: #C5CFD5;
@@ -2317,8 +2321,8 @@ p {
                                 font-size: 17px;
                                 position: relative;
                                 display: inline-block;
-                                width: 3.7em;
-                                height: 1.8em;
+                                width: 50px;
+                                height: 24.49px;
                             }
 
                             .switch input {
@@ -2343,11 +2347,11 @@ p {
                             .slider:before {
                                 position: absolute;
                                 content: "";
-                                height: 1.4em;
-                                width: 1.4em;
+                                height: 1.2em;
+                                width: 1.2em;
                                 border-radius: 20px;
                                 left: 0.2em;
-                                bottom: 0.2em;
+                                bottom: 0.1em;
                                 background-color: #050505;
                                 transition: .4s;
                             }
@@ -2365,7 +2369,7 @@ p {
                             }
 
                             input:checked+.slider:before {
-                                transform: translateX(1.9em);
+                                transform: translateX(1.30em);
                             }
                         }
                     }
@@ -2373,7 +2377,7 @@ p {
                     .down {
                         display: flex;
                         flex-direction: column;
-                        margin-top: 80px;
+                        margin-top: 20px;
 
                         .first {
                             display: flex;
@@ -2381,8 +2385,8 @@ p {
                             margin-bottom: 10px;
 
                             .left {
-                                width: 341px;
-                                height: 425px;
+                                width: 229px;
+                                height: 309px;
                                 text-align: center;
                                 margin-right: 5px;
                                 background: rgba(12, 12, 12, 0.6);
@@ -2390,15 +2394,15 @@ p {
                                 border-radius: 4px;
 
                                 img {
-                                    width: 176px;
-                                    height: 181.5px;
+                                    width: 115px;
+                                    height: 115px;
                                     margin-bottom: 0px;
                                     margin-top: 80px;
                                 }
 
                                 p {
                                     font-family: "Lemon Bold";
-                                    font-size: 34px;
+                                    font-size: 19px;
                                     line-height: 30px;
                                     color: #E1E1E1;
                                     margin: 0px;
@@ -2409,8 +2413,8 @@ p {
                             .right {
                                 display: flex;
                                 flex-direction: column;
-                                width: 714px;
-                                height: 138px;
+                                width: 481px;
+                                height: 100px;
 
                                 .text1 {
                                     background: #0C0C0C;
@@ -2426,11 +2430,11 @@ p {
 
                                         p {
                                             font-family: "Lemon Medium";
-                                            font-size: 26px;
+                                            font-size: 17px;
                                             line-height: 30px;
                                             color: #E1E1E1;
                                             margin: 0px;
-                                            margin-top: 39px;
+                                            margin-top: 20px;
                                             margin-left: 23px;
                                         }
                                     }
@@ -2442,12 +2446,12 @@ p {
 
                                             margin: 0px;
                                             font-family: "Lemon Regular";
-                                            font-size: 16px;
+                                            font-size: 10px;
                                             line-height: 30px;
                                             color: rgba(255, 255, 255, 0.54);
-                                            margin-top: 15px;
+                                            margin-top: 0px;
                                             margin-left: 23px;
-                                            margin-bottom: 23px;
+                                            margin-bottom: 20px;
                                         }
                                     }
                                 }
@@ -2461,8 +2465,8 @@ p {
                             margin-bottom: 180px;
 
                             .left {
-                                width: 341px;
-                                height: 565px;
+                                width: 229px;
+                                height: 414px;
                                 text-align: center;
 
                                 background: rgba(12, 12, 12, 0.6);
@@ -2470,15 +2474,15 @@ p {
                                 border-radius: 4px;
 
                                 img {
-                                    width: 176px;
-                                    height: 181.5px;
+                                    width: 85px;
+                                    height: 89px;
                                     margin-bottom: 0px;
                                     margin-top: 165.66px;
                                 }
 
                                 p {
                                     font-family: "Lemon Bold";
-                                    font-size: 34px;
+                                    font-size: 19px;
                                     line-height: 30px;
                                     color: #E1E1E1;
                                     margin: 0px;
@@ -2489,8 +2493,8 @@ p {
                             .right {
                                 display: flex;
                                 flex-direction: column;
-                                width: 714px;
-                                height: 138px;
+                                width: 481px;
+                                height: 100px;
                                 margin-right: 5px;
 
 
@@ -2508,11 +2512,11 @@ p {
 
                                         p {
                                             font-family: "Lemon Medium";
-                                            font-size: 26px;
+                                            font-size: 17px;
                                             line-height: 30px;
                                             color: #E1E1E1;
                                             margin: 0px;
-                                            margin-top: 38.5px;
+                                            margin-top: 20px;
                                             margin-left: 23px;
                                         }
                                     }
@@ -2524,12 +2528,12 @@ p {
 
                                             margin: 0px;
                                             font-family: "Lemon Regular";
-                                            font-size: 16px;
+                                            font-size: 10px;
                                             line-height: 30px;
                                             color: rgba(255, 255, 255, 0.54);
-                                            margin-top: 15px;
+                                            margin-top: 0px;
                                             margin-left: 23px;
-                                            margin-bottom: 23px;
+                                            margin-bottom: 19px;
                                         }
                                     }
                                 }
@@ -2544,7 +2548,7 @@ p {
 
             .section5 {
                 .container {
-                    max-width: 715px;
+                    max-width: 714px;
                     margin: 0 auto;
                     margin-top: -80px;
 
@@ -2563,7 +2567,7 @@ p {
                     margin: 0 auto;
                     display: flex;
                     flex-direction: column;
-                    margin-top: 105px;
+                    margin-top: 50px;
 
                     .up {
                         display: flex;
@@ -2571,11 +2575,10 @@ p {
 
                         .left {
                             img {
-                                width: 232.29px;
-                                height: 67.12px;
+                                width: 146px;
                                 margin: 0px;
-                                margin-top: 58px;
-                                margin-right: 188px;
+                                margin-top: 35px;
+                                margin-right: 100px;
                             }
                         }
 
@@ -2589,28 +2592,30 @@ p {
                                 p {
                                     font-family: "Lemon Medium";
                                     font-weight: 500;
-                                    font-size: 26px;
-                                    line-height: 36px;
+                                    font-size: 16px;
+                                    line-height: 22px;
                                     color: #FFFFFF;
                                     margin: 0px;
-                                    margin-bottom: 35px;
+                                    margin-bottom: 10px;
 
                                 }
                             }
 
                             .down {
-                                margin-bottom: 66px;
+                                margin-bottom: 35px;
                                 text-align: start;
+                                width: 148px;
 
                                 p {
+                                    margin: 0px;
                                     a {
                                         font-family: "Lemon Regular";
-                                        font-size: 16px;
+                                        font-size: 10px;
                                         line-height: 30px;
                                         color: #A4ADB3;
                                         margin: 0px;
-                                        margin-right: 76px;
-                                        margin-bottom: 15px;
+                                       
+                                        margin-bottom: 0px;
                                         transition: all 0.2s ease-in-out;
 
                                         &:hover {
@@ -2621,17 +2626,20 @@ p {
                                 }
                             }
                         }
+                        #secondmid{
+                            margin-left: 70px;
+                        }
 
                         .right {
-                            margin-top: 107px;
+                            margin-top: 50px;
                             margin-left: 61.5px;
 
 
                             a {
                                 font-family: "Lemon Bold";
                                 padding: 7px;
-                                font-size: 16px;
-                                line-height: 22px;
+                                font-size: 14px;
+                                line-height: 20px;
                                 color: #000000;
                                 background: #FFFF27;
                                 border-radius: 3px;
@@ -2651,7 +2659,7 @@ p {
                         hr {
 
                             border: 2px solid #FFFFFF;
-                            margin-bottom: 12;
+                            margin-bottom: 10px;
                         }
                     }
 
@@ -2661,8 +2669,1320 @@ p {
                         p {
                             font-family: "Lemon Regular";
                             font-weight: 400;
-                            font-size: 13px;
-                            line-height: 18px;
+                            font-size: 9px;
+                            line-height: 13px;
+                            color: #FFFFFF;
+                            margin: 0px;
+                            margin-bottom: 11px;
+                        }
+                    }
+
+
+                }
+
+
+            }
+
+
+        }
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    html {
+        scroll-behavior: smooth;
+
+        body {
+            font-family: "Lemon Regular";
+            background-color: black;
+            margin: 0px;
+            padding: 0px;
+
+
+            .nav {
+                display: none;
+                max-width: 715px;
+                margin: 0 auto;
+
+                .container {
+
+                    display: flex;
+                    flex-direction: row;
+
+                    justify-content: space-between;
+                    margin: 0px 0px;
+                    padding-top: 15px;
+                    margin-bottom: 20px;
+
+
+                    .left {
+                        img {
+                            margin-top: 5px;
+                            width: 78.52px;
+                            
+                        }
+                    }
+
+                    .mid {
+                        display: flex;
+                        flex-direction: row;
+                        padding-top: 5px;
+
+                        a {
+                            font-family: "Lemon Medium";
+                            font-size: 11px;
+                            color: #FFFFFF;
+                            margin: 0px 40px;
+                            transition: 0.3s ease-in-out;
+
+                            &:hover {
+                                color: #FFFF27;
+
+                            }
+                        }
+                    }
+
+                    .right {
+                        padding-top: 0px;
+
+                        a {
+                            font-family: "Lemon Regular";
+                            font-size: 11px;
+                            padding: 7px 18px;
+                            border: 2px solid #FDFDFD;
+                            border-radius: 3px;
+                            transition: 0.3s ease-in-out;
+
+                            &:hover {
+                                color: #FFFF27;
+                                border: 2px solid #FFFF27;
+                            }
+                        }
+
+                    }
+                }
+
+            }
+
+            .section1 {
+
+                background-image: url(../img/bg1banner.png);
+                background-size: 100% 100%;
+
+                .container {
+                    max-width: 715px;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .left {
+                        .text1 {
+                            p {
+                                font-family: "Lemon Medium";
+                                font-size: 9px;
+                                color: #FFFF27;
+                                line-height: 13px;
+                                letter-spacing: 1.72em;
+                                margin-top: 80px;
+                            }
+                        }
+
+                        .text2 {
+                            p {
+                                font-family: "Zacbelx Extrabold";
+                                font-size: 90px;
+                                line-height: 129px;
+                                color: #FFFFFF;
+                                margin-top: -20px;
+                                margin-bottom: -20px;
+                            }
+                        }
+
+                        .text3 {
+                            p {
+                                max-width: 546px;
+                                font-family: "Lemon Regular";
+                                font-size: 10px;
+                                line-height: 24px;
+                                color: #C5CFD5;
+                            }
+                        }
+
+                        .buttons {
+                            display: flex;
+                            flex-direction: row;
+                            margin-top: 20px;
+
+
+
+                            .button1 {
+
+                                // img {
+                                //     width: 124px;
+                                //     height: 38px;
+                                // }
+                                margin-right: 20px;
+
+                                a {
+
+                                    background: #FFFF27;
+                                    border-radius: 3px;
+                                    font-family: "Lemon bold";
+                                    font-size: 11px;
+                                    line-height: 20px;
+                                    color: #050505;
+                                    padding: 10px 13px;
+
+                                    span {
+                                        margin-top: -3px;
+                                        overflow: hidden;
+                                    }
+                                }
+                            }
+
+                        }
+
+                        .downpart {
+                            display: flex;
+                            flex-direction: row;
+                            margin-top: 20px;
+                            margin-bottom: 40px;
+
+
+
+                            .left {
+                                p {
+                                    font-family: "Lemon Bold";
+                                    font-size: 30px;
+                                    line-height: 53px;
+                                    color: #FFFFFF;
+                                    margin: 0px;
+                                }
+                            }
+
+                            .mid {
+                                img {
+                                    width: 2px;
+                                    height: 40px;
+                                    margin: 0px 23px;
+                                    margin-top: 10px;
+
+                                }
+                            }
+
+                            .right {
+                                p {
+                                    font-family: "Lemon UltraLight";
+                                    font-size: 25px;
+                                    line-height: 35px;
+                                    color: #FFFFFF;
+                                    margin: 0px;
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+                    }
+
+                    .right {
+                        img {
+                            width: 363.71px;
+                        }
+                    }
+                }
+            }
+
+            #mainmodal {
+
+                font-family: Arial;
+
+                height: 100%;
+                width: 100%;
+                text-align: center;
+
+                .modalconent {
+                    background-image: url(../img/breakingnews.png);
+                    background-size: 100%;
+                    width: 100%;
+
+                }
+
+                .marquee {
+                    font-family: "Zacbelx Extrabold";
+                    color: #080707;
+                    padding: 5px;
+                    font-size: 42px;
+
+                }
+            }
+
+            .section2 {
+                background-image: url(../img/bgservices.png);
+                background-size: 100% 100%;
+                background-color: #151515;
+
+                .container {
+                    max-width: 715px;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: column;
+
+                    .texts {
+                        width: 100%;
+                        margin: 0 auto;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        justify-content: center;
+
+                        .text1 {
+                            p {
+                                font-family: "Lemon Medium";
+                                font-size: 9px;
+                                line-height: 13px;
+                                letter-spacing: 1.72em;
+                                color: #FFFF27;
+                                margin-top: 70px;
+                                margin-bottom: 22px;
+                            }
+
+                        }
+
+                        .text2 {
+                            img {
+                                margin: 0px;
+                                width: 371.94px;
+                                height: 71.97px;
+                            }
+                        }
+
+                        .text3 {
+
+                            width: 378px;
+                            margin: 0 auto;
+                            font-family: 'LEMON Regular';
+                            font-size: 10px;
+                            line-height: 24px;
+                            text-align: center;
+                            color: #C5CFD5;
+                            margin-top: 26px;
+                            margin-bottom: 44px;
+                        }
+                    }
+
+
+
+                    .innersection {
+                        .first{
+                            display: none;
+                        }
+                        .firstmobile{
+                            display: none;
+                        }
+                        .firsttablet {
+                            display: flex;
+                            width: 715px;
+                            margin: 0 auto;
+                            
+                            flex-direction: column;
+                            justify-content: space-between;
+                            // background: #292929;
+                            // border: 2px solid #181818;
+                            padding: 0px;
+
+                            .boxtablet {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                // background: #292929;
+                                // border: 2px solid #181818;
+                                padding: 17px;
+
+                                .lefttablet {
+                                    display: flex;
+                                    flex-direction: row;
+
+                                    p {
+                                        font-family: "Lemon Regular";
+                                        font-size: 22px;
+                                        color: white;
+                                        margin: 30px 0px;
+                                    }
+
+                                    .img1servicetablet {
+                                        display: block;
+                                        margin-top: 35px;
+                                        margin-left: 15px;
+                                        width: 19px;
+                                        height: 23.36px;
+                                    }
+
+
+
+                                    .img2servicetablet {
+                                        display: none;
+                                        margin-top: 35px;
+                                        margin-left: 15px;
+                                        width: 19px;
+                                        height: 23.36px;
+                                    }
+                                }
+
+                                .righttablet {
+                                    p {
+                                        display: none;
+                                        width: 331px;
+                                        font-family: "Lemon Regular";
+                                        font-size: 10px;
+                                        line-height: 24px;
+                                        color: #9A9A9A;
+                                    }
+
+                                    button {
+                                        margin-top: 35px;
+                                        background-color: transparent;
+                                        cursor: crosshair;
+                                        border: none;
+
+                                        img {
+                                            width: 34px;
+                                        }
+                                    }
+
+
+                                }
+                            }
+
+                            .lineservicetablet {
+                                width: 714px;
+                                border: 2px solid #434343;
+
+                            }
+
+                            #lineserviices4tablet {
+                                margin-bottom: 15px;
+                            }
+
+
+                        }
+                        
+
+                    }
+
+
+
+                }
+            }
+
+            .section3 {
+                .container {
+                    max-width: 715px;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 70px;
+
+                    .up {
+                        margin-bottom: 81px;
+
+                        .up1 {
+                            p {
+                                font-family: "Lemon Medium";
+                                font-size: 9px;
+                                line-height: 13px;
+                                letter-spacing: 1.72em;
+                                color: #FFFF27;
+                                margin-bottom: 25px;
+                            }
+                        }
+
+                        .down1 {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+
+                            .left {
+                                img {
+                                    width: 366.01px;
+                                }
+                            }
+
+                            .right {
+                                p {
+                                    font-family: "Lemon Regular";
+                                    font-size: 10px;
+                                    line-height: 24px;
+                                    color: #C5CFD5;
+                                    max-width: 290px;
+
+                                }
+                            }
+                        }
+                    }
+
+
+                    .down {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+
+                        .box {
+                            .up {
+                                margin-bottom: 0px;
+
+                                button {
+                                    border: none;
+                                    cursor: pointer;
+                                    appearance: none;
+                                    background-color: inherit;
+
+                                    img {
+                                        width: 330px;
+                                        height: 330px;
+
+
+                                    }
+
+                                    
+
+                                    .text {
+                                        display: none;
+                                        color: white;
+                                        font-size: 20px;
+                                        position: absolute;
+                                        text-align: center;
+                                        justify-content: center;
+                                        margin: 230px 145px;
+
+                                        img {
+                                            width: 233.5px;
+                                            height: 62px;
+                                        }
+                                    }
+
+                                    &:hover {
+                                        .overlay {
+                                            opacity: 1;
+                                        }
+                                    }
+
+                                }
+
+                                .modal1 {
+                                    display: none;
+                                    /* Hidden by default */
+                                    position: fixed;
+                                    opacity: 0;
+                                    /* Stay in place */
+                                    z-index: 1;
+                                    /* Sit on top */
+                                    padding-top: 5px;
+                                    padding-bottom: 5px;
+                                    /* Location of the box */
+                                    left: 0;
+                                    top: 0;
+                                    width: 100%;
+                                    /* Full width */
+                                    height: 100%;
+                                    /* Full height */
+                                    overflow: auto;
+                                    /* Enable scroll if needed */
+                                    background-color: rgb(0, 0, 0);
+                                    /* Fallback color */
+                                    background-color: rgba(0, 0, 0, 0.4);
+                                    /* Black w/ opacity */
+                                    transition: opacity 3s ease-in-out;
+
+
+
+                                    .modal-content1 {
+                                        width: 1120px;
+                                        margin: 0 auto;
+                                        background: #131313;
+                                        box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+                                        border-radius: 3px;
+
+                                        .containermodal1 {
+                                            width: 715px;
+                                            margin: 0 auto;
+
+
+                                            .up {
+                                                margin: 0px;
+                                                display: flex;
+                                                flex-direction: row;
+                                                padding-top: 30px;
+                                                justify-content: space-between;
+
+                                                .left {
+                                                    display: flex;
+                                                    flex-direction: row;
+
+                                                    a {
+                                                        font-family: "Lemon Medium";
+                                                        font-size: 18px;
+                                                        line-height: 25px;
+                                                        color: #FFFFFF;
+                                                    }
+
+                                                    .changetovideo {
+                                                        border: none;
+                                                        cursor: pointer;
+                                                        appearance: none;
+                                                        background-color: inherit;
+                                                        margin-right: 50px;
+                                                        font-family: "Lemon Medium";
+                                                        font-size: 18px;
+                                                        line-height: 25px;
+                                                        color: #FFFFFF;
+                                                    }
+
+                                                    .changetoimages {
+                                                        border: none;
+                                                        cursor: pointer;
+                                                        appearance: none;
+                                                        background-color: inherit;
+                                                        font-family: "Lemon Medium";
+                                                        font-size: 18px;
+                                                        line-height: 25px;
+                                                        color: #FFFF27;
+                                                    }
+
+                                                }
+
+                                                .right {
+                                                    button {
+                                                        border: none;
+                                                        cursor: pointer;
+                                                        appearance: none;
+                                                        background-color: inherit;
+
+                                                        img {
+                                                            width: 18px;
+                                                            height: 18px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+                                            .down {
+
+                                                .imagespart {
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    margin-top: 40px;
+                                                    justify-content: space-between;
+
+                                                    .left {
+                                                        img {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            margin-bottom: 30px;
+                                                        }
+
+                                                        .project11image {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            display: block;
+                                                        }
+
+                                                        .project12image {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            display: none;
+                                                        }
+
+                                                        .project13image {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            display: none;
+                                                        }
+
+                                                        .project14image {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            display: none;
+                                                        }
+
+                                                        .project15image {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            display: none;
+                                                        }
+                                                    }
+
+                                                    .right {
+                                                        max-width: 280px;
+
+                                                        .text1 {
+                                                            p {
+                                                                font-family: "Lemon Bold";
+                                                                font-size: 28px;
+                                                                line-height: 39px;
+                                                                color: #FFFFFF;
+                                                                margin: 0px;
+                                                            }
+                                                        }
+
+                                                        .text2 {
+                                                            p {
+                                                                font-family: "Lemon Regular";
+                                                                font-size: 12px;
+                                                                line-height: 30px;
+                                                                color: #C5CFD5;
+                                                                margin-top: 17px;
+                                                                margin-bottom: 75px;
+                                                            }
+                                                        }
+
+                                                        .selections {
+                                                            display: flex;
+                                                            flex-direction: row;
+                                                            flex-wrap: wrap;
+
+                                                            button {
+                                                                border: none;
+                                                                cursor: pointer;
+                                                                appearance: none;
+                                                                background-color: inherit;
+                                                                padding: 0px;
+                                                                margin: 3px;
+
+                                                                img {
+                                                                    width: 85px;
+                                                                    height: 85px;
+                                                                }
+                                                            }
+                                                        }
+
+                                                        .downparts {
+                                                            justify-content: center;
+                                                            text-align: center;
+                                                            display: flex;
+                                                            flex-direction: column;
+
+                                                            .ups {
+                                                                p {
+                                                                    font-family: "Lemon Regular";
+                                                                    font-size: 16px;
+                                                                    line-height: 22px;
+                                                                    color: rgba(197, 207, 213, 0.7);
+                                                                    margin: 0px;
+                                                                    margin-bottom: 24px;
+                                                                    margin-top: 200px;
+                                                                }
+                                                            }
+
+                                                            .downs {
+                                                                img {
+                                                                    width: 60px;
+                                                                    height: 60px;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                                .videopart {
+                                                    display: none;
+                                                    flex-direction: row;
+                                                    margin-top: 40px;
+                                                    justify-content: space-between;
+
+                                                    .left {
+                                                        video {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            margin-bottom: 30px;
+                                                        }
+
+                                                        .project11video {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            display: block;
+                                                        }
+
+                                                        .project12video {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            display: none;
+                                                        }
+
+                                                        .project13video {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            display: none;
+                                                        }
+
+                                                        .project14video {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            display: none;
+                                                        }
+
+                                                        .project15video {
+                                                            width: 737px;
+                                                            height: 737px;
+                                                            display: none;
+                                                        }
+                                                    }
+
+                                                    .right {
+                                                        max-width: 280px;
+
+                                                        .text1 {
+                                                            p {
+                                                                font-family: "Lemon Bold";
+                                                                font-size: 28px;
+                                                                line-height: 39px;
+                                                                color: #FFFFFF;
+                                                                margin: 0px;
+                                                            }
+                                                        }
+
+                                                        .text2 {
+                                                            p {
+                                                                font-family: "Lemon Regular";
+                                                                font-size: 12px;
+                                                                line-height: 30px;
+                                                                color: #C5CFD5;
+                                                                margin-top: 17px;
+                                                                margin-bottom: 75px;
+                                                            }
+                                                        }
+
+                                                        .selections {
+                                                            display: flex;
+                                                            flex-direction: row;
+                                                            flex-wrap: wrap;
+
+                                                            button {
+                                                                border: none;
+                                                                cursor: pointer;
+                                                                appearance: none;
+                                                                background-color: inherit;
+                                                                padding: 0px;
+                                                                margin: 3px;
+
+                                                                video {
+                                                                    width: 85px;
+                                                                    height: 85px;
+                                                                }
+                                                            }
+                                                        }
+
+                                                        .downparts {
+                                                            justify-content: center;
+                                                            text-align: center;
+                                                            display: flex;
+                                                            flex-direction: column;
+
+                                                            .ups {
+                                                                p {
+                                                                    font-family: "Lemon Regular";
+                                                                    font-size: 16px;
+                                                                    line-height: 22px;
+                                                                    color: rgba(197, 207, 213, 0.7);
+                                                                    margin: 0px;
+                                                                    margin-bottom: 24px;
+                                                                    margin-top: 200px;
+                                                                }
+                                                            }
+
+                                                            .downs {
+                                                                img {
+                                                                    width: 60px;
+                                                                    height: 60px;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .down {
+                                display: flex;
+                                flex-direction: column;
+
+                                .ups {
+                                    p {
+                                        font-family: "Lemon Medium";
+                                        font-size: 10px;
+                                        line-height: 14px;
+                                        color: #FFFFFF;
+                                        margin-top: 0px;
+                                        margin-bottom: 0px;
+                                    }
+                                }
+
+                                .downs {
+                                    p {
+                                        font-family: "Lemon Regular";
+                                        font-size: 9px;
+                                        line-height: 13px;
+                                        color: #A4ADB3;
+                                        margin-top: 6px;
+                                        margin-bottom: 40px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .section4 {
+                background-image: url(../img/bgcareer.png);
+                background-size: 100% 100%;
+                background-color: #151515;
+
+                .container {
+                    max-width: 715px;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: column;
+
+
+                    .up {
+                        display: flex;
+                        flex-direction: row;
+
+                        .left {
+                            flex: 0.2;
+
+                            img {
+                                width: 200px;
+                                margin-left: -70px;
+                                
+                            }
+
+                            .onpart {
+                                display: none;
+                            }
+
+                            .offpart {
+
+                                display: none;
+                            }
+                        }
+
+                        .mid {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            text-align: center;
+                            flex: 2;
+                            margin-top: 80px;
+
+                            .text1 {
+                                p {
+                                    font-family: "Lemon Medium";
+                                    font-size: 9px;
+                                    line-height: 13px;
+                                    letter-spacing: 1.72em;
+                                    color: #FFFF27;
+                                    margin-bottom: 40px;
+                                }
+                            }
+
+                            .text2 {
+                                img {
+                                    width: 430px;
+                                    margin-bottom: 20px;
+                                }
+                            }
+
+                            .text3 {
+                                max-width: 423;
+                                margin: 0 auto;
+
+                                p {
+                                    max-width: 423px;
+                                    font-family: "Lemon Regular";
+                                    font-size: 10px;
+                                    line-height: 30px;
+                                    text-align: center;
+                                    color: #C5CFD5;
+                                    margin-top: -20px;
+                                }
+                            }
+                        }
+
+                        .right {
+                            flex: 0.2;
+                            text-align: end;
+                            margin-top: 50px;
+
+
+                            // img {
+                            //     width: 59.76px;
+                            //     height: 29.88px;
+                            // }
+
+                            .switch {
+                                --secondary-container: #FFFF27;
+                                --primary: #050505;
+                                font-size: 17px;
+                                position: relative;
+                                display: inline-block;
+                                width: 50px;
+                                height: 24.49px;
+                            }
+
+                            .switch input {
+                                display: none;
+                                opacity: 0;
+                                width: 0;
+                                height: 0;
+                            }
+
+                            .slider {
+                                position: absolute;
+                                cursor: pointer;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                background-color: #D1D1D1;
+                                transition: .2s;
+                                border-radius: 30px;
+                            }
+
+                            .slider:before {
+                                position: absolute;
+                                content: "";
+                                height: 1.2em;
+                                width: 1.2em;
+                                border-radius: 20px;
+                                left: 0.2em;
+                                bottom: 0.1em;
+                                background-color: #050505;
+                                transition: .4s;
+                            }
+
+                            input:checked+.slider::before {
+                                background-color: var(--primary);
+                            }
+
+                            input:checked+.slider {
+                                background-color: var(--secondary-container);
+                            }
+
+                            input:focus+.slider {
+                                box-shadow: 0 0 1px var(--secondary-container);
+                            }
+
+                            input:checked+.slider:before {
+                                transform: translateX(1.30em);
+                            }
+                        }
+                    }
+
+                    .down {
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 20px;
+
+                        .first {
+                            display: flex;
+                            flex-direction: row;
+                            margin-bottom: 10px;
+
+                            .left {
+                                width: 229px;
+                                height: 309px;
+                                text-align: center;
+                                margin-right: 5px;
+                                background: rgba(12, 12, 12, 0.6);
+                                border: 1px solid #191919;
+                                border-radius: 4px;
+
+                                img {
+                                    width: 115px;
+                                    height: 115px;
+                                    margin-bottom: 0px;
+                                    margin-top: 80px;
+                                }
+
+                                p {
+                                    font-family: "Lemon Bold";
+                                    font-size: 19px;
+                                    line-height: 30px;
+                                    color: #E1E1E1;
+                                    margin: 0px;
+                                    margin-top: -20px;
+                                }
+                            }
+
+                            .right {
+                                display: flex;
+                                flex-direction: column;
+                                width: 481px;
+                                height: 100px;
+
+                                .text1 {
+                                    background: #0C0C0C;
+                                    opacity: 0.6;
+                                    border: 1px solid #191919;
+                                    border-radius: 4px;
+                                    padding: 0px;
+                                    margin: 0px;
+                                    margin-bottom: 5px;
+
+                                    .up {
+                                        margin: 0px;
+
+                                        p {
+                                            font-family: "Lemon Medium";
+                                            font-size: 17px;
+                                            line-height: 30px;
+                                            color: #E1E1E1;
+                                            margin: 0px;
+                                            margin-top: 20px;
+                                            margin-left: 23px;
+                                        }
+                                    }
+
+                                    .down {
+                                        margin: 0px;
+
+                                        p {
+
+                                            margin: 0px;
+                                            font-family: "Lemon Regular";
+                                            font-size: 10px;
+                                            line-height: 30px;
+                                            color: rgba(255, 255, 255, 0.54);
+                                            margin-top: 0px;
+                                            margin-left: 23px;
+                                            margin-bottom: 20px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .second {
+                            display: flex;
+                            flex-direction: row;
+                            margin-bottom: 10px;
+                            margin-bottom: 180px;
+
+                            .left {
+                                width: 229px;
+                                height: 414px;
+                                text-align: center;
+
+                                background: rgba(12, 12, 12, 0.6);
+                                border: 1px solid #191919;
+                                border-radius: 4px;
+
+                                img {
+                                    width: 85px;
+                                    height: 89px;
+                                    margin-bottom: 0px;
+                                    margin-top: 165.66px;
+                                }
+
+                                p {
+                                    font-family: "Lemon Bold";
+                                    font-size: 19px;
+                                    line-height: 30px;
+                                    color: #E1E1E1;
+                                    margin: 0px;
+                                    margin-top: 5px;
+                                }
+                            }
+
+                            .right {
+                                display: flex;
+                                flex-direction: column;
+                                width: 481px;
+                                height: 100px;
+                                margin-right: 5px;
+
+
+                                .text1 {
+                                    background: #0C0C0C;
+                                    opacity: 0.6;
+                                    border: 1px solid #191919;
+                                    border-radius: 4px;
+                                    padding: 0px;
+                                    margin: 0px;
+                                    margin-bottom: 5px;
+
+                                    .up {
+                                        margin: 0px;
+
+                                        p {
+                                            font-family: "Lemon Medium";
+                                            font-size: 17px;
+                                            line-height: 30px;
+                                            color: #E1E1E1;
+                                            margin: 0px;
+                                            margin-top: 20px;
+                                            margin-left: 23px;
+                                        }
+                                    }
+
+                                    .down {
+                                        margin: 0px;
+
+                                        p {
+
+                                            margin: 0px;
+                                            font-family: "Lemon Regular";
+                                            font-size: 10px;
+                                            line-height: 30px;
+                                            color: rgba(255, 255, 255, 0.54);
+                                            margin-top: 0px;
+                                            margin-left: 23px;
+                                            margin-bottom: 19px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+
+                    }
+
+                }
+            }
+
+            .section5 {
+                .container {
+                    max-width: 714px;
+                    margin: 0 auto;
+                    margin-top: -80px;
+
+                    margin-bottom: 0px;
+
+                    img {
+                        width: 715px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+
+            .section6 {
+                .container {
+                    max-width: 715px;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 50px;
+
+                    .up {
+                        display: flex;
+                        flex-direction: row;
+
+                        .left {
+                            img {
+                                width: 146px;
+                                margin: 0px;
+                                margin-top: 35px;
+                                margin-right: 100px;
+                            }
+                        }
+
+                        .mid {
+                            display: flex;
+                            flex-direction: column;
+
+
+                            .up {
+
+                                p {
+                                    font-family: "Lemon Medium";
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                    color: #FFFFFF;
+                                    margin: 0px;
+                                    margin-bottom: 10px;
+
+                                }
+                            }
+
+                            .down {
+                                margin-bottom: 35px;
+                                text-align: start;
+                                width: 148px;
+
+                                p {
+                                    margin: 0px;
+                                    a {
+                                        font-family: "Lemon Regular";
+                                        font-size: 10px;
+                                        line-height: 30px;
+                                        color: #A4ADB3;
+                                        margin: 0px;
+                                       
+                                        margin-bottom: 0px;
+                                        transition: all 0.2s ease-in-out;
+
+                                        &:hover {
+                                            color: #9A9A9A;
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+                        #secondmid{
+                            margin-left: 70px;
+                        }
+
+                        .right {
+                            margin-top: 50px;
+                            margin-left: 61.5px;
+
+
+                            a {
+                                font-family: "Lemon Bold";
+                                padding: 7px;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #000000;
+                                background: #FFFF27;
+                                border-radius: 3px;
+
+                            }
+
+                        }
+                    }
+
+
+                }
+
+                .down {
+                    text-align: center;
+
+                    .line {
+                        hr {
+
+                            border: 2px solid #FFFFFF;
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                    .text {
+                        margin: 0px;
+
+                        p {
+                            font-family: "Lemon Regular";
+                            font-weight: 400;
+                            font-size: 9px;
+                            line-height: 13px;
                             color: #FFFFFF;
                             margin: 0px;
                             margin-bottom: 11px;
@@ -2681,7 +4001,4 @@ p {
 }
 
 
-// Mobile styles
-@media only screen and (max-width: 767px) {
-    
-}
+
