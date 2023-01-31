@@ -1690,6 +1690,7 @@ p {
   }
   html body .section4 .container .up .left {
     flex: 0.2;
+    margin-right: -65px;
   }
   html body .section4 .container .up .left img {
     width: 200px;
@@ -2038,7 +2039,7 @@ p {
   }
   html body .nav {
     display: none;
-    max-width: 715px;
+    max-width: 330px;
     margin: 0 auto;
   }
   html body .nav .container {
@@ -2088,32 +2089,32 @@ p {
     background-size: 100% 100%;
   }
   html body .section1 .container {
-    max-width: 715px;
+    max-width: 330px;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
   }
   html body .section1 .container .left .text1 p {
     font-family: "Lemon Medium";
-    font-size: 9px;
+    font-size: 7px;
     color: #FFFF27;
-    line-height: 13px;
+    line-height: 10px;
     letter-spacing: 1.72em;
-    margin-top: 80px;
+    margin-top: 70px;
   }
   html body .section1 .container .left .text2 p {
     font-family: "Zacbelx Extrabold";
-    font-size: 90px;
-    line-height: 129px;
+    font-size: 70px;
+    line-height: 100px;
     color: #FFFFFF;
-    margin-top: -20px;
-    margin-bottom: -20px;
+    margin-top: -10px;
+    margin-bottom: -10px;
   }
   html body .section1 .container .left .text3 p {
-    max-width: 546px;
+    max-width: 299px;
     font-family: "Lemon Regular";
-    font-size: 10px;
+    font-size: 9px;
     line-height: 24px;
     color: #C5CFD5;
   }
@@ -2130,7 +2131,7 @@ p {
     border-radius: 3px;
     font-family: "Lemon bold";
     font-size: 11px;
-    line-height: 20px;
+    line-height: 15px;
     color: #050505;
     padding: 10px 13px;
   }
@@ -2141,7 +2142,7 @@ p {
   html body .section1 .container .left .downpart {
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-bottom: 40px;
   }
   html body .section1 .container .left .downpart .left p {
@@ -2153,17 +2154,24 @@ p {
   }
   html body .section1 .container .left .downpart .mid img {
     width: 2px;
-    height: 40px;
+    height: 35px;
     margin: 0px 23px;
     margin-top: 10px;
   }
+  html body .section1 .container .left .downpart .right {
+    display: flex;
+  }
   html body .section1 .container .left .downpart .right p {
+    display: flex;
     font-family: "Lemon UltraLight";
-    font-size: 25px;
-    line-height: 35px;
+    font-size: 22px;
+    line-height: 31px;
     color: #FFFFFF;
     margin: 0px;
     margin-top: 10px;
+  }
+  html body .section1 .container .right {
+    display: none;
   }
   html body .section1 .container .right img {
     width: 363.71px;
@@ -2183,7 +2191,7 @@ p {
     font-family: "Zacbelx Extrabold";
     color: #080707;
     padding: 5px;
-    font-size: 42px;
+    font-size: 30px;
   }
   html body .section2 {
     background-image: url(../img/bgservices.png);
@@ -2191,7 +2199,7 @@ p {
     background-color: #151515;
   }
   html body .section2 .container {
-    max-width: 715px;
+    max-width: 330px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -2206,23 +2214,22 @@ p {
   }
   html body .section2 .container .texts .text1 p {
     font-family: "Lemon Medium";
-    font-size: 9px;
-    line-height: 13px;
+    font-size: 7px;
+    line-height: 10px;
     letter-spacing: 1.72em;
     color: #FFFF27;
-    margin-top: 70px;
-    margin-bottom: 22px;
+    margin-top: 45px;
+    margin-bottom: 15px;
   }
   html body .section2 .container .texts .text2 img {
     margin: 0px;
-    width: 371.94px;
-    height: 71.97px;
+    width: 299.59px;
   }
   html body .section2 .container .texts .text3 {
-    width: 378px;
+    width: 300px;
     margin: 0 auto;
     font-family: "LEMON Regular";
-    font-size: 10px;
+    font-size: 9px;
     line-height: 24px;
     text-align: center;
     color: #C5CFD5;
@@ -2232,107 +2239,175 @@ p {
   html body .section2 .container .innersection .first {
     display: none;
   }
-  html body .section2 .container .innersection .firstmobile {
+  html body .section2 .container .innersection .firsttablet {
     display: none;
   }
-  html body .section2 .container .innersection .firsttablet {
+  html body .section2 .container .innersection .firstmobile {
     display: flex;
-    width: 715px;
+    width: 330px;
     margin: 0 auto;
     flex-direction: column;
     justify-content: space-between;
     padding: 0px;
   }
-  html body .section2 .container .innersection .firsttablet .boxtablet {
+  html body .section2 .container .innersection .firstmobile .boxmobile {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     padding: 17px;
+    width: 300px;
   }
-  html body .section2 .container .innersection .firsttablet .boxtablet .lefttablet {
+  html body .section2 .container .innersection .firstmobile .boxmobile .leftmobile {
     display: flex;
     flex-direction: row;
   }
-  html body .section2 .container .innersection .firsttablet .boxtablet .lefttablet p {
+  html body .section2 .container .innersection .firstmobile .boxmobile .leftmobile p {
     font-family: "Lemon Regular";
     font-size: 22px;
     color: white;
     margin: 30px 0px;
   }
-  html body .section2 .container .innersection .firsttablet .boxtablet .lefttablet .img1servicetablet {
+  html body .section2 .container .innersection .firstmobile .boxmobile .leftmobile .img1servicemobile {
     display: block;
     margin-top: 35px;
     margin-left: 15px;
     width: 19px;
     height: 23.36px;
   }
-  html body .section2 .container .innersection .firsttablet .boxtablet .lefttablet .img2servicetablet {
+  html body .section2 .container .innersection .firstmobile .boxmobile .leftmobile .img2servicemobile {
     display: none;
     margin-top: 35px;
     margin-left: 15px;
     width: 19px;
     height: 23.36px;
   }
-  html body .section2 .container .innersection .firsttablet .boxtablet .righttablet p {
+  html body .section2 .container .innersection .firstmobile .boxmobile .rightmobile1 {
+    margin: -62px 0px 0px 250px;
+  }
+  html body .section2 .container .innersection .firstmobile .boxmobile .rightmobile1 p {
     display: none;
-    width: 331px;
+    width: 300px;
     font-family: "Lemon Regular";
-    font-size: 10px;
+    font-size: 9px;
     line-height: 24px;
     color: #9A9A9A;
   }
-  html body .section2 .container .innersection .firsttablet .boxtablet .righttablet button {
-    margin-top: 35px;
+  html body .section2 .container .innersection .firstmobile .boxmobile .rightmobile1 button {
+    overflow-y: auto;
     background-color: transparent;
     cursor: crosshair;
     border: none;
   }
-  html body .section2 .container .innersection .firsttablet .boxtablet .righttablet button img {
+  html body .section2 .container .innersection .firstmobile .boxmobile .rightmobile1 button img {
     width: 34px;
+    overflow: auto;
   }
-  html body .section2 .container .innersection .firsttablet .lineservicetablet {
-    width: 714px;
+  html body .section2 .container .innersection .firstmobile .boxmobile .rightmobile2 {
+    margin: -62px 0px 0px 250px;
+  }
+  html body .section2 .container .innersection .firstmobile .boxmobile .rightmobile2 p {
+    display: none;
+    width: 300px;
+    font-family: "Lemon Regular";
+    font-size: 9px;
+    line-height: 24px;
+    color: #9A9A9A;
+  }
+  html body .section2 .container .innersection .firstmobile .boxmobile .rightmobile2 button {
+    overflow-y: auto;
+    background-color: transparent;
+    cursor: crosshair;
+    border: none;
+  }
+  html body .section2 .container .innersection .firstmobile .boxmobile .rightmobile2 button img {
+    width: 34px;
+    overflow: auto;
+  }
+  html body .section2 .container .innersection .firstmobile .boxmobile .rightmobile3 {
+    margin: -62px 0px 0px 250px;
+  }
+  html body .section2 .container .innersection .firstmobile .boxmobile .rightmobile3 p {
+    display: none;
+    width: 300px;
+    font-family: "Lemon Regular";
+    font-size: 9px;
+    line-height: 24px;
+    color: #9A9A9A;
+  }
+  html body .section2 .container .innersection .firstmobile .boxmobile .rightmobile3 button {
+    overflow-y: auto;
+    background-color: transparent;
+    cursor: crosshair;
+    border: none;
+  }
+  html body .section2 .container .innersection .firstmobile .boxmobile .rightmobile3 button img {
+    width: 34px;
+    overflow: auto;
+  }
+  html body .section2 .container .innersection .firstmobile .boxmobile .rightmobile4 {
+    margin: -62px 0px 0px 250px;
+  }
+  html body .section2 .container .innersection .firstmobile .boxmobile .rightmobile4 p {
+    display: none;
+    width: 300px;
+    font-family: "Lemon Regular";
+    font-size: 9px;
+    line-height: 24px;
+    color: #9A9A9A;
+  }
+  html body .section2 .container .innersection .firstmobile .boxmobile .rightmobile4 button {
+    overflow-y: auto;
+    background-color: transparent;
+    cursor: crosshair;
+    border: none;
+  }
+  html body .section2 .container .innersection .firstmobile .boxmobile .rightmobile4 button img {
+    width: 34px;
+    overflow: auto;
+  }
+  html body .section2 .container .innersection .firstmobile .lineservicemobile {
+    width: 330px;
     border: 2px solid #434343;
   }
-  html body .section2 .container .innersection .firsttablet #lineserviices4tablet {
+  html body .section2 .container .innersection .firstmobile #lineserviices4mobile {
     margin-bottom: 15px;
   }
   html body .section3 .container {
-    max-width: 715px;
+    max-width: 330px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    margin-top: 70px;
+    margin-top: 50px;
   }
   html body .section3 .container .up {
-    margin-bottom: 81px;
+    margin-bottom: 25px;
   }
   html body .section3 .container .up .up1 p {
     font-family: "Lemon Medium";
-    font-size: 9px;
-    line-height: 13px;
+    font-size: 7px;
+    line-height: 10px;
     letter-spacing: 1.72em;
     color: #FFFF27;
     margin-bottom: 25px;
   }
   html body .section3 .container .up .down1 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
   }
   html body .section3 .container .up .down1 .left img {
-    width: 366.01px;
+    width: 300px;
   }
   html body .section3 .container .up .down1 .right p {
     font-family: "Lemon Regular";
-    font-size: 10px;
+    font-size: 9px;
     line-height: 24px;
     color: #C5CFD5;
     max-width: 290px;
   }
   html body .section3 .container .down {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
   }
@@ -2346,6 +2421,7 @@ p {
        -moz-appearance: none;
             appearance: none;
     background-color: inherit;
+    padding: 0px;
   }
   html body .section3 .container .down .box .up button img {
     width: 330px;
@@ -2667,7 +2743,7 @@ p {
     background-color: #151515;
   }
   html body .section4 .container {
-    max-width: 715px;
+    max-width: 330px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -2680,8 +2756,8 @@ p {
     flex: 0.2;
   }
   html body .section4 .container .up .left img {
-    width: 200px;
-    margin-left: -70px;
+    width: 100px;
+    margin-left: -50px;
   }
   html body .section4 .container .up .left .onpart {
     display: none;
@@ -2695,18 +2771,19 @@ p {
     justify-content: center;
     text-align: center;
     flex: 2;
-    margin-top: 80px;
+    margin-top: 45px;
+    margin-left: -10px;
   }
   html body .section4 .container .up .mid .text1 p {
     font-family: "Lemon Medium";
-    font-size: 9px;
-    line-height: 13px;
+    font-size: 7px;
+    line-height: 10px;
     letter-spacing: 1.72em;
     color: #FFFF27;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   html body .section4 .container .up .mid .text2 img {
-    width: 430px;
+    width: 254px;
     margin-bottom: 20px;
   }
   html body .section4 .container .up .mid .text3 {
@@ -2714,12 +2791,12 @@ p {
     margin: 0 auto;
   }
   html body .section4 .container .up .mid .text3 p {
-    max-width: 423px;
+    max-width: 254px;
     font-family: "Lemon Regular";
-    font-size: 10px;
-    line-height: 30px;
+    font-size: 9px;
+    line-height: 24px;
     text-align: center;
-    color: #C5CFD5;
+    color: #C5CFD4;
     margin-top: -20px;
   }
   html body .section4 .container .up .right {
@@ -2733,8 +2810,8 @@ p {
     font-size: 17px;
     position: relative;
     display: inline-block;
-    width: 50px;
-    height: 24.49px;
+    width: 45px;
+    height: 22.04px;
   }
   html body .section4 .container .up .right .switch input {
     display: none;
@@ -2756,11 +2833,11 @@ p {
   html body .section4 .container .up .right .slider:before {
     position: absolute;
     content: "";
-    height: 1.2em;
-    width: 1.2em;
+    height: 1.1em;
+    width: 1.1em;
     border-radius: 20px;
-    left: 0.2em;
-    bottom: 0.1em;
+    left: 0.1em;
+    bottom: 0.05em;
     background-color: #050505;
     transition: 0.4s;
   }
@@ -2783,23 +2860,25 @@ p {
   }
   html body .section4 .container .down .first {
     display: flex;
-    flex-direction: row;
-    margin-bottom: 10px;
+    flex-direction: column;
+    margin-bottom: 5px;
   }
   html body .section4 .container .down .first .left {
-    width: 229px;
-    height: 309px;
+    width: 330px;
+    height: 184px;
     text-align: center;
-    margin-right: 5px;
     background: rgba(12, 12, 12, 0.6);
     border: 1px solid #191919;
     border-radius: 4px;
+    display: flex;
+    flex-direction: row;
   }
   html body .section4 .container .down .first .left img {
-    width: 115px;
-    height: 115px;
+    width: 110.5px;
+    height: 114px;
     margin-bottom: 0px;
-    margin-top: 80px;
+    margin-top: 40px;
+    margin-left: 66px;
   }
   html body .section4 .container .down .first .left p {
     font-family: "Lemon Bold";
@@ -2807,7 +2886,6 @@ p {
     line-height: 30px;
     color: #E1E1E1;
     margin: 0px;
-    margin-top: -20px;
   }
   html body .section4 .container .down .first .right {
     display: flex;
@@ -2929,7 +3007,7 @@ p {
     margin: 0 auto;
   }
   html body .section6 .container {
-    max-width: 715px;
+    max-width: 330px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;

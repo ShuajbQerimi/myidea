@@ -550,6 +550,355 @@ $('#textservicess4tablet').click(function () {
 });
 
 
+$('#butoniservice1mobile').click(function () {
+    $('#boxmobile').css({
+        'display': 'flex',
+        'flex-direction': 'column',
+        'width':'300px'
+    });
+    $('#img1service1mobile').css({
+        'display': 'none',
+        "transition":"0.5s ease",
+    });
+    $('#img2service1mobile').css({
+        'display': 'block',
+        "transition":"0.5s ease",
+    });
+    $('#butoniservice1mobile').css({
+        'display': 'none',
+        "transition":"0.5s ease",
+        'margin':'0px 0px 0px 0px',
+    });
+    $('#lineserviices1mobile').css({
+        'display': 'none',
+        "transition":"0.5s ease",
+    });
+    $('#textgraphhic1mobile').css({
+        'padding-bottom': '0px',
+        "transition":"0.5s ease",
+    });
+    $('#textservicess1mobile').css({
+        'display': 'block',
+        'cursor':'pointer',
+        "transition":"0.5s ease",
+        'margin':'0px 0px 0px 0px',
+    });
+    $('#kutiatext1mobile').css({
+        'background': '#292929',
+        'border': '#2px solid #181818',
+        'width': '330px',
+        'margin-bottom': '12px',
+        "transition":"0.5s ease",
+    });
+    $('#rightmobile1').css({
+        'margin':'0px',
+
+    });
+    
+});
+$('#textservicess1mobile').click(function () {
+    $('#img1service1mobile').css({
+        'display': 'flex',
+        "transition":"0.5s ease"
+    });
+    $('#img2service1mobile').css({
+        'display': 'none',
+        "transition":"0.5s ease"
+    });
+    $('#butoniservice1mobile').css({
+        'display': 'flex',
+        "transition":"0.5s ease",
+        'margin':'0px 0px 0px 0px',
+    });
+    $('#lineserviices1mobile').css({
+        'display': 'flex',
+        "transition":"0.5s ease",
+        'width': ' 328px'
+    });
+    $('#textgraphhic1mobile').css({
+        'padding-bottom': '0px',
+        "transition":"0.5s ease"
+    });
+    $('#textservicess1mobile').css({
+        'display': 'none',
+        'cursor':'pointer',
+        "transition":"0.5s ease",
+        'margin':'0px 0px 0px 0px',
+    });
+    $('#kutiatext1mobile').css({
+        'background': 'none',
+        "transition":"0.5s ease"
+        
+    });
+    $('#rightmobile1').css({
+        'margin':'-62px 0px 0px 250px',
+
+    });
+});
+
+$('#butoniservice2mobile').click(function () {
+    $('#boxmobile').css({
+        'display': 'flex',
+        'flex-direction': 'column',
+        'width':'300px'
+    });
+    $('#img1service2mobile').css({
+        'display': 'none',
+        "transition":"0.5s ease",
+    });
+    $('#img2service2mobile').css({
+        'display': 'block',
+        "transition":"0.5s ease",
+    });
+    $('#butoniservice2mobile').css({
+        'display': 'none',
+        "transition":"0.5s ease",
+        'margin':'0px 0px 0px 0px',
+    });
+    $('#lineserviices2mobile').css({
+        'display': 'none',
+        "transition":"0.5s ease",
+    });
+    $('#textgraphhic2mobile').css({
+        'padding-bottom': '0px',
+        "transition":"0.5s ease",
+    });
+    $('#textservicess2mobile').css({
+        'display': 'block',
+        'cursor':'pointer',
+        "transition":"0.5s ease",
+        'margin':'0px 0px 0px 0px',
+    });
+    $('#kutiatext2mobile').css({
+        'background': '#292929',
+        'border': '#2px solid #181818',
+        'width': '330px',
+        'margin-bottom': '12px',
+        "transition":"0.5s ease",
+    });
+    $('#rightmobile2').css({
+        'margin':'0px',
+
+    });
+    
+});
+$('#textservicess2mobile').click(function () {
+    $('#img1service2mobile').css({
+        'display': 'flex',
+        "transition":"0.5s ease"
+    });
+    $('#img2service2mobile').css({
+        'display': 'none',
+        "transition":"0.5s ease"
+    });
+    $('#butoniservice2mobile').css({
+        'display': 'flex',
+        "transition":"0.5s ease",
+        'margin':'0px 0px 0px 0px',
+    });
+    $('#lineserviices2mobile').css({
+        'display': 'flex',
+        "transition":"0.5s ease",
+        'width': ' 328px'
+    });
+    $('#textgraphhic2mobile').css({
+        'padding-bottom': '0px',
+        "transition":"0.5s ease"
+    });
+    $('#textservicess2mobile').css({
+        'display': 'none',
+        'cursor':'pointer',
+        "transition":"0.5s ease",
+        'margin':'0px 0px 0px 0px',
+    });
+    $('#kutiatext2mobile').css({
+        'background': 'none',
+        "transition":"0.5s ease"
+        
+    });
+    $('#rightmobile2').css({
+        'margin':'-62px 0px 0px 250px',
+
+    });
+});
+
+$('#butoniservice3mobile').click(function () {
+    $('#boxmobile').css({
+        'display': 'flex',
+        'flex-direction': 'column',
+        'width':'300px'
+    });
+    $('#img1service3mobile').css({
+        'display': 'none',
+        "transition":"0.5s ease",
+    });
+    $('#img2service3mobile').css({
+        'display': 'block',
+        "transition":"0.5s ease",
+    });
+    $('#butoniservice3mobile').css({
+        'display': 'none',
+        "transition":"0.5s ease",
+        'margin':'0px 0px 0px 0px',
+    });
+    $('#lineserviices3mobile').css({
+        'display': 'none',
+        "transition":"0.5s ease",
+    });
+    $('#textgraphhic3mobile').css({
+        'padding-bottom': '0px',
+        "transition":"0.5s ease",
+    });
+    $('#textservicess3mobile').css({
+        'display': 'block',
+        'cursor':'pointer',
+        "transition":"0.5s ease",
+        'margin':'0px 0px 0px 0px',
+    });
+    $('#kutiatext3mobile').css({
+        'background': '#292929',
+        'border': '#2px solid #181818',
+        'width': '330px',
+        'margin-bottom': '12px',
+        "transition":"0.5s ease",
+    });
+    $('#rightmobile3').css({
+        'margin':'0px',
+
+    });
+    
+});
+$('#textservicess3mobile').click(function () {
+    $('#img1service3mobile').css({
+        'display': 'flex',
+        "transition":"0.5s ease"
+    });
+    $('#img2service3mobile').css({
+        'display': 'none',
+        "transition":"0.5s ease"
+    });
+    $('#butoniservice3mobile').css({
+        'display': 'flex',
+        "transition":"0.5s ease",
+        'margin':'0px 0px 0px 0px',
+    });
+    $('#lineserviices3mobile').css({
+        'display': 'flex',
+        "transition":"0.5s ease",
+        'width': ' 328px'
+    });
+    $('#textgraphhic3mobile').css({
+        'padding-bottom': '0px',
+        "transition":"0.5s ease"
+    });
+    $('#textservicess3mobile').css({
+        'display': 'none',
+        'cursor':'pointer',
+        "transition":"0.5s ease",
+        'margin':'0px 0px 0px 0px',
+    });
+    $('#kutiatext3mobile').css({
+        'background': 'none',
+        "transition":"0.5s ease"
+        
+    });
+    $('#rightmobile3').css({
+        'margin':'-62px 0px 0px 250px',
+
+    });
+});
+
+
+
+
+$('#butoniservice4mobile').click(function () {
+    $('#boxmobile').css({
+        'display': 'flex',
+        'flex-direction': 'column',
+        'width':'300px'
+    });
+    $('#img1service4mobile').css({
+        'display': 'none',
+        "transition":"0.5s ease",
+    });
+    $('#img2service4mobile').css({
+        'display': 'block',
+        "transition":"0.5s ease",
+    });
+    $('#butoniservice4mobile').css({
+        'display': 'none',
+        "transition":"0.5s ease",
+        'margin':'0px 0px 0px 0px',
+    });
+    $('#lineserviices4mobile').css({
+        'display': 'none',
+        "transition":"0.5s ease",
+    });
+    $('#textgraphhic4mobile').css({
+        'padding-bottom': '0px',
+        "transition":"0.5s ease",
+    });
+    $('#textservicess4mobile').css({
+        'display': 'block',
+        'cursor':'pointer',
+        "transition":"0.5s ease",
+        'margin':'0px 0px 0px 0px',
+    });
+    $('#kutiatext4mobile').css({
+        'background': '#292929',
+        'border': '#2px solid #181818',
+        'width': '330px',
+        'margin-bottom': '12px',
+        "transition":"0.5s ease",
+    });
+    $('#rightmobile4').css({
+        'margin':'0px',
+
+    });
+    
+});
+$('#textservicess4mobile').click(function () {
+    $('#img1service4mobile').css({
+        'display': 'flex',
+        "transition":"0.5s ease"
+    });
+    $('#img2service4mobile').css({
+        'display': 'none',
+        "transition":"0.5s ease"
+    });
+    $('#butoniservice4mobile').css({
+        'display': 'flex',
+        "transition":"0.5s ease",
+        'margin':'0px 0px 0px 0px',
+    });
+    $('#lineserviices4mobile').css({
+        'display': 'flex',
+        "transition":"0.5s ease",
+        'width': ' 328px'
+    });
+    $('#textgraphhic4mobile').css({
+        'padding-bottom': '0px',
+        "transition":"0.5s ease"
+    });
+    $('#textservicess4mobile').css({
+        'display': 'none',
+        'cursor':'pointer',
+        "transition":"0.5s ease",
+        'margin':'0px 0px 0px 0px',
+    });
+    $('#kutiatext4mobile').css({
+        'background': 'none',
+        "transition":"0.5s ease"
+        
+    });
+    $('#rightmobile4').css({
+        'margin':'-62px 0px 0px 250px',
+
+    });
+});
+
+
+
 
 let active = false
 

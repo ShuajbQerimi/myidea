@@ -428,10 +428,11 @@ p {
 
                         }
 
-                        .firsttablet{
+                        .firsttablet {
                             display: none;
                         }
-                        .firstmobile{
+
+                        .firstmobile {
                             display: none;
                         }
 
@@ -1407,7 +1408,7 @@ p {
                         img {
                             margin-top: 5px;
                             width: 78.52px;
-                            
+
                         }
                     }
 
@@ -1661,17 +1662,19 @@ p {
 
 
                     .innersection {
-                        .first{
+                        .first {
                             display: none;
                         }
-                        .firstmobile{
+
+                        .firstmobile {
                             display: none;
                         }
+
                         .firsttablet {
                             display: flex;
                             width: 715px;
                             margin: 0 auto;
-                            
+
                             flex-direction: column;
                             justify-content: space-between;
                             // background: #292929;
@@ -1753,7 +1756,7 @@ p {
 
 
                         }
-                        
+
 
                     }
 
@@ -1832,7 +1835,7 @@ p {
 
                                     }
 
-                                    
+
 
                                     .text {
                                         display: none;
@@ -2245,11 +2248,13 @@ p {
 
                         .left {
                             flex: 0.2;
+                            margin-right: -65px;
 
                             img {
                                 width: 200px;
                                 margin-left: -70px;
-                                
+
+
                             }
 
                             .onpart {
@@ -2608,13 +2613,14 @@ p {
 
                                 p {
                                     margin: 0px;
+
                                     a {
                                         font-family: "Lemon Regular";
                                         font-size: 10px;
                                         line-height: 30px;
                                         color: #A4ADB3;
                                         margin: 0px;
-                                       
+
                                         margin-bottom: 0px;
                                         transition: all 0.2s ease-in-out;
 
@@ -2626,7 +2632,8 @@ p {
                                 }
                             }
                         }
-                        #secondmid{
+
+                        #secondmid {
                             margin-left: 70px;
                         }
 
@@ -2701,7 +2708,7 @@ p {
 
             .nav {
                 display: none;
-                max-width: 715px;
+                max-width: 330px;
                 margin: 0 auto;
 
                 .container {
@@ -2719,7 +2726,7 @@ p {
                         img {
                             margin-top: 5px;
                             width: 78.52px;
-                            
+
                         }
                     }
 
@@ -2770,40 +2777,40 @@ p {
                 background-size: 100% 100%;
 
                 .container {
-                    max-width: 715px;
+                    max-width: 330px;
                     margin: 0 auto;
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
                     justify-content: space-between;
 
                     .left {
                         .text1 {
                             p {
                                 font-family: "Lemon Medium";
-                                font-size: 9px;
+                                font-size: 7px;
                                 color: #FFFF27;
-                                line-height: 13px;
+                                line-height: 10px;
                                 letter-spacing: 1.72em;
-                                margin-top: 80px;
+                                margin-top: 70px;
                             }
                         }
 
                         .text2 {
                             p {
                                 font-family: "Zacbelx Extrabold";
-                                font-size: 90px;
-                                line-height: 129px;
+                                font-size: 70px;
+                                line-height: 100px;
                                 color: #FFFFFF;
-                                margin-top: -20px;
-                                margin-bottom: -20px;
+                                margin-top: -10px;
+                                margin-bottom: -10px;
                             }
                         }
 
                         .text3 {
                             p {
-                                max-width: 546px;
+                                max-width: 299px;
                                 font-family: "Lemon Regular";
-                                font-size: 10px;
+                                font-size: 9px;
                                 line-height: 24px;
                                 color: #C5CFD5;
                             }
@@ -2830,7 +2837,7 @@ p {
                                     border-radius: 3px;
                                     font-family: "Lemon bold";
                                     font-size: 11px;
-                                    line-height: 20px;
+                                    line-height: 15px;
                                     color: #050505;
                                     padding: 10px 13px;
 
@@ -2846,7 +2853,7 @@ p {
                         .downpart {
                             display: flex;
                             flex-direction: row;
-                            margin-top: 20px;
+                            margin-top: 15px;
                             margin-bottom: 40px;
 
 
@@ -2864,7 +2871,7 @@ p {
                             .mid {
                                 img {
                                     width: 2px;
-                                    height: 40px;
+                                    height: 35px;
                                     margin: 0px 23px;
                                     margin-top: 10px;
 
@@ -2872,10 +2879,13 @@ p {
                             }
 
                             .right {
+                                display: flex;
+
                                 p {
+                                    display: flex;
                                     font-family: "Lemon UltraLight";
-                                    font-size: 25px;
-                                    line-height: 35px;
+                                    font-size: 22px;
+                                    line-height: 31px;
                                     color: #FFFFFF;
                                     margin: 0px;
                                     margin-top: 10px;
@@ -2885,6 +2895,8 @@ p {
                     }
 
                     .right {
+                        display: none;
+
                         img {
                             width: 363.71px;
                         }
@@ -2911,7 +2923,7 @@ p {
                     font-family: "Zacbelx Extrabold";
                     color: #080707;
                     padding: 5px;
-                    font-size: 42px;
+                    font-size: 30px;
 
                 }
             }
@@ -2922,7 +2934,7 @@ p {
                 background-color: #151515;
 
                 .container {
-                    max-width: 715px;
+                    max-width: 330px;
                     margin: 0 auto;
                     display: flex;
                     flex-direction: column;
@@ -2938,12 +2950,12 @@ p {
                         .text1 {
                             p {
                                 font-family: "Lemon Medium";
-                                font-size: 9px;
-                                line-height: 13px;
+                                font-size: 7px;
+                                line-height: 10px;
                                 letter-spacing: 1.72em;
                                 color: #FFFF27;
-                                margin-top: 70px;
-                                margin-bottom: 22px;
+                                margin-top: 45px;
+                                margin-bottom: 15px;
                             }
 
                         }
@@ -2951,17 +2963,16 @@ p {
                         .text2 {
                             img {
                                 margin: 0px;
-                                width: 371.94px;
-                                height: 71.97px;
+                                width: 299.59px;
                             }
                         }
 
                         .text3 {
 
-                            width: 378px;
+                            width: 300px;
                             margin: 0 auto;
                             font-family: 'LEMON Regular';
-                            font-size: 10px;
+                            font-size: 9px;
                             line-height: 24px;
                             text-align: center;
                             color: #C5CFD5;
@@ -2973,32 +2984,36 @@ p {
 
 
                     .innersection {
-                        .first{
+                        .first {
                             display: none;
                         }
-                        .firstmobile{
-                            display: none;
-                        }
+
                         .firsttablet {
+                            display: none;
+                        }
+
+                        .firstmobile {
+
                             display: flex;
-                            width: 715px;
+                            width: 330px;
                             margin: 0 auto;
-                            
+
                             flex-direction: column;
                             justify-content: space-between;
                             // background: #292929;
                             // border: 2px solid #181818;
                             padding: 0px;
 
-                            .boxtablet {
+                            .boxmobile {
                                 display: flex;
-                                flex-direction: row;
+                                flex-direction: column;
                                 justify-content: space-between;
                                 // background: #292929;
                                 // border: 2px solid #181818;
                                 padding: 17px;
+                                width: 300px;
 
-                                .lefttablet {
+                                .leftmobile {
                                     display: flex;
                                     flex-direction: row;
 
@@ -3009,7 +3024,7 @@ p {
                                         margin: 30px 0px;
                                     }
 
-                                    .img1servicetablet {
+                                    .img1servicemobile {
                                         display: block;
                                         margin-top: 35px;
                                         margin-left: 15px;
@@ -3019,7 +3034,7 @@ p {
 
 
 
-                                    .img2servicetablet {
+                                    .img2servicemobile {
                                         display: none;
                                         margin-top: 35px;
                                         margin-left: 15px;
@@ -3028,24 +3043,109 @@ p {
                                     }
                                 }
 
-                                .righttablet {
+                                .rightmobile1 {
+                                    margin: -62px 0px 0px 250px;
                                     p {
                                         display: none;
-                                        width: 331px;
+                                        width: 300px;
                                         font-family: "Lemon Regular";
-                                        font-size: 10px;
+                                        font-size: 9px;
                                         line-height: 24px;
                                         color: #9A9A9A;
                                     }
 
                                     button {
-                                        margin-top: 35px;
+                                        
+                                        overflow-y: auto;
                                         background-color: transparent;
                                         cursor: crosshair;
                                         border: none;
-
+                                       
                                         img {
                                             width: 34px;
+                                            overflow: auto;
+
+                                        }
+                                    }
+
+
+                                }
+                                .rightmobile2{
+                                    margin: -62px 0px 0px 250px;
+                                    p {
+                                        display: none;
+                                        width: 300px;
+                                        font-family: "Lemon Regular";
+                                        font-size: 9px;
+                                        line-height: 24px;
+                                        color: #9A9A9A;
+                                    }
+
+                                    button {
+                                        
+                                        overflow-y: auto;
+                                        background-color: transparent;
+                                        cursor: crosshair;
+                                        border: none;
+                                       
+                                        img {
+                                            width: 34px;
+                                            overflow: auto;
+
+                                        }
+                                    }
+
+
+                                }
+                                .rightmobile3{
+                                    margin: -62px 0px 0px 250px;
+                                    p {
+                                        display: none;
+                                        width: 300px;
+                                        font-family: "Lemon Regular";
+                                        font-size: 9px;
+                                        line-height: 24px;
+                                        color: #9A9A9A;
+                                    }
+
+                                    button {
+                                        
+                                        overflow-y: auto;
+                                        background-color: transparent;
+                                        cursor: crosshair;
+                                        border: none;
+                                       
+                                        img {
+                                            width: 34px;
+                                            overflow: auto;
+
+                                        }
+                                    }
+
+
+                                }
+                                .rightmobile4{
+                                    margin: -62px 0px 0px 250px;
+                                    p {
+                                        display: none;
+                                        width: 300px;
+                                        font-family: "Lemon Regular";
+                                        font-size: 9px;
+                                        line-height: 24px;
+                                        color: #9A9A9A;
+                                    }
+
+                                    button {
+                                        
+                                        overflow-y: auto;
+                                        background-color: transparent;
+                                        cursor: crosshair;
+                                        border: none;
+                                       
+                                        img {
+                                            width: 34px;
+                                            overflow: auto;
+
                                         }
                                     }
 
@@ -3053,19 +3153,20 @@ p {
                                 }
                             }
 
-                            .lineservicetablet {
-                                width: 714px;
+                            .lineservicemobile {
+                                width: 330px;
                                 border: 2px solid #434343;
 
                             }
 
-                            #lineserviices4tablet {
+                            #lineserviices4mobile {
                                 margin-bottom: 15px;
                             }
 
 
                         }
-                        
+
+
 
                     }
 
@@ -3076,20 +3177,20 @@ p {
 
             .section3 {
                 .container {
-                    max-width: 715px;
+                    max-width: 330px;
                     margin: 0 auto;
                     display: flex;
                     flex-direction: column;
-                    margin-top: 70px;
+                    margin-top: 50px;
 
                     .up {
-                        margin-bottom: 81px;
+                        margin-bottom: 25px;
 
                         .up1 {
                             p {
                                 font-family: "Lemon Medium";
-                                font-size: 9px;
-                                line-height: 13px;
+                                font-size: 7px;
+                                line-height: 10px;
                                 letter-spacing: 1.72em;
                                 color: #FFFF27;
                                 margin-bottom: 25px;
@@ -3098,19 +3199,19 @@ p {
 
                         .down1 {
                             display: flex;
-                            flex-direction: row;
+                            flex-direction: column;
                             justify-content: space-between;
 
                             .left {
                                 img {
-                                    width: 366.01px;
+                                    width: 300px;
                                 }
                             }
 
                             .right {
                                 p {
                                     font-family: "Lemon Regular";
-                                    font-size: 10px;
+                                    font-size: 9px;
                                     line-height: 24px;
                                     color: #C5CFD5;
                                     max-width: 290px;
@@ -3123,7 +3224,7 @@ p {
 
                     .down {
                         display: flex;
-                        flex-direction: row;
+                        flex-direction: column;
                         justify-content: space-between;
                         flex-wrap: wrap;
 
@@ -3136,7 +3237,7 @@ p {
                                     cursor: pointer;
                                     appearance: none;
                                     background-color: inherit;
-
+                                    padding: 0px;
                                     img {
                                         width: 330px;
                                         height: 330px;
@@ -3144,7 +3245,7 @@ p {
 
                                     }
 
-                                    
+
 
                                     .text {
                                         display: none;
@@ -3545,7 +3646,7 @@ p {
                 background-color: #151515;
 
                 .container {
-                    max-width: 715px;
+                    max-width: 330px;
                     margin: 0 auto;
                     display: flex;
                     flex-direction: column;
@@ -3559,9 +3660,9 @@ p {
                             flex: 0.2;
 
                             img {
-                                width: 200px;
-                                margin-left: -70px;
-                                
+                                width: 100px;
+                                margin-left: -50px;
+
                             }
 
                             .onpart {
@@ -3580,22 +3681,23 @@ p {
                             justify-content: center;
                             text-align: center;
                             flex: 2;
-                            margin-top: 80px;
+                            margin-top: 45px;
+                            margin-left: -10px;
 
                             .text1 {
                                 p {
                                     font-family: "Lemon Medium";
-                                    font-size: 9px;
-                                    line-height: 13px;
+                                    font-size: 7px;
+                                    line-height: 10px;
                                     letter-spacing: 1.72em;
                                     color: #FFFF27;
-                                    margin-bottom: 40px;
+                                    margin-bottom: 20px;
                                 }
                             }
 
                             .text2 {
                                 img {
-                                    width: 430px;
+                                    width: 254px;
                                     margin-bottom: 20px;
                                 }
                             }
@@ -3605,12 +3707,12 @@ p {
                                 margin: 0 auto;
 
                                 p {
-                                    max-width: 423px;
+                                    max-width: 254px;
                                     font-family: "Lemon Regular";
-                                    font-size: 10px;
-                                    line-height: 30px;
+                                    font-size: 9px;
+                                    line-height: 24px;
                                     text-align: center;
-                                    color: #C5CFD5;
+                                    color: #C5CFD4;
                                     margin-top: -20px;
                                 }
                             }
@@ -3633,8 +3735,8 @@ p {
                                 font-size: 17px;
                                 position: relative;
                                 display: inline-block;
-                                width: 50px;
-                                height: 24.49px;
+                                width: 45px;
+                                height: 22.04px;
                             }
 
                             .switch input {
@@ -3659,11 +3761,11 @@ p {
                             .slider:before {
                                 position: absolute;
                                 content: "";
-                                height: 1.2em;
-                                width: 1.2em;
+                                height: 1.1em;
+                                width: 1.1em;
                                 border-radius: 20px;
-                                left: 0.2em;
-                                bottom: 0.1em;
+                                left: 0.1em;
+                                bottom: 0.05em;
                                 background-color: #050505;
                                 transition: .4s;
                             }
@@ -3693,23 +3795,27 @@ p {
 
                         .first {
                             display: flex;
-                            flex-direction: row;
-                            margin-bottom: 10px;
+                            flex-direction: column;
+                            margin-bottom: 5px;
 
                             .left {
-                                width: 229px;
-                                height: 309px;
+                                width: 330px;
+                                height: 184px;
                                 text-align: center;
-                                margin-right: 5px;
                                 background: rgba(12, 12, 12, 0.6);
                                 border: 1px solid #191919;
                                 border-radius: 4px;
+                                display: flex;
+                                flex-direction: row;
+                               
+                                
 
                                 img {
-                                    width: 115px;
-                                    height: 115px;
+                                    width: 110.5px;
+                                    height: 114px;
                                     margin-bottom: 0px;
-                                    margin-top: 80px;
+                                    margin-top: 40px;
+                                    margin-left: 66px;
                                 }
 
                                 p {
@@ -3718,7 +3824,7 @@ p {
                                     line-height: 30px;
                                     color: #E1E1E1;
                                     margin: 0px;
-                                    margin-top: -20px;
+                                    
                                 }
                             }
 
@@ -3875,7 +3981,7 @@ p {
 
             .section6 {
                 .container {
-                    max-width: 715px;
+                    max-width: 330px;
                     margin: 0 auto;
                     display: flex;
                     flex-direction: column;
@@ -3920,13 +4026,14 @@ p {
 
                                 p {
                                     margin: 0px;
+
                                     a {
                                         font-family: "Lemon Regular";
                                         font-size: 10px;
                                         line-height: 30px;
                                         color: #A4ADB3;
                                         margin: 0px;
-                                       
+
                                         margin-bottom: 0px;
                                         transition: all 0.2s ease-in-out;
 
@@ -3938,7 +4045,8 @@ p {
                                 }
                             }
                         }
-                        #secondmid{
+
+                        #secondmid {
                             margin-left: 70px;
                         }
 
@@ -3999,6 +4107,3 @@ p {
         }
     }
 }
-
-
-
