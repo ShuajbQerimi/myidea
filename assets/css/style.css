@@ -38,6 +38,30 @@
   font-family: "Zacbelx Medium";
   src: url("../fonts/zacbelx-medium.ttf") format("truetype");
 }
+@-webkit-keyframes bounce_513 {
+  0%, 100% {
+    transform: translateY(-17%);
+    -webkit-animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+            animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    -webkit-animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+            animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+@keyframes bounce_513 {
+  0%, 100% {
+    transform: translateY(-17%);
+    -webkit-animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+            animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    -webkit-animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+            animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
 a {
   text-decoration: none;
   color: white;
@@ -70,7 +94,12 @@ p {
     padding-top: 15px;
     margin-bottom: 20px;
   }
-  html body .nav .container .left img {
+  html body .nav .container .left #logofirst {
+    width: 97.71px;
+    height: 25.93px;
+  }
+  html body .nav .container .left #logosecond {
+    display: none;
     width: 97.71px;
     height: 25.93px;
   }
@@ -989,7 +1018,7 @@ p {
     height: 67.12px;
     margin: 0px;
     margin-top: 58px;
-    margin-right: 188px;
+    margin-right: 185px;
   }
   html body .section6 .container .up .mid {
     display: flex;
@@ -1019,11 +1048,13 @@ p {
     transition: all 0.2s ease-in-out;
   }
   html body .section6 .container .up .mid .down p a:hover {
-    color: #9A9A9A;
+    color: #FFFF27;
   }
   html body .section6 .container .up .right {
-    margin-top: 107px;
+    margin-top: 128px;
     margin-left: 61.5px;
+    -webkit-animation: bounce_513 1s infinite;
+            animation: bounce_513 1s infinite;
   }
   html body .section6 .container .up .right a {
     font-family: "Lemon Bold";

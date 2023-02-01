@@ -47,7 +47,19 @@
     font-family: "Zacbelx Medium";
     src: url("../fonts/zacbelx-medium.ttf") format("truetype");
 }
-
+@keyframes bounce_513 {
+    0%,
+      100% {
+      transform: translateY(-17%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+  
+    50% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+  
 
 
 a {
@@ -88,10 +100,18 @@ p {
 
 
                     .left {
-                        img {
+
+                        #logofirst{
                             width: 97.71px;
                             height: 25.93px;
                         }
+                        #logosecond{
+                            display: none;
+                            width: 97.71px;
+                            height: 25.93px;
+                        }
+
+
                     }
 
                     .mid {
@@ -1294,7 +1314,7 @@ p {
                                 height: 67.12px;
                                 margin: 0px;
                                 margin-top: 58px;
-                                margin-right: 188px;
+                                margin-right: 185px;
                             }
                         }
 
@@ -1333,7 +1353,7 @@ p {
                                         transition: all 0.2s ease-in-out;
 
                                         &:hover {
-                                            color: #9A9A9A;
+                                            color: #FFFF27;
                                         }
                                     }
 
@@ -1342,10 +1362,10 @@ p {
                         }
 
                         .right {
-                            margin-top: 107px;
+                            margin-top: 128px;
                             margin-left: 61.5px;
 
-
+                            animation: bounce_513 1s infinite;
                             a {
                                 font-family: "Lemon Bold";
                                 padding: 7px;
