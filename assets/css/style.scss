@@ -520,7 +520,7 @@ p {
                                         opacity: 0;
                                         transition: .5s ease;
 
-                                        background: rgba(255, 255, 39, 0.7);
+                                        background: rgba(255, 246, 39, 0.75);
                                         border-radius: 3px;
                                         margin-top: -520px;
 
@@ -1085,6 +1085,11 @@ p {
                                 background: rgba(12, 12, 12, 0.6);
                                 border: 1px solid #191919;
                                 border-radius: 4px;
+                                transition: 1s ease-in-out;
+
+                                &:hover {
+                                    background: linear-gradient(270deg, #161616 1.05%, #0C0C0C 100%);
+                                }
 
                                 img {
                                     width: 176px;
@@ -1110,8 +1115,8 @@ p {
                                 height: 138px;
 
                                 .text1 {
-                                    background: #0C0C0C;
-                                    opacity: 0.6;
+                                    background: rgba(12, 12, 12, 0.6);
+                                    opacity: 1;
                                     border: 1px solid #191919;
                                     border-radius: 4px;
                                     padding: 0px;
@@ -1147,6 +1152,12 @@ p {
                                             margin-bottom: 23px;
                                         }
                                     }
+
+                                    transition: 1s ease-in-out;
+
+                                    &:hover {
+                                        background: linear-gradient(270deg, #161616 1.05%, #0C0C0C 100%);
+                                    }
                                 }
                             }
                         }
@@ -1165,6 +1176,11 @@ p {
                                 background: rgba(12, 12, 12, 0.6);
                                 border: 1px solid #191919;
                                 border-radius: 4px;
+                                transition: 1s ease-in-out;
+
+                                &:hover {
+                                    background: linear-gradient(270deg, #161616 1.05%, #0C0C0C 100%);
+                                }
 
                                 img {
                                     width: 176px;
@@ -1192,13 +1208,19 @@ p {
 
 
                                 .text1 {
-                                    background: #0C0C0C;
-                                    opacity: 0.6;
+                                    background: rgba(12, 12, 12, 0.6);
                                     border: 1px solid #191919;
                                     border-radius: 4px;
                                     padding: 0px;
                                     margin: 0px;
                                     margin-bottom: 5px;
+
+                                    transition: 1s ease-in-out;
+
+                                    &:hover {
+                                        background: linear-gradient(270deg, #161616 1.05%, #0C0C0C 100%);
+                                    }
+
 
                                     .up {
                                         margin: 0px;
@@ -3045,6 +3067,7 @@ p {
 
                                 .rightmobile1 {
                                     margin: -62px 0px 0px 250px;
+
                                     p {
                                         display: none;
                                         width: 300px;
@@ -3055,12 +3078,12 @@ p {
                                     }
 
                                     button {
-                                        
+
                                         overflow-y: auto;
                                         background-color: transparent;
                                         cursor: crosshair;
                                         border: none;
-                                       
+
                                         img {
                                             width: 34px;
                                             overflow: auto;
@@ -3070,8 +3093,10 @@ p {
 
 
                                 }
-                                .rightmobile2{
+
+                                .rightmobile2 {
                                     margin: -62px 0px 0px 250px;
+
                                     p {
                                         display: none;
                                         width: 300px;
@@ -3082,12 +3107,12 @@ p {
                                     }
 
                                     button {
-                                        
+
                                         overflow-y: auto;
                                         background-color: transparent;
                                         cursor: crosshair;
                                         border: none;
-                                       
+
                                         img {
                                             width: 34px;
                                             overflow: auto;
@@ -3097,8 +3122,10 @@ p {
 
 
                                 }
-                                .rightmobile3{
+
+                                .rightmobile3 {
                                     margin: -62px 0px 0px 250px;
+
                                     p {
                                         display: none;
                                         width: 300px;
@@ -3109,12 +3136,12 @@ p {
                                     }
 
                                     button {
-                                        
+
                                         overflow-y: auto;
                                         background-color: transparent;
                                         cursor: crosshair;
                                         border: none;
-                                       
+
                                         img {
                                             width: 34px;
                                             overflow: auto;
@@ -3124,8 +3151,10 @@ p {
 
 
                                 }
-                                .rightmobile4{
+
+                                .rightmobile4 {
                                     margin: -62px 0px 0px 250px;
+
                                     p {
                                         display: none;
                                         width: 300px;
@@ -3136,12 +3165,12 @@ p {
                                     }
 
                                     button {
-                                        
+
                                         overflow-y: auto;
                                         background-color: transparent;
                                         cursor: crosshair;
                                         border: none;
-                                       
+
                                         img {
                                             width: 34px;
                                             overflow: auto;
@@ -3238,6 +3267,7 @@ p {
                                     appearance: none;
                                     background-color: inherit;
                                     padding: 0px;
+
                                     img {
                                         width: 330px;
                                         height: 330px;
@@ -3807,8 +3837,8 @@ p {
                                 border-radius: 4px;
                                 display: flex;
                                 flex-direction: row;
-                               
-                                
+
+
 
                                 img {
                                     width: 110.5px;
@@ -3824,7 +3854,9 @@ p {
                                     line-height: 30px;
                                     color: #E1E1E1;
                                     margin: 0px;
-                                    
+                                    margin-top: 77px;
+                                    margin-left: -25px;
+
                                 }
                             }
 
