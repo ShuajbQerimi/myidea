@@ -37,7 +37,7 @@ $('#butoniservice1').click(function () {
     });
     $('#textservicess1').css({
         'display': 'block',
-        'cursor': 'pointer',
+        'cursor': 'url(https://i.stack.imgur.com/bUGV0.png)',
         "transition": "0.5s ease",
     });
     $('#kutiatext1').css({
@@ -73,8 +73,9 @@ $('#textservicess1').click(function () {
     });
     $('#textservicess1').css({
         'display': 'none',
-        'cursor': 'pointer',
-        "transition": "0.5s ease"
+        'cursor': 'url(https://i.stack.imgur.com/bUGV0.png)',
+        "transition": "0.5s ease",
+        
     });
     $('#kutiatext1').css({
         'background': 'none',
