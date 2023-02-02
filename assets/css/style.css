@@ -104,19 +104,40 @@ p {
     height: 25.93px;
   }
   html body .nav .container .mid {
-    display: flex;
-    flex-direction: row;
-    padding-top: 5px;
+    margin: 0 auto;
+    text-align: center;
   }
   html body .nav .container .mid a {
+    color: #FFF;
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
     font-family: "Lemon Medium";
-    font-size: 14px;
-    color: #FFFFFF;
-    margin: 0px 40px;
-    transition: 0.3s ease-in-out;
+    font-size: 10px;
+    line-height: 15px;
+    margin: 0px 20px;
   }
-  html body .nav .container .mid a:hover {
-    color: #FFFF27;
+  html body .nav .container .highlightTextOut a {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  html body .nav .container .highlightTextOut a:before {
+    position: absolute;
+    color: rgb(255, 255, 39);
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    overflow: hidden;
+    content: attr(alt);
+    transition: all 0.3s;
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  html body .nav .container .highlightTextOut a:hover:before {
+    transform: scale(1);
+    opacity: 1;
   }
   html body .nav .container .right {
     padding-top: 5px;
@@ -998,9 +1019,12 @@ p {
     margin-top: -80px;
     margin-bottom: 0px;
   }
-  html body .section5 .container img {
+  html body .section5 .container #desktopquote {
     width: 1060px;
     margin: 0 auto;
+  }
+  html body .section5 .container #mobilequote {
+    display: none;
   }
   html body .section6 .container {
     max-width: 1060px;
@@ -1083,6 +1107,9 @@ p {
     color: #FFFFFF;
     margin: 0px;
     margin-bottom: 11px;
+  }
+  html body .section6mobile {
+    display: none;
   }
 }
 @media only screen and (min-width: 720px) and (max-width: 1023px) {
@@ -1983,9 +2010,12 @@ p {
     margin-top: -80px;
     margin-bottom: 0px;
   }
-  html body .section5 .container img {
+  html body .section5 .container #desktopquote {
     width: 715px;
     margin: 0 auto;
+  }
+  html body .section5 .container #mobilequote {
+    display: none;
   }
   html body .section6 .container {
     max-width: 715px;
@@ -2071,6 +2101,9 @@ p {
     color: #FFFFFF;
     margin: 0px;
     margin-bottom: 11px;
+  }
+  html body .section6mobile {
+    display: none;
   }
 }
 @media only screen and (max-width: 720px) {
@@ -2903,6 +2936,7 @@ p {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    margin-bottom: 150px;
   }
   html body .section4 .container .down .first {
     display: flex;
@@ -2938,29 +2972,31 @@ p {
   html body .section4 .container .down .first .right {
     display: flex;
     flex-direction: column;
-    width: 481px;
-    height: 100px;
   }
   html body .section4 .container .down .first .right .text1 {
     background: #0C0C0C;
-    opacity: 0.6;
+    background: rgba(12, 12, 12, 0.6);
     border: 1px solid #191919;
     border-radius: 4px;
     padding: 0px;
     margin: 0px;
     margin-bottom: 5px;
+    width: 330px;
+    height: 100px;
+    justify-content: center;
+    text-align: center;
   }
   html body .section4 .container .down .first .right .text1 .up {
     margin: 0px;
+    justify-content: center;
   }
   html body .section4 .container .down .first .right .text1 .up p {
     font-family: "Lemon Medium";
-    font-size: 17px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 24px;
     color: #E1E1E1;
     margin: 0px;
     margin-top: 20px;
-    margin-left: 23px;
   }
   html body .section4 .container .down .first .right .text1 .down {
     margin: 0px;
@@ -2968,32 +3004,34 @@ p {
   html body .section4 .container .down .first .right .text1 .down p {
     margin: 0px;
     font-family: "Lemon Regular";
-    font-size: 10px;
+    font-size: 9px;
     line-height: 30px;
     color: rgba(255, 255, 255, 0.54);
     margin-top: 0px;
-    margin-left: 23px;
     margin-bottom: 20px;
   }
   html body .section4 .container .down .second {
     display: flex;
-    flex-direction: row;
-    margin-bottom: 10px;
-    margin-bottom: 180px;
+    flex-direction: column-reverse;
+    margin-top: 5px;
+    margin-bottom: 0px;
   }
   html body .section4 .container .down .second .left {
-    width: 229px;
-    height: 414px;
+    width: 330px;
+    height: 184px;
     text-align: center;
     background: rgba(12, 12, 12, 0.6);
     border: 1px solid #191919;
     border-radius: 4px;
+    display: flex;
+    flex-direction: row;
   }
   html body .section4 .container .down .second .left img {
     width: 85px;
     height: 89px;
     margin-bottom: 0px;
-    margin-top: 165.66px;
+    margin-top: 40px;
+    margin-left: 90px;
   }
   html body .section4 .container .down .second .left p {
     font-family: "Lemon Bold";
@@ -3001,63 +3039,76 @@ p {
     line-height: 30px;
     color: #E1E1E1;
     margin: 0px;
-    margin-top: 5px;
+    margin-top: 75px;
   }
   html body .section4 .container .down .second .right {
     display: flex;
     flex-direction: column;
-    width: 481px;
-    height: 100px;
     margin-right: 5px;
+    text-align: center;
   }
   html body .section4 .container .down .second .right .text1 {
     background: #0C0C0C;
-    opacity: 0.6;
+    background: rgba(12, 12, 12, 0.6);
     border: 1px solid #191919;
     border-radius: 4px;
     padding: 0px;
     margin: 0px;
     margin-bottom: 5px;
+    width: 330px;
+    text-align: center;
+    height: 100px;
   }
   html body .section4 .container .down .second .right .text1 .up {
     margin: 0px;
+    text-align: center;
+    justify-content: center;
   }
   html body .section4 .container .down .second .right .text1 .up p {
     font-family: "Lemon Medium";
-    font-size: 17px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 24px;
     color: #E1E1E1;
     margin: 0px;
     margin-top: 20px;
-    margin-left: 23px;
+    text-align: center;
   }
   html body .section4 .container .down .second .right .text1 .down {
     margin: 0px;
+    text-align: center;
   }
   html body .section4 .container .down .second .right .text1 .down p {
+    text-align: center;
     margin: 0px;
     font-family: "Lemon Regular";
-    font-size: 10px;
+    font-size: 9px;
     line-height: 30px;
     color: rgba(255, 255, 255, 0.54);
     margin-top: 0px;
-    margin-left: 23px;
     margin-bottom: 19px;
   }
   html body .section5 .container {
-    max-width: 714px;
+    max-width: 330px;
     margin: 0 auto;
     margin-top: -80px;
     margin-bottom: 0px;
   }
-  html body .section5 .container img {
+  html body .section5 .container #desktopquote {
+    display: none;
     width: 715px;
     margin: 0 auto;
+  }
+  html body .section5 .container #mobilequote {
+    width: 330px;
+    margin: 0 auto;
+  }
+  html body .section6 {
+    display: none;
   }
   html body .section6 .container {
     max-width: 330px;
     margin: 0 auto;
-    display: flex;
+    display: n;
     flex-direction: column;
     margin-top: 50px;
   }
@@ -3138,5 +3189,89 @@ p {
     color: #FFFFFF;
     margin: 0px;
     margin-bottom: 11px;
+  }
+  html body .section6mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  html body .section6mobile .up .container {
+    max-width: 330px;
+    margin: 0 auto;
+    display: n;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  html body .section6mobile .up .container .up1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  html body .section6mobile .up .container .up1 img {
+    width: 146.55px;
+  }
+  html body .section6mobile .up .container .up1 a {
+    font-family: "Lemon Bold";
+    padding: 12px;
+    font-size: 14px;
+    color: #000000;
+    background: #FFFF27;
+    border-radius: 3px;
+  }
+  html body .section6mobile .up .container .down1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+  }
+  html body .section6mobile .up .container .down1 .mid {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+  }
+  html body .section6mobile .up .container .down1 .mid .up p {
+    font-size: 16px;
+    line-height: 0px;
+  }
+  html body .section6mobile .up .container .down1 .mid .down p {
+    /* or 300% */
+    width: 100%;
+    color: #A4ADB3;
+    margin: 10px 0px;
+  }
+  html body .section6mobile .up .container .down1 .mid .down p a {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-family: "Lemon Regular";
+    color: #A4ADB3;
+    font-size: 10px;
+    line-height: 0px;
+  }
+  html body .section6mobile .up .container .down1 .mid .down p #leftinsta {
+    margin-left: -15px;
+  }
+  html body .section6mobile .up .container .down1 .mid .down p #lefttel {
+    margin-left: -10px;
+  }
+  html body .section6mobile .up .container .down1 #secondmid {
+    margin-left: 85px;
+  }
+  html body .section6mobile .down {
+    text-align: center;
+  }
+  html body .section6mobile .down .line hr {
+    border: 2px solid #FFFFFF;
+    margin-bottom: 10px;
+  }
+  html body .section6mobile .down .text {
+    margin: 0px;
+  }
+  html body .section6mobile .down .text p {
+    font-family: "Lemon Regular";
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 13px;
+    color: #FFFFFF;
+    margin: 0px;
+    margin-bottom: 9px;
   }
 }/*# sourceMappingURL=style.css.map */

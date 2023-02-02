@@ -47,19 +47,21 @@
     font-family: "Zacbelx Medium";
     src: url("../fonts/zacbelx-medium.ttf") format("truetype");
 }
+
 @keyframes bounce_513 {
+
     0%,
-      100% {
-      transform: translateY(-17%);
-      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    100% {
+        transform: translateY(-17%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
     }
-  
+
     50% {
-      transform: translateY(0);
-      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
     }
-  }
-  
+}
+
 
 
 a {
@@ -101,11 +103,12 @@ p {
 
                     .left {
 
-                        #logofirst{
+                        #logofirst {
                             width: 97.71px;
                             height: 25.93px;
                         }
-                        #logosecond{
+
+                        #logosecond {
                             display: none;
                             width: 97.71px;
                             height: 25.93px;
@@ -115,23 +118,54 @@ p {
                     }
 
                     .mid {
-                        display: flex;
-                        flex-direction: row;
-                        padding-top: 5px;
+
+                        margin: 0 auto;
+                        text-align: center;
+
+
 
                         a {
+                            color: #FFF;
+                            text-decoration: none;
+                            margin: 0px 10px;
+                            padding: 10px 10px;
+                            position: relative;
+                            z-index: 0;
+                            cursor: pointer;
+
                             font-family: "Lemon Medium";
-                            font-size: 14px;
-                            color: #FFFFFF;
-                            margin: 0px 40px;
-                            transition: 0.3s ease-in-out;
+                            font-size: 10px;
+                            line-height: 15px;
+                            margin: 0px 20px;
 
+                        }
+                    }
+
+                    .highlightTextOut {
+                        a {
+                            color: rgba(255, 255, 255, 0.7);
+                            &:before {
+                                position: absolute;
+                                color: rgba(255, 255, 39, 1);
+                                top: 0px;
+                                left: 0px;
+                                padding: 10px;
+                                overflow: hidden;
+                                content: attr(alt);
+                                transition: all 0.3s;
+                                transform: scale(0.8);
+                                opacity: 0;
+                            }
                             &:hover {
-                                color: #FFFF27;
-
+                                &:before {
+                                    transform: scale(1);
+                                    opacity: 1;
+                                }
                             }
                         }
                     }
+
+
 
                     .right {
                         padding-top: 5px;
@@ -1289,9 +1323,13 @@ p {
 
                     margin-bottom: 0px;
 
-                    img {
+                    #desktopquote {
                         width: 1060px;
                         margin: 0 auto;
+                    }
+
+                    #mobilequote {
+                        display: none;
                     }
                 }
             }
@@ -1366,6 +1404,7 @@ p {
                             margin-left: 61.5px;
 
                             animation: bounce_513 1s infinite;
+
                             a {
                                 font-family: "Lemon Bold";
                                 padding: 7px;
@@ -1414,6 +1453,9 @@ p {
 
             }
 
+            .section6mobile {
+                display: none;
+            }
 
         }
     }
@@ -2601,9 +2643,13 @@ p {
 
                     margin-bottom: 0px;
 
-                    img {
+                    #desktopquote {
                         width: 715px;
                         margin: 0 auto;
+                    }
+
+                    #mobilequote {
+                        display: none;
                     }
                 }
             }
@@ -2730,6 +2776,10 @@ p {
                 }
 
 
+            }
+
+            .section6mobile {
+                display: none;
             }
 
 
@@ -3842,6 +3892,7 @@ p {
                         display: flex;
                         flex-direction: column;
                         margin-top: 20px;
+                        margin-bottom: 150px;
 
                         .first {
                             display: flex;
@@ -3883,29 +3934,34 @@ p {
                             .right {
                                 display: flex;
                                 flex-direction: column;
-                                width: 481px;
-                                height: 100px;
+
 
                                 .text1 {
                                     background: #0C0C0C;
-                                    opacity: 0.6;
+                                    background: rgba(12, 12, 12, 0.6);
                                     border: 1px solid #191919;
                                     border-radius: 4px;
                                     padding: 0px;
                                     margin: 0px;
                                     margin-bottom: 5px;
+                                    width: 330px;
+                                    height: 100px;
+                                    justify-content: center;
+                                    text-align: center;
 
                                     .up {
                                         margin: 0px;
+                                        justify-content: center;
 
                                         p {
                                             font-family: "Lemon Medium";
-                                            font-size: 17px;
-                                            line-height: 30px;
+                                            font-size: 14px;
+                                            line-height: 24px;
                                             color: #E1E1E1;
                                             margin: 0px;
                                             margin-top: 20px;
-                                            margin-left: 23px;
+
+
                                         }
                                     }
 
@@ -3916,11 +3972,11 @@ p {
 
                                             margin: 0px;
                                             font-family: "Lemon Regular";
-                                            font-size: 10px;
+                                            font-size: 9px;
                                             line-height: 30px;
                                             color: rgba(255, 255, 255, 0.54);
                                             margin-top: 0px;
-                                            margin-left: 23px;
+
                                             margin-bottom: 20px;
                                         }
                                     }
@@ -3930,24 +3986,27 @@ p {
 
                         .second {
                             display: flex;
-                            flex-direction: row;
-                            margin-bottom: 10px;
-                            margin-bottom: 180px;
+                            flex-direction: column-reverse;
+                            margin-top: 5px;
+                            margin-bottom: 0px;
 
                             .left {
-                                width: 229px;
-                                height: 414px;
+                                width: 330px;
+                                height: 184px;
                                 text-align: center;
 
                                 background: rgba(12, 12, 12, 0.6);
                                 border: 1px solid #191919;
                                 border-radius: 4px;
+                                display: flex;
+                                flex-direction: row;
 
                                 img {
                                     width: 85px;
                                     height: 89px;
                                     margin-bottom: 0px;
-                                    margin-top: 165.66px;
+                                    margin-top: 40px;
+                                    margin-left: 90px;
                                 }
 
                                 p {
@@ -3956,53 +4015,59 @@ p {
                                     line-height: 30px;
                                     color: #E1E1E1;
                                     margin: 0px;
-                                    margin-top: 5px;
+                                    margin-top: 75px;
                                 }
                             }
 
                             .right {
                                 display: flex;
                                 flex-direction: column;
-                                width: 481px;
-                                height: 100px;
+
                                 margin-right: 5px;
+                                text-align: center;
 
 
                                 .text1 {
                                     background: #0C0C0C;
-                                    opacity: 0.6;
+                                    background: rgba(12, 12, 12, 0.6);
                                     border: 1px solid #191919;
                                     border-radius: 4px;
                                     padding: 0px;
                                     margin: 0px;
                                     margin-bottom: 5px;
+                                    width: 330px;
+                                    text-align: center;
+                                    height: 100px;
 
                                     .up {
                                         margin: 0px;
+                                        text-align: center;
+                                        justify-content: center;
 
                                         p {
                                             font-family: "Lemon Medium";
-                                            font-size: 17px;
-                                            line-height: 30px;
+                                            font-size: 14px;
+                                            line-height: 24px;
                                             color: #E1E1E1;
                                             margin: 0px;
                                             margin-top: 20px;
-                                            margin-left: 23px;
+                                            text-align: center;
                                         }
                                     }
 
                                     .down {
                                         margin: 0px;
+                                        text-align: center;
 
                                         p {
-
+                                            text-align: center;
                                             margin: 0px;
                                             font-family: "Lemon Regular";
-                                            font-size: 10px;
+                                            font-size: 9px;
                                             line-height: 30px;
                                             color: rgba(255, 255, 255, 0.54);
                                             margin-top: 0px;
-                                            margin-left: 23px;
+
                                             margin-bottom: 19px;
                                         }
                                     }
@@ -4018,24 +4083,32 @@ p {
 
             .section5 {
                 .container {
-                    max-width: 714px;
+                    max-width: 330px;
                     margin: 0 auto;
                     margin-top: -80px;
 
                     margin-bottom: 0px;
 
-                    img {
+                    #desktopquote {
+                        display: none;
                         width: 715px;
+                        margin: 0 auto;
+                    }
+
+                    #mobilequote {
+                        width: 330px;
                         margin: 0 auto;
                     }
                 }
             }
 
             .section6 {
+                display: none;
+
                 .container {
                     max-width: 330px;
                     margin: 0 auto;
-                    display: flex;
+                    display: n;
                     flex-direction: column;
                     margin-top: 50px;
 
@@ -4155,6 +4228,126 @@ p {
 
             }
 
+            .section6mobile {
+                display: flex;
+                flex-direction: column;
+
+                .up {
+                    .container {
+                        max-width: 330px;
+                        margin: 0 auto;
+                        display: n;
+                        flex-direction: column;
+                        margin-top: 50px;
+
+                        .up1 {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+
+                            img {
+                                width: 146.55px;
+                            }
+
+                            a {
+                                font-family: "Lemon Bold";
+                                padding: 12px;
+                                font-size: 14px;
+                                color: #000000;
+                                background: #FFFF27;
+                                border-radius: 3px;
+
+                            }
+
+                        }
+
+                        .down1 {
+                            display: flex;
+                            flex-direction: row;
+                            margin-top: 30px;
+
+
+                            .mid {
+                                display: flex;
+                                flex-direction: column;
+                                text-align: start;
+
+
+                                .up {
+                                    p {
+                                        font-size: 16px;
+                                        line-height: 0px;
+                                    }
+                                }
+
+                                .down {
+                                    p {
+
+                                        /* or 300% */
+                                        width: 100%;
+
+                                        color: #A4ADB3;
+                                        margin: 10px 0px;
+
+                                        a {
+                                            margin: 0px;
+                                            padding: 0px;
+                                            width: 100%;
+                                            font-family: "Lemon Regular";
+                                            color: #A4ADB3;
+                                            font-size: 10px;
+                                            line-height: 0px;
+                                        }
+
+                                        #leftinsta {
+                                            margin-left: -15px;
+                                        }
+
+                                        #lefttel {
+                                            margin-left: -10px;
+                                        }
+
+
+                                    }
+                                }
+                            }
+
+                            #secondmid {
+                                margin-left: 85px;
+                            }
+                        }
+                    }
+                }
+
+                .down {
+                    text-align: center;
+
+                    .line {
+                        hr {
+
+                            border: 2px solid #FFFFFF;
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                    .text {
+                        margin: 0px;
+
+                        p {
+                            font-family: "Lemon Regular";
+                            font-weight: 400;
+                            font-size: 9px;
+                            line-height: 13px;
+                            color: #FFFFFF;
+                            margin: 0px;
+                            margin-bottom: 9px;
+
+                        }
+                    }
+
+
+                }
+            }
 
         }
     }
