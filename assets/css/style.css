@@ -337,7 +337,7 @@ p {
     height: 101.97px;
   }
   html body .content .section2 .container .texts .text3 {
-    width: 546px;
+    width: 586px;
     margin: 0 auto;
     font-family: "LEMON Regular";
     font-size: 14px;
@@ -446,6 +446,7 @@ p {
     line-height: 30px;
     color: #C5CFD5;
     max-width: 473px;
+    margin-top: 30px;
   }
   html body .content .section3 .container .down {
     display: flex;
@@ -842,7 +843,7 @@ p {
     margin: 0 auto;
   }
   html body .content .section4 .container .up .mid .text3 p {
-    max-width: 600px;
+    max-width: 658px;
     font-family: "Lemon Regular";
     font-size: 14px;
     line-height: 30px;
@@ -1185,6 +1186,9 @@ p {
   html body .content .nav .container .left img {
     margin-top: 5px;
     width: 78.52px;
+  }
+  html body .content .nav .container .left #logofirst {
+    display: none;
   }
   html body .content .nav .container .left .containerBo {
     display: none;
