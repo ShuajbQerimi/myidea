@@ -88,6 +88,109 @@ p {
   color: white;
 }
 
+#loader-wrapper.loader-off {
+  display: none !important;
+}
+
+#loader-wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  z-index: 15000;
+  overflow: hidden;
+}
+#loader-wrapper .loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+#loader-wrapper .loader .jelly {
+  --uib-size: 80px;
+  --uib-speed: 0.7s;
+  --uib-color: #FFFF27;
+  position: relative;
+  height: calc(var(--uib-size) / 2);
+  width: var(--uib-size);
+  filter: url("#uib-jelly-ooze");
+  -webkit-animation: rotate72317 calc(var(--uib-speed) * 2) linear infinite;
+          animation: rotate72317 calc(var(--uib-speed) * 2) linear infinite;
+}
+#loader-wrapper .loader .jelly::before,
+#loader-wrapper .loader .jelly::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 25%;
+  width: 50%;
+  height: 100%;
+  background: var(--uib-color);
+  border-radius: 100%;
+}
+#loader-wrapper .loader .jelly::before {
+  -webkit-animation: shift-left var(--uib-speed) ease infinite;
+          animation: shift-left var(--uib-speed) ease infinite;
+}
+#loader-wrapper .loader .jelly::after {
+  -webkit-animation: shift-right var(--uib-speed) ease infinite;
+          animation: shift-right var(--uib-speed) ease infinite;
+}
+#loader-wrapper .loader .jelly-maker {
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+@-webkit-keyframes rotate72317 {
+  0%, 49.999%, 100% {
+    transform: none;
+  }
+  50%, 99.999% {
+    transform: rotate(90deg);
+  }
+}
+@keyframes rotate72317 {
+  0%, 49.999%, 100% {
+    transform: none;
+  }
+  50%, 99.999% {
+    transform: rotate(90deg);
+  }
+}
+@-webkit-keyframes shift-left {
+  0%, 100% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: scale(0.65) translateX(-75%);
+  }
+}
+@keyframes shift-left {
+  0%, 100% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: scale(0.65) translateX(-75%);
+  }
+}
+@-webkit-keyframes shift-right {
+  0%, 100% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: scale(0.65) translateX(75%);
+  }
+}
+@keyframes shift-right {
+  0%, 100% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: scale(0.65) translateX(75%);
+  }
+}
+
 @media only screen and (min-width: 1071px) {
   html {
     scroll-behavior: smooth;
@@ -249,7 +352,62 @@ p {
   }
   html body .content .section1 .container .left .buttons .button1 a span {
     margin-top: -3px;
+    margin-bottom: -4px;
     overflow: hidden;
+    margin-left: 5px;
+  }
+  html body .content .section1 .container .left .buttons .button1 a #behancelogo {
+    width: 21.23px;
+    height: 13.27px;
+  }
+  html body .content .section1 .container .left .buttons .button1 a #linkedinlogo {
+    width: 17.32px;
+    height: 16.76px;
+  }
+  html body .content .section1 .container .left .buttons .button1 a #dribblelogo {
+    width: 20.19px;
+    height: 20.2px;
+    margin-bottom: -4px;
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume {
+    position: relative;
+    padding: 10px 35px;
+    border-radius: 3px;
+    transition: all 0.2s;
+    background-color: #FFFF27;
+    margin-right: 40px;
+    font-family: "Lemon Regular";
+    font-size: 14px;
+    color: #050505;
+    margin-top: -8px;
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume a {
+    color: #050505;
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+    background-color: #fff;
   }
   html body .content .section1 .container .left .downpart {
     display: flex;
@@ -1260,23 +1418,78 @@ p {
   html body .content .section1 .container .left .buttons {
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: 35px;
   }
   html body .content .section1 .container .left .buttons .button1 {
-    margin-right: 20px;
+    margin-right: 40px;
   }
   html body .content .section1 .container .left .buttons .button1 a {
     background: #FFFF27;
     border-radius: 3px;
-    font-family: "Lemon bold";
-    font-size: 11px;
+    font-family: "Lemon Regular";
+    font-size: 14px;
     line-height: 20px;
     color: #050505;
     padding: 10px 13px;
   }
   html body .content .section1 .container .left .buttons .button1 a span {
     margin-top: -3px;
+    margin-bottom: -4px;
     overflow: hidden;
+    margin-left: 5px;
+  }
+  html body .content .section1 .container .left .buttons .button1 a #behancelogo {
+    width: 21.23px;
+    height: 13.27px;
+  }
+  html body .content .section1 .container .left .buttons .button1 a #linkedinlogo {
+    width: 17.32px;
+    height: 16.76px;
+  }
+  html body .content .section1 .container .left .buttons .button1 a #dribblelogo {
+    width: 20.19px;
+    height: 20.2px;
+    margin-bottom: -4px;
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume {
+    position: relative;
+    padding: 10px 13px;
+    border-radius: 3px;
+    transition: all 0.2s;
+    background-color: #FFFF27;
+    margin-right: 40px;
+    font-family: "Lemon Regular";
+    font-size: 14px;
+    color: #050505;
+    margin-top: -8px;
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume a {
+    color: #050505;
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+    background-color: #fff;
   }
   html body .content .section1 .container .left .downpart {
     display: flex;
@@ -2258,23 +2471,78 @@ p {
   html body .content .section1 .container .left .buttons {
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: 35px;
   }
   html body .content .section1 .container .left .buttons .button1 {
-    margin-right: 20px;
+    margin-right: 40px;
   }
   html body .content .section1 .container .left .buttons .button1 a {
     background: #FFFF27;
     border-radius: 3px;
-    font-family: "Lemon bold";
-    font-size: 11px;
-    line-height: 15px;
+    font-family: "Lemon Regular";
+    font-size: 14px;
+    line-height: 20px;
     color: #050505;
     padding: 10px 13px;
   }
   html body .content .section1 .container .left .buttons .button1 a span {
     margin-top: -3px;
+    margin-bottom: -4px;
     overflow: hidden;
+    margin-left: 5px;
+  }
+  html body .content .section1 .container .left .buttons .button1 a #behancelogo {
+    width: 21.23px;
+    height: 13.27px;
+  }
+  html body .content .section1 .container .left .buttons .button1 a #linkedinlogo {
+    width: 17.32px;
+    height: 16.76px;
+  }
+  html body .content .section1 .container .left .buttons .button1 a #dribblelogo {
+    width: 20.19px;
+    height: 20.2px;
+    margin-bottom: -4px;
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume {
+    position: relative;
+    padding: 10px 13px;
+    border-radius: 3px;
+    transition: all 0.2s;
+    background-color: #FFFF27;
+    margin-right: 40px;
+    font-family: "Lemon Regular";
+    font-size: 14px;
+    color: #050505;
+    margin-top: -8px;
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume a {
+    color: #050505;
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  html body .content .section1 .container .left .buttons #buttoniresume::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+    background-color: #fff;
   }
   html body .content .section1 .container .left .downpart {
     display: flex;

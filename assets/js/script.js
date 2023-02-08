@@ -1,6 +1,5 @@
 
 
-
 $(function () {
     $("#logofirst").hover(function () {
         $('#logofirst').parent().css('display', 'none');
