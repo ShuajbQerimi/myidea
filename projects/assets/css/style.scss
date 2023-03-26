@@ -1,0 +1,1848 @@
+@font-face {
+    font-family: "Lemon Bold";
+    src: url("../fonts/LemonMilkProBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Lemon Bold Italic";
+    src: url("../fonts/LemonMilkProBoldItalic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Lemon Medium";
+    src: url("../fonts/LemonMilkProMedium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Lemon Medium Italic";
+    src: url("../fonts/LemonMilkProMediumItalic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Lemon Regular";
+    src: url("../fonts/LemonMilkProRegular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Lemon Regular Italic";
+    src: url("../fonts/LemonMilkProRegularItalic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Lemon UltraLight";
+    src: url("../fonts/LemonMilkProUltraLight.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Lemon UltraLight Italic";
+    src: url("../fonts/LemonMilkProUltraLightItalic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Zacbelx Extrabold";
+    src: url("../fonts/zacbelx-extrabold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Zacbelx Medium";
+    src: url("../fonts/zacbelx-medium.ttf") format("truetype");
+}
+
+@keyframes imgfirst {
+
+    0%,
+    100% {
+        transform: rotate(0deg) translateY(6px) rotate(0deg);
+    }
+
+
+
+    100% {
+        transform: rotate(360deg) translateY(6px) rotate(-360deg);
+    }
+
+
+}
+
+@keyframes bounce_513 {
+
+    0%,
+    100% {
+        transform: translateY(-17%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+
+    50% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
+
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 720px) {
+    #loader-wrapper.loader-off {
+        display: none !important;
+    }
+    
+    #loader-wrapper {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: #000;
+        z-index: 15000;
+        overflow: hidden;
+    
+        .loader {
+            position: absolute;
+            left: 40%;
+            top: 48%;
+    
+            .jelly {
+                --uib-size: 80px;
+                --uib-speed: 0.7s;
+                --uib-color: #FFFF27;
+                position: relative;
+                height: calc(var(--uib-size) / 2);
+                width: var(--uib-size);
+                filter: url('#uib-jelly-ooze');
+                animation: rotate72317 calc(var(--uib-speed) * 2) linear infinite;
+            }
+    
+            .jelly::before,
+            .jelly::after {
+                content: '';
+                position: absolute;
+                top: 0%;
+                left: 25%;
+                width: 50%;
+                height: 100%;
+                background: var(--uib-color);
+                border-radius: 100%;
+            }
+    
+            .jelly::before {
+                animation: shift-left var(--uib-speed) ease infinite;
+            }
+    
+            .jelly::after {
+                animation: shift-right var(--uib-speed) ease infinite;
+            }
+    
+            .jelly-maker {
+                width: 0;
+                height: 0;
+                position: absolute;
+            }
+    
+            @keyframes rotate72317 {
+    
+                0%,
+                49.999%,
+                100% {
+                    transform: none;
+                }
+    
+                50%,
+                99.999% {
+                    transform: rotate(90deg);
+                }
+            }
+    
+            @keyframes shift-left {
+    
+                0%,
+                100% {
+                    transform: translateX(0%);
+                }
+    
+                50% {
+                    transform: scale(0.65) translateX(-75%);
+                }
+            }
+    
+            @keyframes shift-right {
+    
+                0%,
+                100% {
+                    transform: translateX(0%);
+                }
+    
+                50% {
+                    transform: scale(0.65) translateX(75%);
+                }
+            }
+        }
+    }
+    
+    html {
+        scroll-behavior: smooth;
+
+        body {
+            font-family: "Lemon Regular";
+            background-color: black;
+            margin: 0px;
+            padding: 0px;
+
+            .content {
+
+                .section3 {
+                    .container {
+                        max-width: 330px;
+                        margin: 0 auto;
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 50px;
+
+                        .up {
+                            margin-bottom: 25px;
+
+                            .up1 {
+                                p {
+                                    font-family: "Lemon Medium";
+                                    font-size: 7px;
+                                    line-height: 10px;
+                                    letter-spacing: 1.72em;
+                                    color: #FFFF27;
+                                    margin-bottom: 25px;
+                                }
+                            }
+
+                            .down1 {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+
+                                .left {
+                                    img {
+                                        width: 300px;
+                                    }
+                                }
+
+                                .right {
+                                    p {
+                                        font-family: "Lemon Regular";
+                                        font-size: 9px;
+                                        line-height: 24px;
+                                        color: #C5CFD5;
+                                        max-width: 290px;
+
+                                    }
+                                }
+                            }
+                        }
+
+
+                        .down {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+
+                            .box {
+                                .up {
+                                    margin-bottom: 0px;
+
+                                    button {
+                                        border: none;
+                                        cursor: pointer;
+                                        appearance: none;
+                                        background-color: inherit;
+                                        padding: 0px;
+
+                                        img {
+                                            width: 330px;
+                                            height: 330px;
+
+
+                                        }
+
+
+
+                                        .text {
+                                            display: none;
+                                            color: white;
+                                            font-size: 20px;
+                                            position: absolute;
+                                            text-align: center;
+                                            justify-content: center;
+                                            margin: 230px 145px;
+
+                                            img {
+                                                width: 233.5px;
+                                                height: 62px;
+                                            }
+                                        }
+
+                                        &:hover {
+                                            .overlay {
+                                                opacity: 1;
+                                            }
+                                        }
+
+                                    }
+
+                                    .modal1 {
+                                        display: none;
+                                        /* Hidden by default */
+                                        position: fixed;
+                                        opacity: 0;
+                                        /* Stay in place */
+                                        z-index: 1;
+                                        /* Sit on top */
+                                        padding-top: 5px;
+                                        padding-bottom: 5px;
+                                        /* Location of the box */
+                                        left: 0;
+                                        top: 0;
+                                        width: 100%;
+                                        /* Full width */
+                                        height: 100%;
+                                        /* Full height */
+                                        overflow: auto;
+                                        /* Enable scroll if needed */
+                                        background-color: rgb(0, 0, 0);
+                                        /* Fallback color */
+                                        background-color: rgba(0, 0, 0, 0.4);
+                                        /* Black w/ opacity */
+                                        transition: opacity 3s ease-in-out;
+
+
+
+                                        .modal-content1 {
+                                            width: 1120px;
+                                            margin: 0 auto;
+                                            background: #131313;
+                                            box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+                                            border-radius: 3px;
+
+                                            .containermodal1 {
+                                                width: 715px;
+                                                margin: 0 auto;
+
+
+                                                .up {
+                                                    margin: 0px;
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    padding-top: 30px;
+                                                    justify-content: space-between;
+
+                                                    .left {
+                                                        display: flex;
+                                                        flex-direction: row;
+
+                                                        a {
+                                                            font-family: "Lemon Medium";
+                                                            font-size: 18px;
+                                                            line-height: 25px;
+                                                            color: #FFFFFF;
+                                                        }
+
+                                                        .changetovideo {
+                                                            border: none;
+                                                            cursor: pointer;
+                                                            appearance: none;
+                                                            background-color: inherit;
+                                                            margin-right: 50px;
+                                                            font-family: "Lemon Medium";
+                                                            font-size: 18px;
+                                                            line-height: 25px;
+                                                            color: #FFFFFF;
+                                                        }
+
+                                                        .changetoimages {
+                                                            border: none;
+                                                            cursor: pointer;
+                                                            appearance: none;
+                                                            background-color: inherit;
+                                                            font-family: "Lemon Medium";
+                                                            font-size: 18px;
+                                                            line-height: 25px;
+                                                            color: #FFFF27;
+                                                        }
+
+                                                    }
+
+                                                    .right {
+                                                        button {
+                                                            border: none;
+                                                            cursor: pointer;
+                                                            appearance: none;
+                                                            background-color: inherit;
+
+                                                            img {
+                                                                width: 18px;
+                                                                height: 18px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                                .down {
+
+                                                    .imagespart {
+                                                        display: flex;
+                                                        flex-direction: row;
+                                                        margin-top: 40px;
+                                                        justify-content: space-between;
+
+                                                        .left {
+                                                            img {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                margin-bottom: 30px;
+                                                            }
+
+                                                            .project11image {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                display: block;
+                                                            }
+
+                                                            .project12image {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                display: none;
+                                                            }
+
+                                                            .project13image {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                display: none;
+                                                            }
+
+                                                            .project14image {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                display: none;
+                                                            }
+
+                                                            .project15image {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                display: none;
+                                                            }
+                                                        }
+
+                                                        .right {
+                                                            max-width: 280px;
+
+                                                            .text1 {
+                                                                p {
+                                                                    font-family: "Lemon Bold";
+                                                                    font-size: 28px;
+                                                                    line-height: 39px;
+                                                                    color: #FFFFFF;
+                                                                    margin: 0px;
+                                                                }
+                                                            }
+
+                                                            .text2 {
+                                                                p {
+                                                                    font-family: "Lemon Regular";
+                                                                    font-size: 12px;
+                                                                    line-height: 30px;
+                                                                    color: #C5CFD5;
+                                                                    margin-top: 17px;
+                                                                    margin-bottom: 75px;
+                                                                }
+                                                            }
+
+                                                            .selections {
+                                                                display: flex;
+                                                                flex-direction: row;
+                                                                flex-wrap: wrap;
+
+                                                                button {
+                                                                    border: none;
+                                                                    cursor: pointer;
+                                                                    appearance: none;
+                                                                    background-color: inherit;
+                                                                    padding: 0px;
+                                                                    margin: 3px;
+
+                                                                    img {
+                                                                        width: 85px;
+                                                                        height: 85px;
+                                                                    }
+                                                                }
+                                                            }
+
+                                                            .downparts {
+                                                                justify-content: center;
+                                                                text-align: center;
+                                                                display: flex;
+                                                                flex-direction: column;
+
+                                                                .ups {
+                                                                    p {
+                                                                        font-family: "Lemon Regular";
+                                                                        font-size: 16px;
+                                                                        line-height: 22px;
+                                                                        color: rgba(197, 207, 213, 0.7);
+                                                                        margin: 0px;
+                                                                        margin-bottom: 24px;
+                                                                        margin-top: 200px;
+                                                                    }
+                                                                }
+
+                                                                .downs {
+                                                                    img {
+                                                                        width: 60px;
+                                                                        height: 60px;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+
+                                                    .videopart {
+                                                        display: none;
+                                                        flex-direction: row;
+                                                        margin-top: 40px;
+                                                        justify-content: space-between;
+
+                                                        .left {
+                                                            video {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                margin-bottom: 30px;
+                                                            }
+
+                                                            .project11video {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                display: block;
+                                                            }
+
+                                                            .project12video {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                display: none;
+                                                            }
+
+                                                            .project13video {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                display: none;
+                                                            }
+
+                                                            .project14video {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                display: none;
+                                                            }
+
+                                                            .project15video {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                display: none;
+                                                            }
+                                                        }
+
+                                                        .right {
+                                                            max-width: 280px;
+
+                                                            .text1 {
+                                                                p {
+                                                                    font-family: "Lemon Bold";
+                                                                    font-size: 28px;
+                                                                    line-height: 39px;
+                                                                    color: #FFFFFF;
+                                                                    margin: 0px;
+                                                                }
+                                                            }
+
+                                                            .text2 {
+                                                                p {
+                                                                    font-family: "Lemon Regular";
+                                                                    font-size: 12px;
+                                                                    line-height: 30px;
+                                                                    color: #C5CFD5;
+                                                                    margin-top: 17px;
+                                                                    margin-bottom: 75px;
+                                                                }
+                                                            }
+
+                                                            .selections {
+                                                                display: flex;
+                                                                flex-direction: row;
+                                                                flex-wrap: wrap;
+
+                                                                button {
+                                                                    border: none;
+                                                                    cursor: pointer;
+                                                                    appearance: none;
+                                                                    background-color: inherit;
+                                                                    padding: 0px;
+                                                                    margin: 3px;
+
+                                                                    video {
+                                                                        width: 85px;
+                                                                        height: 85px;
+                                                                    }
+                                                                }
+                                                            }
+
+                                                            .downparts {
+                                                                justify-content: center;
+                                                                text-align: center;
+                                                                display: flex;
+                                                                flex-direction: column;
+
+                                                                .ups {
+                                                                    p {
+                                                                        font-family: "Lemon Regular";
+                                                                        font-size: 16px;
+                                                                        line-height: 22px;
+                                                                        color: rgba(197, 207, 213, 0.7);
+                                                                        margin: 0px;
+                                                                        margin-bottom: 24px;
+                                                                        margin-top: 200px;
+                                                                    }
+                                                                }
+
+                                                                .downs {
+                                                                    img {
+                                                                        width: 60px;
+                                                                        height: 60px;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+
+
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .down {
+                                    display: flex;
+                                    flex-direction: column;
+
+                                    .ups {
+                                        p {
+                                            font-family: "Lemon Medium";
+                                            font-size: 10px;
+                                            line-height: 14px;
+                                            color: #FFFFFF;
+                                            margin-top: 0px;
+                                            margin-bottom: 0px;
+                                        }
+                                    }
+
+                                    .downs {
+                                        p {
+                                            font-family: "Lemon Regular";
+                                            font-size: 9px;
+                                            line-height: 13px;
+                                            color: #A4ADB3;
+                                            margin-top: 6px;
+                                            margin-bottom: 40px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+
+
+        }
+    }
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1070px) {
+    #loader-wrapper.loader-off {
+        display: none !important;
+    }
+    
+    #loader-wrapper {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: #000;
+        z-index: 15000;
+        overflow: hidden;
+    
+        .loader {
+            position: absolute;
+            left: 40%;
+            top: 48%;
+    
+            .jelly {
+                --uib-size: 80px;
+                --uib-speed: 0.7s;
+                --uib-color: #FFFF27;
+                position: relative;
+                height: calc(var(--uib-size) / 2);
+                width: var(--uib-size);
+                filter: url('#uib-jelly-ooze');
+                animation: rotate72317 calc(var(--uib-speed) * 2) linear infinite;
+            }
+    
+            .jelly::before,
+            .jelly::after {
+                content: '';
+                position: absolute;
+                top: 0%;
+                left: 25%;
+                width: 50%;
+                height: 100%;
+                background: var(--uib-color);
+                border-radius: 100%;
+            }
+    
+            .jelly::before {
+                animation: shift-left var(--uib-speed) ease infinite;
+            }
+    
+            .jelly::after {
+                animation: shift-right var(--uib-speed) ease infinite;
+            }
+    
+            .jelly-maker {
+                width: 0;
+                height: 0;
+                position: absolute;
+            }
+    
+            @keyframes rotate72317 {
+    
+                0%,
+                49.999%,
+                100% {
+                    transform: none;
+                }
+    
+                50%,
+                99.999% {
+                    transform: rotate(90deg);
+                }
+            }
+    
+            @keyframes shift-left {
+    
+                0%,
+                100% {
+                    transform: translateX(0%);
+                }
+    
+                50% {
+                    transform: scale(0.65) translateX(-75%);
+                }
+            }
+    
+            @keyframes shift-right {
+    
+                0%,
+                100% {
+                    transform: translateX(0%);
+                }
+    
+                50% {
+                    transform: scale(0.65) translateX(75%);
+                }
+            }
+        }
+    }
+    
+
+    html {
+        scroll-behavior: smooth;
+
+        body {
+            font-family: "Lemon Regular";
+            background-color: black;
+            margin: 0px;
+            padding: 0px;
+
+            .content {
+                .section3 {
+                    .container {
+                        max-width: 715px;
+                        margin: 0 auto;
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 70px;
+
+                        .up {
+                            margin-bottom: 81px;
+
+                            .up1 {
+                                p {
+                                    font-family: "Lemon Medium";
+                                    font-size: 9px;
+                                    line-height: 13px;
+                                    letter-spacing: 1.72em;
+                                    color: #FFFF27;
+                                    margin-bottom: 25px;
+                                }
+                            }
+
+                            .down1 {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+
+                                .left {
+                                    img {
+                                        width: 366.01px;
+                                    }
+                                }
+
+                                .right {
+                                    p {
+                                        font-family: "Lemon Regular";
+                                        font-size: 10px;
+                                        line-height: 24px;
+                                        color: #C5CFD5;
+                                        max-width: 290px;
+
+                                    }
+                                }
+                            }
+                        }
+
+
+                        .down {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+
+                            .box {
+                                .up {
+                                    margin-bottom: 0px;
+
+                                    button {
+                                        border: none;
+                                        cursor: pointer;
+                                        appearance: none;
+                                        background-color: inherit;
+
+                                        img {
+                                            width: 330px;
+                                            height: 330px;
+
+
+                                        }
+
+
+
+                                        .text {
+                                            display: none;
+                                            color: white;
+                                            font-size: 20px;
+                                            position: absolute;
+                                            text-align: center;
+                                            justify-content: center;
+                                            margin: 230px 145px;
+
+                                            img {
+                                                width: 233.5px;
+                                                height: 62px;
+                                            }
+                                        }
+
+                                        &:hover {
+                                            .overlay {
+                                                opacity: 1;
+                                            }
+                                        }
+
+                                    }
+
+                                    .modal1 {
+                                        display: none;
+                                        /* Hidden by default */
+                                        position: fixed;
+                                        opacity: 0;
+                                        /* Stay in place */
+                                        z-index: 1;
+                                        /* Sit on top */
+                                        padding-top: 5px;
+                                        padding-bottom: 5px;
+                                        /* Location of the box */
+                                        left: 0;
+                                        top: 0;
+                                        width: 100%;
+                                        /* Full width */
+                                        height: 100%;
+                                        /* Full height */
+                                        overflow: auto;
+                                        /* Enable scroll if needed */
+                                        background-color: rgb(0, 0, 0);
+                                        /* Fallback color */
+                                        background-color: rgba(0, 0, 0, 0.4);
+                                        /* Black w/ opacity */
+                                        transition: opacity 3s ease-in-out;
+
+
+
+                                        .modal-content1 {
+                                            width: 1120px;
+                                            margin: 0 auto;
+                                            background: #131313;
+                                            box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+                                            border-radius: 3px;
+
+                                            .containermodal1 {
+                                                width: 715px;
+                                                margin: 0 auto;
+
+
+                                                .up {
+                                                    margin: 0px;
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    padding-top: 30px;
+                                                    justify-content: space-between;
+
+                                                    .left {
+                                                        display: flex;
+                                                        flex-direction: row;
+
+                                                        a {
+                                                            font-family: "Lemon Medium";
+                                                            font-size: 18px;
+                                                            line-height: 25px;
+                                                            color: #FFFFFF;
+                                                        }
+
+                                                        .changetovideo {
+                                                            border: none;
+                                                            cursor: pointer;
+                                                            appearance: none;
+                                                            background-color: inherit;
+                                                            margin-right: 50px;
+                                                            font-family: "Lemon Medium";
+                                                            font-size: 18px;
+                                                            line-height: 25px;
+                                                            color: #FFFFFF;
+                                                        }
+
+                                                        .changetoimages {
+                                                            border: none;
+                                                            cursor: pointer;
+                                                            appearance: none;
+                                                            background-color: inherit;
+                                                            font-family: "Lemon Medium";
+                                                            font-size: 18px;
+                                                            line-height: 25px;
+                                                            color: #FFFF27;
+                                                        }
+
+                                                    }
+
+                                                    .right {
+                                                        button {
+                                                            border: none;
+                                                            cursor: pointer;
+                                                            appearance: none;
+                                                            background-color: inherit;
+
+                                                            img {
+                                                                width: 18px;
+                                                                height: 18px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                                .down {
+
+                                                    .imagespart {
+                                                        display: flex;
+                                                        flex-direction: row;
+                                                        margin-top: 40px;
+                                                        justify-content: space-between;
+
+                                                        .left {
+                                                            img {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                margin-bottom: 30px;
+                                                            }
+
+                                                            .project11image {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                display: block;
+                                                            }
+
+                                                            .project12image {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                display: none;
+                                                            }
+
+                                                            .project13image {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                display: none;
+                                                            }
+
+                                                            .project14image {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                display: none;
+                                                            }
+
+                                                            .project15image {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                display: none;
+                                                            }
+                                                        }
+
+                                                        .right {
+                                                            max-width: 280px;
+
+                                                            .text1 {
+                                                                p {
+                                                                    font-family: "Lemon Bold";
+                                                                    font-size: 28px;
+                                                                    line-height: 39px;
+                                                                    color: #FFFFFF;
+                                                                    margin: 0px;
+                                                                }
+                                                            }
+
+                                                            .text2 {
+                                                                p {
+                                                                    font-family: "Lemon Regular";
+                                                                    font-size: 12px;
+                                                                    line-height: 30px;
+                                                                    color: #C5CFD5;
+                                                                    margin-top: 17px;
+                                                                    margin-bottom: 75px;
+                                                                }
+                                                            }
+
+                                                            .selections {
+                                                                display: flex;
+                                                                flex-direction: row;
+                                                                flex-wrap: wrap;
+
+                                                                button {
+                                                                    border: none;
+                                                                    cursor: pointer;
+                                                                    appearance: none;
+                                                                    background-color: inherit;
+                                                                    padding: 0px;
+                                                                    margin: 3px;
+
+                                                                    img {
+                                                                        width: 85px;
+                                                                        height: 85px;
+                                                                    }
+                                                                }
+                                                            }
+
+                                                            .downparts {
+                                                                justify-content: center;
+                                                                text-align: center;
+                                                                display: flex;
+                                                                flex-direction: column;
+
+                                                                .ups {
+                                                                    p {
+                                                                        font-family: "Lemon Regular";
+                                                                        font-size: 16px;
+                                                                        line-height: 22px;
+                                                                        color: rgba(197, 207, 213, 0.7);
+                                                                        margin: 0px;
+                                                                        margin-bottom: 24px;
+                                                                        margin-top: 200px;
+                                                                    }
+                                                                }
+
+                                                                .downs {
+                                                                    img {
+                                                                        width: 60px;
+                                                                        height: 60px;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+
+                                                    .videopart {
+                                                        display: none;
+                                                        flex-direction: row;
+                                                        margin-top: 40px;
+                                                        justify-content: space-between;
+
+                                                        .left {
+                                                            video {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                margin-bottom: 30px;
+                                                            }
+
+                                                            .project11video {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                display: block;
+                                                            }
+
+                                                            .project12video {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                display: none;
+                                                            }
+
+                                                            .project13video {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                display: none;
+                                                            }
+
+                                                            .project14video {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                display: none;
+                                                            }
+
+                                                            .project15video {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                display: none;
+                                                            }
+                                                        }
+
+                                                        .right {
+                                                            max-width: 280px;
+
+                                                            .text1 {
+                                                                p {
+                                                                    font-family: "Lemon Bold";
+                                                                    font-size: 28px;
+                                                                    line-height: 39px;
+                                                                    color: #FFFFFF;
+                                                                    margin: 0px;
+                                                                }
+                                                            }
+
+                                                            .text2 {
+                                                                p {
+                                                                    font-family: "Lemon Regular";
+                                                                    font-size: 12px;
+                                                                    line-height: 30px;
+                                                                    color: #C5CFD5;
+                                                                    margin-top: 17px;
+                                                                    margin-bottom: 75px;
+                                                                }
+                                                            }
+
+                                                            .selections {
+                                                                display: flex;
+                                                                flex-direction: row;
+                                                                flex-wrap: wrap;
+
+                                                                button {
+                                                                    border: none;
+                                                                    cursor: pointer;
+                                                                    appearance: none;
+                                                                    background-color: inherit;
+                                                                    padding: 0px;
+                                                                    margin: 3px;
+
+                                                                    video {
+                                                                        width: 85px;
+                                                                        height: 85px;
+                                                                    }
+                                                                }
+                                                            }
+
+                                                            .downparts {
+                                                                justify-content: center;
+                                                                text-align: center;
+                                                                display: flex;
+                                                                flex-direction: column;
+
+                                                                .ups {
+                                                                    p {
+                                                                        font-family: "Lemon Regular";
+                                                                        font-size: 16px;
+                                                                        line-height: 22px;
+                                                                        color: rgba(197, 207, 213, 0.7);
+                                                                        margin: 0px;
+                                                                        margin-bottom: 24px;
+                                                                        margin-top: 200px;
+                                                                    }
+                                                                }
+
+                                                                .downs {
+                                                                    img {
+                                                                        width: 60px;
+                                                                        height: 60px;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+
+
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .down {
+                                    display: flex;
+                                    flex-direction: column;
+
+                                    .ups {
+                                        p {
+                                            font-family: "Lemon Medium";
+                                            font-size: 10px;
+                                            line-height: 14px;
+                                            color: #FFFFFF;
+                                            margin-top: 0px;
+                                            margin-bottom: 0px;
+                                        }
+                                    }
+
+                                    .downs {
+                                        p {
+                                            font-family: "Lemon Regular";
+                                            font-size: 9px;
+                                            line-height: 13px;
+                                            color: #A4ADB3;
+                                            margin-top: 6px;
+                                            margin-bottom: 40px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1071px) {
+
+    #loader-wrapper.loader-off {
+        display: none !important;
+    }
+    
+    #loader-wrapper {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: #000;
+        z-index: 15000;
+        overflow: hidden;
+    
+        .loader {
+            position: absolute;
+            left: 48%;
+            top: 48%;
+    
+            .jelly {
+                --uib-size: 80px;
+                --uib-speed: 0.7s;
+                --uib-color: #FFFF27;
+                position: relative;
+                height: calc(var(--uib-size) / 2);
+                width: var(--uib-size);
+                filter: url('#uib-jelly-ooze');
+                animation: rotate72317 calc(var(--uib-speed) * 2) linear infinite;
+            }
+    
+            .jelly::before,
+            .jelly::after {
+                content: '';
+                position: absolute;
+                top: 0%;
+                left: 25%;
+                width: 50%;
+                height: 100%;
+                background: var(--uib-color);
+                border-radius: 100%;
+            }
+    
+            .jelly::before {
+                animation: shift-left var(--uib-speed) ease infinite;
+            }
+    
+            .jelly::after {
+                animation: shift-right var(--uib-speed) ease infinite;
+            }
+    
+            .jelly-maker {
+                width: 0;
+                height: 0;
+                position: absolute;
+            }
+    
+            @keyframes rotate72317 {
+    
+                0%,
+                49.999%,
+                100% {
+                    transform: none;
+                }
+    
+                50%,
+                99.999% {
+                    transform: rotate(90deg);
+                }
+            }
+    
+            @keyframes shift-left {
+    
+                0%,
+                100% {
+                    transform: translateX(0%);
+                }
+    
+                50% {
+                    transform: scale(0.65) translateX(-75%);
+                }
+            }
+    
+            @keyframes shift-right {
+    
+                0%,
+                100% {
+                    transform: translateX(0%);
+                }
+    
+                50% {
+                    transform: scale(0.65) translateX(75%);
+                }
+            }
+        }
+    }
+    
+    html {
+        scroll-behavior: smooth;
+
+        body {
+            font-family: "Lemon Regular";
+            background-color: black;
+            margin: 0px;
+            padding: 0px;
+
+            .content {
+                .section3 {
+                    .container {
+                        max-width: 1060px;
+                        margin: 0 auto;
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 40px;
+
+                        .up {
+                            margin-bottom: 81px;
+
+                            .up1 {
+                                p {
+                                    font-family: "Lemon Medium";
+                                    font-size: 12px;
+                                    line-height: 17px;
+                                    letter-spacing: 1.72em;
+                                    color: #FFFF27;
+                                    margin-bottom: 25px;
+                                }
+                            }
+
+                            .down1 {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+
+                                .left {
+                                    img {
+                                        width: 524.95px;
+                                    }
+                                }
+
+                                .right {
+                                    p {
+                                        font-family: "Lemon Regular";
+                                        font-size: 14px;
+                                        line-height: 30px;
+                                        color: #C5CFD5;
+                                        max-width: 473px;
+                                        margin-top: 30px;
+
+                                    }
+                                }
+                            }
+                        }
+
+
+                        .down {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+
+                            .box {
+                                .up {
+                                    margin-bottom: 0px;
+
+                                    button {
+                                        border: none;
+                                        cursor: pointer;
+                                        appearance: none;
+                                        background-color: inherit;
+
+                                        img {
+                                            width: 515px;
+                                            height: 515px;
+
+
+                                        }
+
+                                        .overlay {
+                                            position: absolute;
+                                            width: 515px;
+                                            height: 515px;
+                                            opacity: 0;
+                                            transition: .5s ease;
+
+                                            background: rgba(255, 246, 39, 0.75);
+                                            border-radius: 3px;
+                                            margin-top: -520px;
+
+
+                                        }
+
+                                        .text {
+                                            color: white;
+                                            font-size: 20px;
+                                            position: absolute;
+                                            text-align: center;
+                                            justify-content: center;
+                                            margin: 230px 145px;
+
+                                            img {
+                                                width: 233.5px;
+                                                height: 62px;
+                                            }
+                                        }
+
+                                        &:hover {
+                                            .overlay {
+                                                opacity: 1;
+                                            }
+                                        }
+
+                                    }
+
+                                    .modal1 {
+                                        display: none;
+                                        /* Hidden by default */
+                                        position: fixed;
+                                        opacity: 0;
+                                        /* Stay in place */
+                                        z-index: 1;
+                                        /* Sit on top */
+                                        padding-top: 5px;
+                                        padding-bottom: 5px;
+                                        /* Location of the box */
+                                        left: 0;
+                                        top: 0;
+                                        width: 100%;
+                                        /* Full width */
+                                        height: 100%;
+                                        /* Full height */
+                                        overflow: auto;
+                                        /* Enable scroll if needed */
+                                        background-color: rgb(0, 0, 0);
+                                        /* Fallback color */
+                                        background-color: rgba(0, 0, 0, 0.4);
+                                        /* Black w/ opacity */
+                                        transition: opacity 3s ease-in-out;
+
+
+
+                                        .modal-content1 {
+                                            width: 1120px;
+                                            margin: 0 auto;
+                                            background: #131313;
+                                            box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+                                            border-radius: 3px;
+
+                                            .containermodal1 {
+                                                width: 1060px;
+                                                margin: 0 auto;
+
+
+                                                .up {
+                                                    margin: 0px;
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    padding-top: 30px;
+                                                    justify-content: space-between;
+
+                                                    .left {
+                                                        display: flex;
+                                                        flex-direction: row;
+
+                                                        a {
+                                                            font-family: "Lemon Medium";
+                                                            font-size: 18px;
+                                                            line-height: 25px;
+                                                            color: #FFFFFF;
+                                                        }
+
+                                                        .changetovideo {
+                                                            border: none;
+                                                            cursor: pointer;
+                                                            appearance: none;
+                                                            background-color: inherit;
+                                                            margin-right: 50px;
+                                                            font-family: "Lemon Medium";
+                                                            font-size: 18px;
+                                                            line-height: 25px;
+                                                            color: #FFFFFF;
+                                                        }
+
+                                                        .changetoimages {
+                                                            border: none;
+                                                            cursor: pointer;
+                                                            appearance: none;
+                                                            background-color: inherit;
+                                                            font-family: "Lemon Medium";
+                                                            font-size: 18px;
+                                                            line-height: 25px;
+                                                            color: #FFFF27;
+                                                        }
+
+                                                    }
+
+                                                    .right {
+                                                        button {
+                                                            border: none;
+                                                            cursor: pointer;
+                                                            appearance: none;
+                                                            background-color: inherit;
+
+                                                            img {
+                                                                width: 18px;
+                                                                height: 18px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                                .down {
+
+                                                    .imagespart {
+                                                        display: flex;
+                                                        flex-direction: row;
+                                                        margin-top: 40px;
+                                                        justify-content: space-between;
+
+                                                        .left {
+                                                            img {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                margin-bottom: 30px;
+                                                            }
+
+                                                            .project11image {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                display: block;
+                                                            }
+
+                                                            .project12image {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                display: none;
+                                                            }
+
+                                                            .project13image {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                display: none;
+                                                            }
+
+                                                            .project14image {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                display: none;
+                                                            }
+
+                                                            .project15image {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                display: none;
+                                                            }
+                                                        }
+
+                                                        .right {
+                                                            max-width: 280px;
+
+                                                            .text1 {
+                                                                p {
+                                                                    font-family: "Lemon Bold";
+                                                                    font-size: 28px;
+                                                                    line-height: 39px;
+                                                                    color: #FFFFFF;
+                                                                    margin: 0px;
+                                                                }
+                                                            }
+
+                                                            .text2 {
+                                                                p {
+                                                                    font-family: "Lemon Regular";
+                                                                    font-size: 12px;
+                                                                    line-height: 30px;
+                                                                    color: #C5CFD5;
+                                                                    margin-top: 17px;
+                                                                    margin-bottom: 75px;
+                                                                }
+                                                            }
+
+                                                            .selections {
+                                                                display: flex;
+                                                                flex-direction: row;
+                                                                flex-wrap: wrap;
+
+                                                                button {
+                                                                    border: none;
+                                                                    cursor: pointer;
+                                                                    appearance: none;
+                                                                    background-color: inherit;
+                                                                    padding: 0px;
+                                                                    margin: 3px;
+
+                                                                    img {
+                                                                        width: 85px;
+                                                                        height: 85px;
+                                                                    }
+                                                                }
+                                                            }
+
+                                                            .downparts {
+                                                                justify-content: center;
+                                                                text-align: center;
+                                                                display: flex;
+                                                                flex-direction: column;
+
+                                                                .ups {
+                                                                    p {
+                                                                        font-family: "Lemon Regular";
+                                                                        font-size: 16px;
+                                                                        line-height: 22px;
+                                                                        color: rgba(197, 207, 213, 0.7);
+                                                                        margin: 0px;
+                                                                        margin-bottom: 24px;
+                                                                        margin-top: 200px;
+                                                                    }
+                                                                }
+
+                                                                .downs {
+                                                                    img {
+                                                                        width: 60px;
+                                                                        height: 60px;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+
+                                                    .videopart {
+                                                        display: none;
+                                                        flex-direction: row;
+                                                        margin-top: 40px;
+                                                        justify-content: space-between;
+
+                                                        .left {
+                                                            video {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                margin-bottom: 30px;
+                                                            }
+
+                                                            .project11video {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                display: block;
+                                                            }
+
+                                                            .project12video {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                display: none;
+                                                            }
+
+                                                            .project13video {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                display: none;
+                                                            }
+
+                                                            .project14video {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                display: none;
+                                                            }
+
+                                                            .project15video {
+                                                                width: 737px;
+                                                                height: 737px;
+                                                                display: none;
+                                                            }
+                                                        }
+
+                                                        .right {
+                                                            max-width: 280px;
+
+                                                            .text1 {
+                                                                p {
+                                                                    font-family: "Lemon Bold";
+                                                                    font-size: 28px;
+                                                                    line-height: 39px;
+                                                                    color: #FFFFFF;
+                                                                    margin: 0px;
+                                                                }
+                                                            }
+
+                                                            .text2 {
+                                                                p {
+                                                                    font-family: "Lemon Regular";
+                                                                    font-size: 12px;
+                                                                    line-height: 30px;
+                                                                    color: #C5CFD5;
+                                                                    margin-top: 17px;
+                                                                    margin-bottom: 75px;
+                                                                }
+                                                            }
+
+                                                            .selections {
+                                                                display: flex;
+                                                                flex-direction: row;
+                                                                flex-wrap: wrap;
+
+                                                                button {
+                                                                    border: none;
+                                                                    cursor: pointer;
+                                                                    appearance: none;
+                                                                    background-color: inherit;
+                                                                    padding: 0px;
+                                                                    margin: 3px;
+
+                                                                    video {
+                                                                        width: 85px;
+                                                                        height: 85px;
+                                                                    }
+                                                                }
+                                                            }
+
+                                                            .downparts {
+                                                                justify-content: center;
+                                                                text-align: center;
+                                                                display: flex;
+                                                                flex-direction: column;
+
+                                                                .ups {
+                                                                    p {
+                                                                        font-family: "Lemon Regular";
+                                                                        font-size: 16px;
+                                                                        line-height: 22px;
+                                                                        color: rgba(197, 207, 213, 0.7);
+                                                                        margin: 0px;
+                                                                        margin-bottom: 24px;
+                                                                        margin-top: 200px;
+                                                                    }
+                                                                }
+
+                                                                .downs {
+                                                                    img {
+                                                                        width: 60px;
+                                                                        height: 60px;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+
+
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .down {
+                                    display: flex;
+                                    flex-direction: column;
+
+                                    .ups {
+                                        p {
+                                            font-family: "Lemon Medium";
+                                            font-size: 18px;
+                                            line-height: 25px;
+                                            color: #FFFFFF;
+                                            margin-top: 0px;
+                                            margin-bottom: 0px;
+                                        }
+                                    }
+
+                                    .downs {
+                                        p {
+                                            font-family: "Lemon Regular";
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            color: #A4ADB3;
+                                            margin-top: 6px;
+                                            margin-bottom: 40px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+
+        }
+    }
+}
+
+
+

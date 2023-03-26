@@ -1,0 +1,1426 @@
+@font-face {
+  font-family: "Lemon Bold";
+  src: url("../fonts/LemonMilkProBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Lemon Bold Italic";
+  src: url("../fonts/LemonMilkProBoldItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "Lemon Medium";
+  src: url("../fonts/LemonMilkProMedium.otf") format("opentype");
+}
+@font-face {
+  font-family: "Lemon Medium Italic";
+  src: url("../fonts/LemonMilkProMediumItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "Lemon Regular";
+  src: url("../fonts/LemonMilkProRegular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Lemon Regular Italic";
+  src: url("../fonts/LemonMilkProRegularItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "Lemon UltraLight";
+  src: url("../fonts/LemonMilkProUltraLight.otf") format("opentype");
+}
+@font-face {
+  font-family: "Lemon UltraLight Italic";
+  src: url("../fonts/LemonMilkProUltraLightItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "Zacbelx Extrabold";
+  src: url("../fonts/zacbelx-extrabold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Zacbelx Medium";
+  src: url("../fonts/zacbelx-medium.ttf") format("truetype");
+}
+@keyframes imgfirst {
+  0%, 100% {
+    transform: rotate(0deg) translateY(6px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateY(6px) rotate(-360deg);
+  }
+}
+@keyframes bounce_513 {
+  0%, 100% {
+    transform: translateY(-17%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (max-width: 720px) {
+  #loader-wrapper.loader-off {
+    display: none !important;
+  }
+  #loader-wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 15000;
+    overflow: hidden;
+  }
+  #loader-wrapper .loader {
+    position: absolute;
+    left: 40%;
+    top: 48%;
+  }
+  #loader-wrapper .loader .jelly {
+    --uib-size: 80px;
+    --uib-speed: 0.7s;
+    --uib-color: #FFFF27;
+    position: relative;
+    height: calc(var(--uib-size) / 2);
+    width: var(--uib-size);
+    filter: url("#uib-jelly-ooze");
+    animation: rotate72317 calc(var(--uib-speed) * 2) linear infinite;
+  }
+  #loader-wrapper .loader .jelly::before,
+  #loader-wrapper .loader .jelly::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 25%;
+    width: 50%;
+    height: 100%;
+    background: var(--uib-color);
+    border-radius: 100%;
+  }
+  #loader-wrapper .loader .jelly::before {
+    animation: shift-left var(--uib-speed) ease infinite;
+  }
+  #loader-wrapper .loader .jelly::after {
+    animation: shift-right var(--uib-speed) ease infinite;
+  }
+  #loader-wrapper .loader .jelly-maker {
+    width: 0;
+    height: 0;
+    position: absolute;
+  }
+  @keyframes rotate72317 {
+    0%, 49.999%, 100% {
+      transform: none;
+    }
+    50%, 99.999% {
+      transform: rotate(90deg);
+    }
+  }
+  @keyframes shift-left {
+    0%, 100% {
+      transform: translateX(0%);
+    }
+    50% {
+      transform: scale(0.65) translateX(-75%);
+    }
+  }
+  @keyframes shift-right {
+    0%, 100% {
+      transform: translateX(0%);
+    }
+    50% {
+      transform: scale(0.65) translateX(75%);
+    }
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  html body {
+    font-family: "Lemon Regular";
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+  }
+  html body .content .section3 .container {
+    max-width: 330px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  html body .content .section3 .container .up {
+    margin-bottom: 25px;
+  }
+  html body .content .section3 .container .up .up1 p {
+    font-family: "Lemon Medium";
+    font-size: 7px;
+    line-height: 10px;
+    letter-spacing: 1.72em;
+    color: #FFFF27;
+    margin-bottom: 25px;
+  }
+  html body .content .section3 .container .up .down1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  html body .content .section3 .container .up .down1 .left img {
+    width: 300px;
+  }
+  html body .content .section3 .container .up .down1 .right p {
+    font-family: "Lemon Regular";
+    font-size: 9px;
+    line-height: 24px;
+    color: #C5CFD5;
+    max-width: 290px;
+  }
+  html body .content .section3 .container .down {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  html body .content .section3 .container .down .box .up {
+    margin-bottom: 0px;
+  }
+  html body .content .section3 .container .down .box .up button {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+    padding: 0px;
+  }
+  html body .content .section3 .container .down .box .up button img {
+    width: 330px;
+    height: 330px;
+  }
+  html body .content .section3 .container .down .box .up button .text {
+    display: none;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    margin: 230px 145px;
+  }
+  html body .content .section3 .container .down .box .up button .text img {
+    width: 233.5px;
+    height: 62px;
+  }
+  html body .content .section3 .container .down .box .up button:hover .overlay {
+    opacity: 1;
+  }
+  html body .content .section3 .container .down .box .up .modal1 {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    opacity: 0;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    transition: opacity 3s ease-in-out;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 {
+    width: 1120px;
+    margin: 0 auto;
+    background: #131313;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 {
+    width: 715px;
+    margin: 0 auto;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    justify-content: space-between;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .left {
+    display: flex;
+    flex-direction: row;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .left a {
+    font-family: "Lemon Medium";
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .left .changetovideo {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+    margin-right: 50px;
+    font-family: "Lemon Medium";
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .left .changetoimages {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+    font-family: "Lemon Medium";
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFF27;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .right button {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .right button img {
+    width: 18px;
+    height: 18px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: space-between;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left img {
+    width: 737px;
+    height: 737px;
+    margin-bottom: 30px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left .project11image {
+    width: 737px;
+    height: 737px;
+    display: block;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left .project12image {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left .project13image {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left .project14image {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left .project15image {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right {
+    max-width: 280px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .text1 p {
+    font-family: "Lemon Bold";
+    font-size: 28px;
+    line-height: 39px;
+    color: #FFFFFF;
+    margin: 0px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .text2 p {
+    font-family: "Lemon Regular";
+    font-size: 12px;
+    line-height: 30px;
+    color: #C5CFD5;
+    margin-top: 17px;
+    margin-bottom: 75px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .selections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .selections button {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+    padding: 0px;
+    margin: 3px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .selections button img {
+    width: 85px;
+    height: 85px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .downparts {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .downparts .ups p {
+    font-family: "Lemon Regular";
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(197, 207, 213, 0.7);
+    margin: 0px;
+    margin-bottom: 24px;
+    margin-top: 200px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .downparts .downs img {
+    width: 60px;
+    height: 60px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart {
+    display: none;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: space-between;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left video {
+    width: 737px;
+    height: 737px;
+    margin-bottom: 30px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left .project11video {
+    width: 737px;
+    height: 737px;
+    display: block;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left .project12video {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left .project13video {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left .project14video {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left .project15video {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right {
+    max-width: 280px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .text1 p {
+    font-family: "Lemon Bold";
+    font-size: 28px;
+    line-height: 39px;
+    color: #FFFFFF;
+    margin: 0px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .text2 p {
+    font-family: "Lemon Regular";
+    font-size: 12px;
+    line-height: 30px;
+    color: #C5CFD5;
+    margin-top: 17px;
+    margin-bottom: 75px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .selections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .selections button {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+    padding: 0px;
+    margin: 3px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .selections button video {
+    width: 85px;
+    height: 85px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .downparts {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .downparts .ups p {
+    font-family: "Lemon Regular";
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(197, 207, 213, 0.7);
+    margin: 0px;
+    margin-bottom: 24px;
+    margin-top: 200px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .downparts .downs img {
+    width: 60px;
+    height: 60px;
+  }
+  html body .content .section3 .container .down .box .down {
+    display: flex;
+    flex-direction: column;
+  }
+  html body .content .section3 .container .down .box .down .ups p {
+    font-family: "Lemon Medium";
+    font-size: 10px;
+    line-height: 14px;
+    color: #FFFFFF;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  html body .content .section3 .container .down .box .down .downs p {
+    font-family: "Lemon Regular";
+    font-size: 9px;
+    line-height: 13px;
+    color: #A4ADB3;
+    margin-top: 6px;
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 1070px) {
+  #loader-wrapper.loader-off {
+    display: none !important;
+  }
+  #loader-wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 15000;
+    overflow: hidden;
+  }
+  #loader-wrapper .loader {
+    position: absolute;
+    left: 40%;
+    top: 48%;
+  }
+  #loader-wrapper .loader .jelly {
+    --uib-size: 80px;
+    --uib-speed: 0.7s;
+    --uib-color: #FFFF27;
+    position: relative;
+    height: calc(var(--uib-size) / 2);
+    width: var(--uib-size);
+    filter: url("#uib-jelly-ooze");
+    animation: rotate72317 calc(var(--uib-speed) * 2) linear infinite;
+  }
+  #loader-wrapper .loader .jelly::before,
+  #loader-wrapper .loader .jelly::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 25%;
+    width: 50%;
+    height: 100%;
+    background: var(--uib-color);
+    border-radius: 100%;
+  }
+  #loader-wrapper .loader .jelly::before {
+    animation: shift-left var(--uib-speed) ease infinite;
+  }
+  #loader-wrapper .loader .jelly::after {
+    animation: shift-right var(--uib-speed) ease infinite;
+  }
+  #loader-wrapper .loader .jelly-maker {
+    width: 0;
+    height: 0;
+    position: absolute;
+  }
+  @keyframes rotate72317 {
+    0%, 49.999%, 100% {
+      transform: none;
+    }
+    50%, 99.999% {
+      transform: rotate(90deg);
+    }
+  }
+  @keyframes shift-left {
+    0%, 100% {
+      transform: translateX(0%);
+    }
+    50% {
+      transform: scale(0.65) translateX(-75%);
+    }
+  }
+  @keyframes shift-right {
+    0%, 100% {
+      transform: translateX(0%);
+    }
+    50% {
+      transform: scale(0.65) translateX(75%);
+    }
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  html body {
+    font-family: "Lemon Regular";
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+  }
+  html body .content .section3 .container {
+    max-width: 715px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+  }
+  html body .content .section3 .container .up {
+    margin-bottom: 81px;
+  }
+  html body .content .section3 .container .up .up1 p {
+    font-family: "Lemon Medium";
+    font-size: 9px;
+    line-height: 13px;
+    letter-spacing: 1.72em;
+    color: #FFFF27;
+    margin-bottom: 25px;
+  }
+  html body .content .section3 .container .up .down1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  html body .content .section3 .container .up .down1 .left img {
+    width: 366.01px;
+  }
+  html body .content .section3 .container .up .down1 .right p {
+    font-family: "Lemon Regular";
+    font-size: 10px;
+    line-height: 24px;
+    color: #C5CFD5;
+    max-width: 290px;
+  }
+  html body .content .section3 .container .down {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  html body .content .section3 .container .down .box .up {
+    margin-bottom: 0px;
+  }
+  html body .content .section3 .container .down .box .up button {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+  }
+  html body .content .section3 .container .down .box .up button img {
+    width: 330px;
+    height: 330px;
+  }
+  html body .content .section3 .container .down .box .up button .text {
+    display: none;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    margin: 230px 145px;
+  }
+  html body .content .section3 .container .down .box .up button .text img {
+    width: 233.5px;
+    height: 62px;
+  }
+  html body .content .section3 .container .down .box .up button:hover .overlay {
+    opacity: 1;
+  }
+  html body .content .section3 .container .down .box .up .modal1 {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    opacity: 0;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    transition: opacity 3s ease-in-out;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 {
+    width: 1120px;
+    margin: 0 auto;
+    background: #131313;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 {
+    width: 715px;
+    margin: 0 auto;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    justify-content: space-between;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .left {
+    display: flex;
+    flex-direction: row;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .left a {
+    font-family: "Lemon Medium";
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .left .changetovideo {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+    margin-right: 50px;
+    font-family: "Lemon Medium";
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .left .changetoimages {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+    font-family: "Lemon Medium";
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFF27;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .right button {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .right button img {
+    width: 18px;
+    height: 18px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: space-between;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left img {
+    width: 737px;
+    height: 737px;
+    margin-bottom: 30px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left .project11image {
+    width: 737px;
+    height: 737px;
+    display: block;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left .project12image {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left .project13image {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left .project14image {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left .project15image {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right {
+    max-width: 280px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .text1 p {
+    font-family: "Lemon Bold";
+    font-size: 28px;
+    line-height: 39px;
+    color: #FFFFFF;
+    margin: 0px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .text2 p {
+    font-family: "Lemon Regular";
+    font-size: 12px;
+    line-height: 30px;
+    color: #C5CFD5;
+    margin-top: 17px;
+    margin-bottom: 75px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .selections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .selections button {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+    padding: 0px;
+    margin: 3px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .selections button img {
+    width: 85px;
+    height: 85px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .downparts {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .downparts .ups p {
+    font-family: "Lemon Regular";
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(197, 207, 213, 0.7);
+    margin: 0px;
+    margin-bottom: 24px;
+    margin-top: 200px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .downparts .downs img {
+    width: 60px;
+    height: 60px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart {
+    display: none;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: space-between;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left video {
+    width: 737px;
+    height: 737px;
+    margin-bottom: 30px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left .project11video {
+    width: 737px;
+    height: 737px;
+    display: block;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left .project12video {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left .project13video {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left .project14video {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left .project15video {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right {
+    max-width: 280px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .text1 p {
+    font-family: "Lemon Bold";
+    font-size: 28px;
+    line-height: 39px;
+    color: #FFFFFF;
+    margin: 0px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .text2 p {
+    font-family: "Lemon Regular";
+    font-size: 12px;
+    line-height: 30px;
+    color: #C5CFD5;
+    margin-top: 17px;
+    margin-bottom: 75px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .selections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .selections button {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+    padding: 0px;
+    margin: 3px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .selections button video {
+    width: 85px;
+    height: 85px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .downparts {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .downparts .ups p {
+    font-family: "Lemon Regular";
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(197, 207, 213, 0.7);
+    margin: 0px;
+    margin-bottom: 24px;
+    margin-top: 200px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .downparts .downs img {
+    width: 60px;
+    height: 60px;
+  }
+  html body .content .section3 .container .down .box .down {
+    display: flex;
+    flex-direction: column;
+  }
+  html body .content .section3 .container .down .box .down .ups p {
+    font-family: "Lemon Medium";
+    font-size: 10px;
+    line-height: 14px;
+    color: #FFFFFF;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  html body .content .section3 .container .down .box .down .downs p {
+    font-family: "Lemon Regular";
+    font-size: 9px;
+    line-height: 13px;
+    color: #A4ADB3;
+    margin-top: 6px;
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (min-width: 1071px) {
+  #loader-wrapper.loader-off {
+    display: none !important;
+  }
+  #loader-wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 15000;
+    overflow: hidden;
+  }
+  #loader-wrapper .loader {
+    position: absolute;
+    left: 48%;
+    top: 48%;
+  }
+  #loader-wrapper .loader .jelly {
+    --uib-size: 80px;
+    --uib-speed: 0.7s;
+    --uib-color: #FFFF27;
+    position: relative;
+    height: calc(var(--uib-size) / 2);
+    width: var(--uib-size);
+    filter: url("#uib-jelly-ooze");
+    animation: rotate72317 calc(var(--uib-speed) * 2) linear infinite;
+  }
+  #loader-wrapper .loader .jelly::before,
+  #loader-wrapper .loader .jelly::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 25%;
+    width: 50%;
+    height: 100%;
+    background: var(--uib-color);
+    border-radius: 100%;
+  }
+  #loader-wrapper .loader .jelly::before {
+    animation: shift-left var(--uib-speed) ease infinite;
+  }
+  #loader-wrapper .loader .jelly::after {
+    animation: shift-right var(--uib-speed) ease infinite;
+  }
+  #loader-wrapper .loader .jelly-maker {
+    width: 0;
+    height: 0;
+    position: absolute;
+  }
+  @keyframes rotate72317 {
+    0%, 49.999%, 100% {
+      transform: none;
+    }
+    50%, 99.999% {
+      transform: rotate(90deg);
+    }
+  }
+  @keyframes shift-left {
+    0%, 100% {
+      transform: translateX(0%);
+    }
+    50% {
+      transform: scale(0.65) translateX(-75%);
+    }
+  }
+  @keyframes shift-right {
+    0%, 100% {
+      transform: translateX(0%);
+    }
+    50% {
+      transform: scale(0.65) translateX(75%);
+    }
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  html body {
+    font-family: "Lemon Regular";
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+  }
+  html body .content .section3 .container {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  html body .content .section3 .container .up {
+    margin-bottom: 81px;
+  }
+  html body .content .section3 .container .up .up1 p {
+    font-family: "Lemon Medium";
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 1.72em;
+    color: #FFFF27;
+    margin-bottom: 25px;
+  }
+  html body .content .section3 .container .up .down1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  html body .content .section3 .container .up .down1 .left img {
+    width: 524.95px;
+  }
+  html body .content .section3 .container .up .down1 .right p {
+    font-family: "Lemon Regular";
+    font-size: 14px;
+    line-height: 30px;
+    color: #C5CFD5;
+    max-width: 473px;
+    margin-top: 30px;
+  }
+  html body .content .section3 .container .down {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  html body .content .section3 .container .down .box .up {
+    margin-bottom: 0px;
+  }
+  html body .content .section3 .container .down .box .up button {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+  }
+  html body .content .section3 .container .down .box .up button img {
+    width: 515px;
+    height: 515px;
+  }
+  html body .content .section3 .container .down .box .up button .overlay {
+    position: absolute;
+    width: 515px;
+    height: 515px;
+    opacity: 0;
+    transition: 0.5s ease;
+    background: rgba(255, 246, 39, 0.75);
+    border-radius: 3px;
+    margin-top: -520px;
+  }
+  html body .content .section3 .container .down .box .up button .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    margin: 230px 145px;
+  }
+  html body .content .section3 .container .down .box .up button .text img {
+    width: 233.5px;
+    height: 62px;
+  }
+  html body .content .section3 .container .down .box .up button:hover .overlay {
+    opacity: 1;
+  }
+  html body .content .section3 .container .down .box .up .modal1 {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    opacity: 0;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    transition: opacity 3s ease-in-out;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 {
+    width: 1120px;
+    margin: 0 auto;
+    background: #131313;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 {
+    width: 1060px;
+    margin: 0 auto;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    justify-content: space-between;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .left {
+    display: flex;
+    flex-direction: row;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .left a {
+    font-family: "Lemon Medium";
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .left .changetovideo {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+    margin-right: 50px;
+    font-family: "Lemon Medium";
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .left .changetoimages {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+    font-family: "Lemon Medium";
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFF27;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .right button {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .up .right button img {
+    width: 18px;
+    height: 18px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: space-between;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left img {
+    width: 737px;
+    height: 737px;
+    margin-bottom: 30px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left .project11image {
+    width: 737px;
+    height: 737px;
+    display: block;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left .project12image {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left .project13image {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left .project14image {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .left .project15image {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right {
+    max-width: 280px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .text1 p {
+    font-family: "Lemon Bold";
+    font-size: 28px;
+    line-height: 39px;
+    color: #FFFFFF;
+    margin: 0px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .text2 p {
+    font-family: "Lemon Regular";
+    font-size: 12px;
+    line-height: 30px;
+    color: #C5CFD5;
+    margin-top: 17px;
+    margin-bottom: 75px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .selections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .selections button {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+    padding: 0px;
+    margin: 3px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .selections button img {
+    width: 85px;
+    height: 85px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .downparts {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .downparts .ups p {
+    font-family: "Lemon Regular";
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(197, 207, 213, 0.7);
+    margin: 0px;
+    margin-bottom: 24px;
+    margin-top: 200px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .imagespart .right .downparts .downs img {
+    width: 60px;
+    height: 60px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart {
+    display: none;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: space-between;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left video {
+    width: 737px;
+    height: 737px;
+    margin-bottom: 30px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left .project11video {
+    width: 737px;
+    height: 737px;
+    display: block;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left .project12video {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left .project13video {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left .project14video {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .left .project15video {
+    width: 737px;
+    height: 737px;
+    display: none;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right {
+    max-width: 280px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .text1 p {
+    font-family: "Lemon Bold";
+    font-size: 28px;
+    line-height: 39px;
+    color: #FFFFFF;
+    margin: 0px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .text2 p {
+    font-family: "Lemon Regular";
+    font-size: 12px;
+    line-height: 30px;
+    color: #C5CFD5;
+    margin-top: 17px;
+    margin-bottom: 75px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .selections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .selections button {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: inherit;
+    padding: 0px;
+    margin: 3px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .selections button video {
+    width: 85px;
+    height: 85px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .downparts {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .downparts .ups p {
+    font-family: "Lemon Regular";
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(197, 207, 213, 0.7);
+    margin: 0px;
+    margin-bottom: 24px;
+    margin-top: 200px;
+  }
+  html body .content .section3 .container .down .box .up .modal1 .modal-content1 .containermodal1 .down .videopart .right .downparts .downs img {
+    width: 60px;
+    height: 60px;
+  }
+  html body .content .section3 .container .down .box .down {
+    display: flex;
+    flex-direction: column;
+  }
+  html body .content .section3 .container .down .box .down .ups p {
+    font-family: "Lemon Medium";
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  html body .content .section3 .container .down .box .down .downs p {
+    font-family: "Lemon Regular";
+    font-size: 14px;
+    line-height: 20px;
+    color: #A4ADB3;
+    margin-top: 6px;
+    margin-bottom: 40px;
+  }
+}/*# sourceMappingURL=style.css.map */
