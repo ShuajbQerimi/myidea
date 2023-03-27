@@ -200,6 +200,16 @@ p {
     color: #FFFF27;
     border: 2px solid #FFFF27;
   }
+  html body .content .navmobile {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  html body .content .navmobile .container img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100px;
+  }
   html body .content .section1 {
     background-image: url(../img/bg1banner.png);
     background-size: 100% 100%;
@@ -924,10 +934,12 @@ p {
     flex-direction: row;
   }
   html body .content .section4 .container .up .left {
+    display: none;
     flex: 0.2;
+    position: absolute;
   }
   html body .content .section4 .container .up .left img {
-    width: 100px;
+    width: 180px;
     margin-left: -50px;
   }
   html body .content .section4 .container .up .left .onpart {
@@ -943,7 +955,6 @@ p {
     text-align: center;
     flex: 2;
     margin-top: 45px;
-    margin-left: -10px;
   }
   html body .content .section4 .container .up .mid .text1 p {
     font-family: "Lemon Medium";
@@ -953,9 +964,12 @@ p {
     color: #FFFF27;
     margin-bottom: 20px;
   }
-  html body .content .section4 .container .up .mid .text2 img {
+  html body .content .section4 .container .up .mid .text2 .mycareermobile {
     width: 254px;
     margin-bottom: 20px;
+  }
+  html body .content .section4 .container .up .mid .text2 .mycareerdesktop {
+    display: none;
   }
   html body .content .section4 .container .up .mid .text3 {
     max-width: 423;
@@ -971,6 +985,7 @@ p {
     margin-top: -20px;
   }
   html body .content .section4 .container .up .right {
+    display: none;
     flex: 0.2;
     text-align: end;
     margin-top: 50px;
@@ -1036,7 +1051,7 @@ p {
     margin-bottom: 5px;
   }
   html body .content .section4 .container .down .first .left {
-    width: 330px;
+    width: 340px;
     height: 184px;
     text-align: center;
     background: rgba(12, 12, 12, 0.6);
@@ -1073,7 +1088,7 @@ p {
     padding: 0px;
     margin: 0px;
     margin-bottom: 5px;
-    width: 330px;
+    width: 340px;
     height: 100px;
     justify-content: center;
     text-align: center;
@@ -1109,7 +1124,7 @@ p {
     margin-bottom: 0px;
   }
   html body .content .section4 .container .down .second .left {
-    width: 330px;
+    width: 340px;
     height: 184px;
     text-align: center;
     background: rgba(12, 12, 12, 0.6);
@@ -1147,7 +1162,7 @@ p {
     padding: 0px;
     margin: 0px;
     margin-bottom: 5px;
-    width: 330px;
+    width: 340px;
     text-align: center;
     height: 100px;
   }
@@ -1502,6 +1517,9 @@ p {
   html body .content .nav .container .right a:hover {
     color: #FFFF27;
     border: 2px solid #FFFF27;
+  }
+  html body .content .navmobile {
+    display: none;
   }
   html body .content .section1 {
     background-image: url(../img/bg1banner.png);
@@ -2181,9 +2199,12 @@ p {
     color: #FFFF27;
     margin-bottom: 40px;
   }
-  html body .content .section4 .container .up .mid .text2 img {
+  html body .content .section4 .container .up .mid .text2 .mycareerdesktop {
     width: 430px;
     margin-bottom: 20px;
+  }
+  html body .content .section4 .container .up .mid .text2 .mycareermobile {
+    display: none;
   }
   html body .content .section4 .container .up .mid .text3 {
     max-width: 423;
@@ -2677,6 +2698,9 @@ p {
     background-color: #FFFF27;
     border: 2px solid #FFFF27;
     font-family: "Lemon Medium";
+  }
+  html body .content .navmobile {
+    display: none;
   }
   html body .content .section1 {
     background-image: url(../img/bg1banner.png);
@@ -3369,10 +3393,13 @@ p {
     color: #FFFF27;
     margin-bottom: 40px;
   }
-  html body .content .section4 .container .up .mid .text2 img {
+  html body .content .section4 .container .up .mid .text2 .mycareerdesktop {
     width: 608px;
     height: 111px;
     margin-bottom: 40px;
+  }
+  html body .content .section4 .container .up .mid .text2 .mycareermobile {
+    display: none;
   }
   html body .content .section4 .container .up .mid .text3 {
     max-width: 605;
@@ -3627,7 +3654,7 @@ p {
     height: 67.12px;
     margin: 0px;
     margin-top: 58px;
-    margin-right: 185px;
+    margin-right: 125px;
   }
   html body .content .section6 .container .up .mid {
     display: flex;

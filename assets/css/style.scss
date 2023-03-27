@@ -267,6 +267,25 @@ p {
                     }
 
                 }
+                .navmobile {
+                    display: flex;
+                    margin: 0 auto;
+                    justify-content: center;
+
+                    .container {
+
+                        img {
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                            width: 100px;
+
+                        }
+
+   
+
+                    }
+
+                }
 
                 .section1 {
 
@@ -1225,10 +1244,13 @@ p {
                             flex-direction: row;
 
                             .left {
+                                display: none;
                                 flex: 0.2;
+                                position: absolute;
 
                                 img {
-                                    width: 100px;
+                                    width: 180px;
+                               
                                     margin-left: -50px;
 
                                 }
@@ -1250,7 +1272,7 @@ p {
                                 text-align: center;
                                 flex: 2;
                                 margin-top: 45px;
-                                margin-left: -10px;
+                           
 
                                 .text1 {
                                     p {
@@ -1264,10 +1286,14 @@ p {
                                 }
 
                                 .text2 {
-                                    img {
+                                    .mycareermobile {
                                         width: 254px;
                                         margin-bottom: 20px;
                                     }
+                                    .mycareerdesktop{
+                                        display: none;
+                                    }
+                                    
                                 }
 
                                 .text3 {
@@ -1287,6 +1313,7 @@ p {
                             }
 
                             .right {
+                                display: none;
                                 flex: 0.2;
                                 text-align: end;
                                 margin-top: 50px;
@@ -1368,7 +1395,7 @@ p {
                                 margin-bottom: 5px;
 
                                 .left {
-                                    width: 330px;
+                                    width: 340px;
                                     height: 184px;
                                     text-align: center;
                                     background: rgba(12, 12, 12, 0.6);
@@ -1412,7 +1439,7 @@ p {
                                         padding: 0px;
                                         margin: 0px;
                                         margin-bottom: 5px;
-                                        width: 330px;
+                                        width: 340px;
                                         height: 100px;
                                         justify-content: center;
                                         text-align: center;
@@ -1459,7 +1486,7 @@ p {
                                 margin-bottom: 0px;
 
                                 .left {
-                                    width: 330px;
+                                    width: 340px;
                                     height: 184px;
                                     text-align: center;
 
@@ -1503,7 +1530,7 @@ p {
                                         padding: 0px;
                                         margin: 0px;
                                         margin-bottom: 5px;
-                                        width: 330px;
+                                        width: 340px;
                                         text-align: center;
                                         height: 100px;
 
@@ -2003,6 +2030,9 @@ p {
                         }
                     }
 
+                }
+                .navmobile{
+                    display: none;
                 }
 
                 .section1 {
@@ -2902,9 +2932,12 @@ p {
                                 }
 
                                 .text2 {
-                                    img {
+                                    .mycareerdesktop {
                                         width: 430px;
                                         margin-bottom: 20px;
+                                    }
+                                    .mycareermobile{
+                                        display: none;
                                     }
                                 }
 
@@ -3570,6 +3603,9 @@ p {
                         }
                     }
 
+                }
+                .navmobile{
+                    display: none;
                 }
 
                 .section1 {
@@ -4481,10 +4517,13 @@ p {
                                 }
 
                                 .text2 {
-                                    img {
+                                    .mycareerdesktop {
                                         width: 608px;
                                         height: 111px;
                                         margin-bottom: 40px;
+                                    }
+                                    .mycareermobile{
+                                        display: none;
                                     }
                                 }
 
@@ -4805,7 +4844,7 @@ p {
                                     height: 67.12px;
                                     margin: 0px;
                                     margin-top: 58px;
-                                    margin-right: 185px;
+                                    margin-right: 125px;
                                 }
                             }
 
