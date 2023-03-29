@@ -94,7 +94,7 @@ p {
     #loader-wrapper.loader-off {
         display: none !important;
     }
-    
+
     #loader-wrapper {
         position: fixed;
         left: 0;
@@ -104,12 +104,12 @@ p {
         background: #000;
         z-index: 15000;
         overflow: hidden;
-    
+
         .loader {
             position: absolute;
             left: 40%;
             top: 48%;
-    
+
             .jelly {
                 --uib-size: 80px;
                 --uib-speed: 0.7s;
@@ -120,7 +120,7 @@ p {
                 filter: url('#uib-jelly-ooze');
                 animation: rotate72317 calc(var(--uib-speed) * 2) linear infinite;
             }
-    
+
             .jelly::before,
             .jelly::after {
                 content: '';
@@ -132,61 +132,61 @@ p {
                 background: var(--uib-color);
                 border-radius: 100%;
             }
-    
+
             .jelly::before {
                 animation: shift-left var(--uib-speed) ease infinite;
             }
-    
+
             .jelly::after {
                 animation: shift-right var(--uib-speed) ease infinite;
             }
-    
+
             .jelly-maker {
                 width: 0;
                 height: 0;
                 position: absolute;
             }
-    
+
             @keyframes rotate72317 {
-    
+
                 0%,
                 49.999%,
                 100% {
                     transform: none;
                 }
-    
+
                 50%,
                 99.999% {
                     transform: rotate(90deg);
                 }
             }
-    
+
             @keyframes shift-left {
-    
+
                 0%,
                 100% {
                     transform: translateX(0%);
                 }
-    
+
                 50% {
                     transform: scale(0.65) translateX(-75%);
                 }
             }
-    
+
             @keyframes shift-right {
-    
+
                 0%,
                 100% {
                     transform: translateX(0%);
                 }
-    
+
                 50% {
                     transform: scale(0.65) translateX(75%);
                 }
             }
         }
     }
-    
+
     html {
         scroll-behavior: smooth;
 
@@ -267,6 +267,7 @@ p {
                     }
 
                 }
+
                 .navmobile {
                     display: flex;
                     margin: 0 auto;
@@ -281,7 +282,7 @@ p {
 
                         }
 
-   
+
 
                     }
 
@@ -356,7 +357,7 @@ p {
                                         line-height: 20px;
                                         color: #050505;
                                         padding: 10px 13px;
-                                        
+
 
                                         span {
                                             margin-top: -3px;
@@ -364,15 +365,18 @@ p {
                                             overflow: hidden;
                                             margin-left: 5px;
                                         }
-                                        #behancelogo{
+
+                                        #behancelogo {
                                             width: 21.23px;
                                             height: 13.27px;
                                         }
-                                        #linkedinlogo{
+
+                                        #linkedinlogo {
                                             width: 17.32px;
                                             height: 16.76px;
                                         }
-                                        #dribblelogo{
+
+                                        #dribblelogo {
                                             width: 20.19px;
                                             height: 20.2px;
                                             margin-bottom: -4px;
@@ -393,9 +397,11 @@ p {
                                     font-size: 14px;
                                     color: #050505;
                                     margin-top: -8px;
-                                    a{
+
+                                    a {
                                         color: #050505;
                                     }
+
                                     &:hover {
                                         transform: translateY(-3px);
                                         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -1224,6 +1230,14 @@ p {
                                 }
                             }
                         }
+                        .downdown {
+                            display: block;
+                            margin-left: auto;
+                            img{
+                                width: 101px;
+                                margin-bottom: 50px;
+                            }
+                        }
                     }
                 }
 
@@ -1250,7 +1264,7 @@ p {
 
                                 img {
                                     width: 180px;
-                               
+
                                     margin-left: -50px;
 
                                 }
@@ -1272,7 +1286,7 @@ p {
                                 text-align: center;
                                 flex: 2;
                                 margin-top: 45px;
-                           
+
 
                                 .text1 {
                                     p {
@@ -1290,10 +1304,11 @@ p {
                                         width: 254px;
                                         margin-bottom: 20px;
                                     }
-                                    .mycareerdesktop{
+
+                                    .mycareerdesktop {
                                         display: none;
                                     }
-                                    
+
                                 }
 
                                 .text3 {
@@ -1855,7 +1870,7 @@ p {
     #loader-wrapper.loader-off {
         display: none !important;
     }
-    
+
     #loader-wrapper {
         position: fixed;
         left: 0;
@@ -1865,12 +1880,12 @@ p {
         background: #000;
         z-index: 15000;
         overflow: hidden;
-    
+
         .loader {
             position: absolute;
             left: 40%;
             top: 48%;
-    
+
             .jelly {
                 --uib-size: 80px;
                 --uib-speed: 0.7s;
@@ -1881,7 +1896,7 @@ p {
                 filter: url('#uib-jelly-ooze');
                 animation: rotate72317 calc(var(--uib-speed) * 2) linear infinite;
             }
-    
+
             .jelly::before,
             .jelly::after {
                 content: '';
@@ -1893,61 +1908,61 @@ p {
                 background: var(--uib-color);
                 border-radius: 100%;
             }
-    
+
             .jelly::before {
                 animation: shift-left var(--uib-speed) ease infinite;
             }
-    
+
             .jelly::after {
                 animation: shift-right var(--uib-speed) ease infinite;
             }
-    
+
             .jelly-maker {
                 width: 0;
                 height: 0;
                 position: absolute;
             }
-    
+
             @keyframes rotate72317 {
-    
+
                 0%,
                 49.999%,
                 100% {
                     transform: none;
                 }
-    
+
                 50%,
                 99.999% {
                     transform: rotate(90deg);
                 }
             }
-    
+
             @keyframes shift-left {
-    
+
                 0%,
                 100% {
                     transform: translateX(0%);
                 }
-    
+
                 50% {
                     transform: scale(0.65) translateX(-75%);
                 }
             }
-    
+
             @keyframes shift-right {
-    
+
                 0%,
                 100% {
                     transform: translateX(0%);
                 }
-    
+
                 50% {
                     transform: scale(0.65) translateX(75%);
                 }
             }
         }
     }
-    
+
 
     html {
         scroll-behavior: smooth;
@@ -2031,7 +2046,8 @@ p {
                     }
 
                 }
-                .navmobile{
+
+                .navmobile {
                     display: none;
                 }
 
@@ -2104,7 +2120,7 @@ p {
                                         line-height: 20px;
                                         color: #050505;
                                         padding: 10px 13px;
-                                        
+
 
                                         span {
                                             margin-top: -3px;
@@ -2112,15 +2128,18 @@ p {
                                             overflow: hidden;
                                             margin-left: 5px;
                                         }
-                                        #behancelogo{
+
+                                        #behancelogo {
                                             width: 21.23px;
                                             height: 13.27px;
                                         }
-                                        #linkedinlogo{
+
+                                        #linkedinlogo {
                                             width: 17.32px;
                                             height: 16.76px;
                                         }
-                                        #dribblelogo{
+
+                                        #dribblelogo {
                                             width: 20.19px;
                                             height: 20.2px;
                                             margin-bottom: -4px;
@@ -2141,9 +2160,11 @@ p {
                                     font-size: 14px;
                                     color: #050505;
                                     margin-top: -8px;
-                                    a{
+
+                                    a {
                                         color: #050505;
                                     }
+
                                     &:hover {
                                         transform: translateY(-3px);
                                         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -2872,6 +2893,14 @@ p {
                                 }
                             }
                         }
+                        .downdown {
+                            display: block;
+                            margin-left: auto;
+                            img{
+                                width: 101px;
+                                margin-bottom: 50px;
+                            }
+                        }
                     }
                 }
 
@@ -2936,7 +2965,8 @@ p {
                                         width: 430px;
                                         margin-bottom: 20px;
                                     }
-                                    .mycareermobile{
+
+                                    .mycareermobile {
                                         display: none;
                                     }
                                 }
@@ -3359,7 +3389,7 @@ p {
     #loader-wrapper.loader-off {
         display: none !important;
     }
-    
+
     #loader-wrapper {
         position: fixed;
         left: 0;
@@ -3369,12 +3399,12 @@ p {
         background: #000;
         z-index: 15000;
         overflow: hidden;
-    
+
         .loader {
             position: absolute;
             left: 48%;
             top: 48%;
-    
+
             .jelly {
                 --uib-size: 80px;
                 --uib-speed: 0.7s;
@@ -3385,7 +3415,7 @@ p {
                 filter: url('#uib-jelly-ooze');
                 animation: rotate72317 calc(var(--uib-speed) * 2) linear infinite;
             }
-    
+
             .jelly::before,
             .jelly::after {
                 content: '';
@@ -3397,61 +3427,61 @@ p {
                 background: var(--uib-color);
                 border-radius: 100%;
             }
-    
+
             .jelly::before {
                 animation: shift-left var(--uib-speed) ease infinite;
             }
-    
+
             .jelly::after {
                 animation: shift-right var(--uib-speed) ease infinite;
             }
-    
+
             .jelly-maker {
                 width: 0;
                 height: 0;
                 position: absolute;
             }
-    
+
             @keyframes rotate72317 {
-    
+
                 0%,
                 49.999%,
                 100% {
                     transform: none;
                 }
-    
+
                 50%,
                 99.999% {
                     transform: rotate(90deg);
                 }
             }
-    
+
             @keyframes shift-left {
-    
+
                 0%,
                 100% {
                     transform: translateX(0%);
                 }
-    
+
                 50% {
                     transform: scale(0.65) translateX(-75%);
                 }
             }
-    
+
             @keyframes shift-right {
-    
+
                 0%,
                 100% {
                     transform: translateX(0%);
                 }
-    
+
                 50% {
                     transform: scale(0.65) translateX(75%);
                 }
             }
         }
     }
-    
+
     html {
         scroll-behavior: smooth;
 
@@ -3604,7 +3634,8 @@ p {
                     }
 
                 }
-                .navmobile{
+
+                .navmobile {
                     display: none;
                 }
 
@@ -3677,7 +3708,7 @@ p {
                                         line-height: 20px;
                                         color: #050505;
                                         padding: 10px 13px;
-                                        
+
 
                                         span {
                                             margin-top: -3px;
@@ -3685,15 +3716,18 @@ p {
                                             overflow: hidden;
                                             margin-left: 5px;
                                         }
-                                        #behancelogo{
+
+                                        #behancelogo {
                                             width: 21.23px;
                                             height: 13.27px;
                                         }
-                                        #linkedinlogo{
+
+                                        #linkedinlogo {
                                             width: 17.32px;
                                             height: 16.76px;
                                         }
-                                        #dribblelogo{
+
+                                        #dribblelogo {
                                             width: 20.19px;
                                             height: 20.2px;
                                             margin-bottom: -4px;
@@ -3714,9 +3748,11 @@ p {
                                     font-size: 14px;
                                     color: #050505;
                                     margin-top: -8px;
-                                    a{
+
+                                    a {
                                         color: #050505;
                                     }
+
                                     &:hover {
                                         transform: translateY(-3px);
                                         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -4459,6 +4495,15 @@ p {
                                 }
                             }
                         }
+
+                        .downdown {
+                            display: block;
+                            margin-left: auto;
+                            img{
+                                width: 101px;
+                                margin-bottom: 50px;
+                            }
+                        }
                     }
                 }
 
@@ -4522,7 +4567,8 @@ p {
                                         height: 111px;
                                         margin-bottom: 40px;
                                     }
-                                    .mycareermobile{
+
+                                    .mycareermobile {
                                         display: none;
                                     }
                                 }
@@ -4954,6 +5000,3 @@ p {
         }
     }
 }
-
-
-
