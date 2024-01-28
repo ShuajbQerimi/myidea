@@ -961,6 +961,11 @@ $(document).ready(function () {
     }, function () {
         $('#spani4').hide(300);
     });
+    $('#showtext5').hover(function () {
+        $('#spani5').show(300);
+    }, function () {
+        $('#spani5').hide(300);
+    });
 });
 
 
